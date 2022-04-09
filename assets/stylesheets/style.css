@@ -1,0 +1,28 @@
+@import url(https://www.fontstatic.com/f=sky-bold,sky);a{color:#fff;text-decoration:none}li,ul{list-style:none;padding:0;margin:0}.fa,.fal,.fas{vertical-align:middle;font-size:50px;display:block}body {
+    font-family: sky-bold;
+    color: #fff;text-align: center;
+    margin: 0px;
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(132deg, #111 , #042453 , #111);
+    background-size: 400% 400%;
+    animation: BackgroundGradient 12s ease infinite;
+}@keyframes BackgroundGradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+header{text-align:center;position:relative;overflow:hidden}header .left{display:none}header ul{display:grid;padding:20px;grid-template-columns:repeat(2,1fr);grid-column-gap:15px;grid-row-gap:15px}header ul a:first-child{grid-column:1/-1}header li{background:#ffffff12;border:.078vw solid #fff;padding:10px 0 0;border-radius:10px;cursor:pointer;font-size:18px}p{margin:10px;font-size:20px;grid-column:1/-1;text-align:center}p span{margin:10px;display:block}header li:hover{background:#000;border-color:#1F252E}
+.fa-facebook{border:1px solid #fff;padding:10px 10px;border-radius:50px;margin:10px}.fa-facebook:hover{background:#fff;color:#241b73}
+.fa-telegram{border:1px solid #fff;padding:10px 10px;border-radius:50px;margin:10px}.fa-telegram:hover{background:#fff;color:#241b73}
+.fa-youtube{border:1px solid #fff;padding:10px 8px;border-radius:50px;margin:10px}.fa-youtube:hover{background:#fff;color:#241b73}
+.fa-instagram{border:1px solid #fff;padding:10px 11px;border-radius:50px;margin:10px}.fa-instagram:hover{background:#fff;color:#241b73}
+.fa-tiktok{border:1px solid #fff;padding:10px 11px;border-radius:50px;margin:10px}.fa-tiktok:hover{background:#fff;color:#241b73}
+.logo{margin:20px auto;display:block;grid-column:1/-1;width:180px}
+.responsive {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 155px;
+}
