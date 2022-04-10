@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <title>AliwixPlayer</title>
+  <style>
+    /* This CSS is required to avoid layout issues */
+
+    html,
+    body {
+    height: 100%;
+      width: 100%;
+      background-color: #000;
+       
+      overflow: show;
+      margin: 0;
+      padding: 0;
+       skinButtonColor: "rgba(126, 0, 204, 1.00)",
+        skinAccentColor: "rgba(126, 0, 204, 1.00)",
+    }
+  </style>
+</head>
+
+<body>
+				<script type='text/javascript'>
+      function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+        vars[key] = value;
+      });
+          return vars;
+      }
+      var link = getUrlVars()["src"];
+    </script>  
+  <script src="https://cdn.radiantmediatechs.com/rmp/7.3.3/js/rmp.min.js"></script>
+ 
+  <div id="rmp"></div>
+  <script>
+    var src = {
+    hls:
+    link 
+            
+        
+    };
+     
+    
+    var settings = {
+      iframeMode: true,
+      iframeAllowed: true,
+      scaleMode: 'flatten',
+      licenseKey: 'eWZmZ2d2Y3BrdEAxNTMwNjA2',
+      src: src,
+      skin: 's2',  
+      quickRewind: 10,quickForward: 10,
+      skinAccentColor: 'CCCCCC',
+      contentMetadata: {
+        poster: ['https://i.imgur.com/JdanwmR.jpg']
+      }, 
+      logo: 'aplay.png', 
+      logoPosition: 'topleft',       
+      logoWatermark: true      
+    };
+    var rmp = new RadiantMP("rmp");
+    rmp.init(settings);
+  </script>
+</body>
+
+</html>
