@@ -44,6 +44,41 @@
 
 <script src="https://content.jwplatform.com/libraries/Jq6HIbgz.js"></script>
 <style>
+.jumpBackward {
+    background-image: url('/icons/play-backward-hhu.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: initial !important;
+    color: rgba(240, 255, 255, 0) !important;
+    padding-left: 16% !important;
+    padding-bottom: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin: 0 auto !important;
+ }
+
+.jw-reset {
+    line-height: 2em !important;
+ }
+
+.jw-skin-seven .jw-icon-display {
+    display: table-cell !important; 
+    font-size: 4em !important;  
+}
+
+.jw-display-icon-container {
+    margin: -3.75em auto 0 !important;
+    top: 50% !important;
+    cursor: pointer !important;
+}
+
+.jw-display-icon-container img{
+    width: auto  !important; 
+    height: auto !important;
+    max-width: 120px !important;
+    max-height: 100px !important;
+}
+
 	/*
 
 Skin Netflix v2.0.3
@@ -1002,5 +1037,81 @@ playerInstance.on("ready", function () {
   const spacer = buttonContainer.querySelector(".jw-spacer");
   const timeSlider = playerContainer.querySelector(".jw-slider-time");
   buttonContainer.replaceChild(timeSlider, spacer);
-});</script>
+});</script><script type="text/javascript">  
+
+    function jumpBySeconds(seksToJump) {
+        var time = playerInstance.getPosition() + seksToJump;
+        if(time < 0) { 
+            time = 0; 
+        }
+        playerInstance.seek(time);
+    }
+
+    function displayButtons() {
+        var playButton = document.getElementsByClassName('jw-controls jw-reset')[0];
+        playButton.style.display = "block";
+    }
+
+    function hideButtons() {
+        var playButton = document.getElementsByClassName('jw-controls jw-reset')[0];
+        playButton.style.display = "none";
+    }
+
+    function addControlbarListeners(){
+        var timer;
+        var player = document.getElementsByClassName('jwplayer')[0];
+        player.onmouseover = function(){displayButtons();}; 
+        player.onmouseout = function(){hideButtons();};
+        player.addEventListener("mousemove",function(){
+            displayButtons();
+            clearTimeout(timer);
+            timer=setTimeout(mouseStopped,2000);
+        });
+
+        function mouseStopped(){                               
+            hideButtons();
+        }
+    }
+
+    function addPlayForwardAndBackwardButtons(){
+        // add play 5 sek back button 
+        var playBack = document.createElement("img");
+        playBack.id = "play10sekback";
+        playBack.setAttribute('class','jw-icon jw-icon-display jw-button-color jumpBackward jw-reset');   
+        playBack.setAttribute('onclick','jumpBySeconds(-10)');
+
+        var middleBar = document.getElementsByClassName('jw-display-icon-container jw-reset')[0];
+        middleBar.appendChild(playBack);
+        middleBar.setAttribute('style',"background-color:rgba(0, 0, 0, 0.0); border: 0px; display: flex;");
+        var playButton = middleBar.childNodes[1];
+        middleBar.removeChild(playButton);
+        middleBar.appendChild(playButton);
+
+        // add play 5 sek forward button 
+        var playForward = document.createElement("img");
+        playForward.id = "play10sekforward";
+        playForward.setAttribute('class','jw-icon jw-button-color jw-icon-display jw-reset jumpForward');
+        playForward.setAttribute('onclick','jumpBySeconds(10)');
+
+        var middleBar = document.getElementsByClassName('jw-display-icon-container jw-reset')[0];  
+        middleBar.appendChild(playForward);                     
+        // set icon to center
+        middleBar.style.width = "100%";
+        middleBar.style.margin = "-1.0em auto 0";
+    }
+
+    playerInstance.onPause(function(){
+        console.log("video stopped");
+    });
+
+    playerInstance.onPlay(function(){
+        console.log("video playing...");
+    });
+
+    playerInstance.onReady(function(){            
+        addPlayForwardAndBackwardButtons();
+        addControlbarListeners();           
+     });
+
+</script>
 </body></html>
