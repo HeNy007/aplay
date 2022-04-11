@@ -981,7 +981,7 @@ cast:{
     '/player/img/20220411_021653.png',
     'Download video', 
     function() {  
-    window.open(playerInstance.getPlaylistItem()['file']+'content-disposition: attachment', '_blank').blur();
+    window.open(playerInstance.getPlaylistItem()['file'], '_blank').blur();
     //window.location.href = playerInstance.getPlaylistItem()['file'];
     },
     'download'
