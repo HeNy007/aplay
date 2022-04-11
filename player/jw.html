@@ -866,10 +866,10 @@ Animações do botão.
      <script>
    
    // externalplayer
-   function dlna(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="wvc-x-callback://open?url=http://"+link+"&secure_uri=true"}};
-   function wuffy(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="intent://"+btoa("http://"+link)+"#Intent;scheme=xmtv;package=co.wuffy.player;end"}};
-   function mx(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="intent://"+link+"#Intent;scheme=http;type=video/*;package=com.mxtech.videoplayer.ad;S.browser_fallback_url=market://details?id=com.mxtech.videoplayer.ad;S.title=AliwixPlay;end"}};
-   function vlc(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="vlc-x-callback:// protocol, my link is vlc-x-callback://x-callback-url/stream?url=http://"+link+"&sub=AliwixPlay"}};
+   function dlna(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="wvc-x-callback://open?url=https://"+link+"&secure_uri=true"}};
+   function wuffy(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="intent://"+btoa("https://"+link)+"#Intent;scheme=xmtv;package=co.wuffy.player;end"}};
+   function mx(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="intent://"+link+"#Intent;scheme=https;type=video/*;package=com.mxtech.videoplayer.ad;S.browser_fallback_url=market://details?id=com.mxtech.videoplayer.ad;S.title=AliwixPlay;end"}};
+   function vlc(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="vlc://https://"+link+"&sub=AliwixPlay"}};
    
 
    </script> 
@@ -940,7 +940,7 @@ var link=atob(video);
   displaydescription: true,
   title: "AliwixPlay  copyrights ©",
       description: "www.aliwixplay.pages.dev",
-  file:link,                         
+  file:"https://"+link;                         
         image: 'https://heny007.github.io/img/coverjwplayer.jpg',
         width: '100%',
         height: '100%',
