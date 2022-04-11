@@ -38,47 +38,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    <script type="text/javascript" src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/castjs/4.1.2/cast.min.js"></script>
-
-	
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
-
-<script src="https://content.jwplatform.com/libraries/Jq6HIbgz.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://content.jwplatform.com/libraries/Jq6HIbgz.js"></script>
 <style>
-.jumpBackward {
-    background-image: url('/icons/play-backward-hhu.png') !important;
-    background-repeat: no-repeat !important;
-    background-size: contain !important;
-    background-position: initial !important;
-    color: rgba(240, 255, 255, 0) !important;
-    padding-left: 16% !important;
-    padding-bottom: 100% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin: 0 auto !important;
- }
-
-.jw-reset {
-    line-height: 2em !important;
- }
-
-.jw-skin-seven .jw-icon-display {
-    display: table-cell !important; 
-    font-size: 4em !important;  
-}
-
-.jw-display-icon-container {
-    margin: -3.75em auto 0 !important;
-    top: 50% !important;
-    cursor: pointer !important;
-}
-
-.jw-display-icon-container img{
-    width: auto  !important; 
-    height: auto !important;
-    max-width: 120px !important;
-    max-height: 100px !important;
-}
-
 	/*
 
 Skin Netflix v2.0.3
@@ -1016,9 +978,8 @@ cast:{
     '/player/img/20220411_021653.png',
     'Download video', 
     function() { 
-    window.open(playerInstance.getPlaylistItem()['file'], 'download_window', 'toolbar=0,location=no,directories=0,status=0,scrollbars=0,resizeable=0,width=1,height=1,top=0,left=0'); window.focus(); 
-    //window.open(playerInstance.getPlaylistItem()['file'], '_blank').blur();
-    //window.location.href = playerInstance.getPlaylistItem()['file'];
+   //window.open(playerInstance.getPlaylistItem()['file'], '_blank').blur();
+   window.location.href = playerInstance.getPlaylistItem()['file'];
     },
     'download'
     );
