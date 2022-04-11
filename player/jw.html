@@ -1,4 +1,47 @@
 <html><head>
+	<meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+  <meta name="copyright" content="HeNy007"> 
+  <meta property="og:url" content="https://aliwixplay.netlify.app/"> 
+  <meta property="og:type" content="website"> 
+  <meta property="og:title" content="تطبيق أليويكس بلاي ‫-‬ Aliwix Play"> 
+  <meta property="og:description" content="أليويكس تي في - التطبيق التونسي المجاني الأول لمشاهدة المئات من القنوات التلفزيونية الفضائية والمشفرة بالإضافة لمكتبة منوعة من الأفلام و المسلسلات التونسية و العالمية العربية والأجنبية المترجمة بجودة عالية وبدون تقطيع بواسطة هاتفك الذكي أو باستخدام جهازك اللوحي أو " التلفزيون الذكي" مجاناً aliwix play, play apk, تحميل تطبيق أليويكس بلاي"> 
+  <meta name="keywords" content="apk,Aliwix Play,Aliwix,tv,تطبيق أليويكس بلاي،أليويكس تي في،تحميل أليويكس بلاي"> 
+  <meta property="og:image" content="https://scontent.ftun1-2.fna.fbcdn.net/v/t1.18169-9/546944_397294267029195_1490068599_n.png?_nc_cat=101&ccb=1-5&_nc_sid=85a577&efg=eyJpIjoidCJ9&_nc_ohc=pJJlaPArf88AX9KWsoq&tn=7NzN8heELjMGeCNw&_nc_ht=scontent.ftun1-2.fna&oh=00_AT9ePpvxwiGkcsS3Z1By18o8TOsXs6vAVHPGS8zuiVm1Zg&oe=622D271B"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <title>Aliwix Video Player</title> 
+  <!-- DNS Prefetech --> 
+  <link href="https://www.blogger.com" rel="dns-prefetch"> 
+  <link href="https://script.google.com" rel="dns-prefetch"> 
+  <link href="https://fonts.gstatic.com" rel="dns-prefetch"> 
+  <link href="https://fonts.googleapis.com" rel="dns-prefetch"> 
+  <link href="https://1.bp.blogspot.com" rel="dns-prefetch"> 
+  <link href="https://2.bp.blogspot.com" rel="dns-prefetch"> 
+  <link href="https://3.bp.blogspot.com" rel="dns-prefetch"> 
+  <link href="https://4.bp.blogspot.com" rel="dns-prefetch"> 
+  <link href="https://pagead2.googlesyndication.com" rel="dns-prefetch"> 
+  <link href="https://accounts.google.com" rel="dns-prefetch"> 
+  <link href="https://resources.blogblog.com" rel="dns-prefetch"> 
+  <link href="https://www.google.com" rel="dns-prefetch"> 
+  <link href="https://connect.facebook.net" rel="dns-prefetch"> 
+  <link href="https://www.facebook.com" rel="dns-prefetch"> 
+  <!-- Required --> 
+  <meta content="" property="fb:pages"> 
+  <meta content="" property="fb:app_id"> 
+  <meta content="" property="fb:admins"> 
+  <meta content="" name="twitter:site"> 
+  <meta content="" name="twitter:creator"> 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/heny007/AliwixPlayer/assets/plyr/style.css"> 
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css"> 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/castjs/4.1.2/cast.min.js"></script>
+
+	
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
 
 <script src="https://content.jwplatform.com/libraries/Jq6HIbgz.js"></script>
@@ -754,7 +797,82 @@ Animações do botão.
   background-size: 100%;
 }</style>
 </head>
-<body>
+<body><style>
+	#dlna { position: fixed; z-index: 99999999; left: 25px; text-align: center; border-radius: 50%;  bottom: 35px; } 
+	
+
+   
+  
+  
+  
+  
+ 
+  
+   
+    .clossalert { position: absolute; right: 17px; font-size: 14px; border-radius: 50%; width: 30px; height: 30px; top: -35px;  border: unset !important; } 
+   
+   
+  
+   
+   .circle {
+   position: relative;
+   width: 60px;
+   height: 60px;
+   }
+   .circle svg {
+   fill: none;
+   stroke: red;
+   stroke-linecap: round;
+   stroke-width: 3;
+   stroke-dasharray: 1;
+   stroke-dashoffset: 0;
+   animation: stroke-draw 6s ease-out infinite alternate;
+   }
+   .circle img {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   width: 43px;
+   border-radius: 50%;
+   }
+    @keyframes stroke-draw {
+    from {
+    stroke: red;
+    stroke-dasharray: 1;
+    }
+    to {
+    stroke: yellow;
+    transform: rotate(180deg);
+    stroke-dasharray: 8;
+    }
+    }
+    .c-slider {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    }
+    
+    .c-slide {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+    flex: 2;
+    
+    }</style>
+ 
+     <script>
+   
+   // externalplayer
+   function dlna(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="wvc-x-callback://open?url=http://"+link+"&secure_uri=true"}};
+   function wuffy(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="intent://"+btoa("http://"+link)+"#Intent;scheme=xmtv;package=co.wuffy.player;end"}};
+   function mx(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="intent://"+link+"#Intent;scheme=http;type=video/*;package=com.mxtech.videoplayer.ad;S.browser_fallback_url=market://details?id=com.mxtech.videoplayer.ad;S.title=AliwixPlay;end"}};
+   function vlc(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="vlc-x-callback:// protocol, my link is vlc-x-callback://x-callback-url/stream?url=http://"+link+"&sub=AliwixPlay"}};
+   
+
+   </script> 
 <!-- Head Script  -->
 <!-- <script src="https://content.jwplatform.com/libraries/Jq6HIbgz.js"></script> -->
 
@@ -775,14 +893,45 @@ height:100%; width:100%; padding:0; margin:0; ;}
 top: 40px;
 </style>
 <div id="player"></div>
+    <div id="dlna"> 
+   <div id="dlna_message"> 
+    <button class="clossalert" onclick="document.getElementById(&quot;dlna&quot;).style.display=&quot;none&quot;;">X</button> 
+    <div class="c-slider"> 
+     <div class="c-slider"> 
+      <div class="c-slide"> 
+       <div onclick="mx()" class="circle"> 
+        <img src="/player/img/82efa49c-c459-4b71-83fb-68b9da555349_thumb (2).png"> 
+        <svg viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;" xml:space="preserve"> 
+         <circle cx="50" cy="50" r="40"></circle> 
+        </svg> 
+       </div> 
+       <div class="c-slide"> 
+        <div onclick="wuffy()" class="circle"> 
+         <img src="/player/img/72368682_110561740414824_5464656146772000768_n.jpg" alt=""> 
+         <svg viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;" xml:space="preserve"> 
+          <circle cx="50" cy="50" r="40"></circle> 
+         </svg> 
+        </div> 
+       </div> 
+       <div class="c-slide"> 
+        <div onclick="dlna()" class="circle"> 
+         <img src="/player/img/unnamed.webp" alt=""> 
+         <svg viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;" xml:space="preserve"> 
+          <circle cx="50" cy="50" r="40"></circle> 
+         </svg> 
+        </div> 
+       </div>
+      </div>
+
+     </div>
 <script>
 	function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
 var n="[\\?&]"+e+"=([^&#]*)",
 l=new RegExp(n),
 c=l.exec(window.location.href);
-return null==c?"https://admdn1.cdn.mangomolo.com/adsports1/smil:adsports1.stream.smil/playlist.m3u8":unescape(c[1])}
+return null==c?"admdn1.cdn.mangomolo.com/adsports1/smil:adsports1.stream.smil/playlist.m3u8":unescape(c[1])}
 var video=gup("src");
-var iptv=(video);
+var link=(video);
 	const playerInstance = jwplayer("player").setup({
 		stretching:'fill',
   controls: true,
@@ -791,13 +940,12 @@ var iptv=(video);
   displaydescription: true,
   title: "AliwixPlay  copyrights ©",
       description: "www.aliwixplay.pages.dev",
-  file:iptv,                         
+  file:link,                         
         image: 'https://heny007.github.io/img/coverjwplayer.jpg',
         width: '100%',
         height: '100%',
   fullscreen: "true",
   primary: "html5",
-  
   aspectratio: "16:9",
   renderCaptionsNatively: false,
   autostart: false,
@@ -810,7 +958,7 @@ allowscriptaccess: 'always',
         wmode: 'opaque',
   logo: {
     file:
-      "/player/img/20220411_031556.png"
+      "https://raw.githubusercontent.com/HeNy007/AliwixPlayer/main/assets/plyr/aliwixteamlogo.png"
   },
   advertising: {
     client: "vast",
@@ -849,7 +997,6 @@ cast:{
    // change to portrait
    }
 });
-
 playerInstance.on("ready", function () {
   // Move the timeslider in-line with other controls
   const playerContainer = playerInstance.getContainer();
