@@ -929,9 +929,9 @@ top: 40px;
 var n="[\\?&]"+e+"=([^&#]*)",
 l=new RegExp(n),
 c=l.exec(window.location.href);
-return null==c?"admdn1.cdn.mangomolo.com/adsports1/smil:adsports1.stream.smil/playlist.m3u8":unescape(c[1])}
+return null==c?"YWRtZG4xLmNkbi5tYW5nb21vbG8uY29tL2Fkc3BvcnRzMS9zbWlsOmFkc3BvcnRzMS5zdHJlYW0uc21pbC9wbGF5bGlzdC5tM3U4":unescape(c[1])}
 var video=gup("src");
-var link=(video);
+var link=atob(video);
 	const playerInstance = jwplayer("player").setup({
 		stretching:'fill',
   controls: true,
