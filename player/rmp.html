@@ -93,16 +93,13 @@
 
 <body>
 				<script type='text/javascript'>
-      function getUrlVars() {
-        var vars = {};
-        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
-        vars[key] = value;
-      });
-          return vars;
-      }
-      var link0 = getUrlVars()["src"];
-      var link1 = atob(link0);
-      var link = 'https://'+link1;
+      function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
+var n="[\\?&]"+e+"=([^&#]*)",
+l=new RegExp(n),
+c=l.exec(window.location.href);
+return null==c?"YWRtZG4xLmNkbi5tYW5nb21vbG8uY29tL2Fkc3BvcnRzMS9zbWlsOmFkc3BvcnRzMS5zdHJlYW0uc21pbC9wbGF5bGlzdC5tM3U4":unescape(c[1])}
+var video=gup("src");
+var link=atob(video);
     </script>  
   <script src="https://cdn.radiantmediatechs.com/rmp/7.3.3/js/rmp.min.js"></script>
  <script src="https://cdn.radiantmediatechs.com/rmp/7.7.0/js/rmp-vttjs-shaka.min.js"></script>
@@ -140,7 +137,7 @@
     
   <script>
     var src = {
-   mp4: link,  
+   mp4: 'http://'+link, 
             
         
     };
@@ -162,7 +159,7 @@ const downloadCustomModule = {
   callback: () => {
     rmp.pause();
     window.open(
-      link,
+      'http://'+link, 
       '_blank'
     );
   }
