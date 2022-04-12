@@ -160,22 +160,20 @@
       scaleMode: 'stretch',
 quickRewind: 10,quickForward: 10,
             customModule: customModule,
-
+skin: 's2',  
+skinAccentColor: 'CCCCCC',
+      ads: true,
+    // We pass our adTag here - the player will attempt to load it upon startup
+    adTagUrl: 'https://your-ad-tag-url',
             contentMetadata: {
-
-              poster: [
-
-                'https://www.radiantmediaplayer.com/images/poster-rmp-demo.jpg'
-
-              ]
-
-            }
-
-          };
-
-          // Init player
-var rmp = new RadiantMP("rmp");
-          rmp.init(settings);
+poster: ['https://i.imgur.com/JdanwmR.jpg']
+      }, 
+      logo: '/images/aplay.png', 
+      logoPosition: 'topleft',       
+      logoWatermark: true      
+    };
+    var rmp = new RadiantMP("rmp");
+    rmp.init(settings);
 
         </script> 
     
@@ -185,10 +183,6 @@ var rmp = new RadiantMP("rmp");
   
 </body>
     
-    </div><div class='rmp'><div class='site-link'>AliwixPlay Copyrights ©</div>
-
-    <div class='videos-channel'>
-<a class='button refresh' href='javascript:window.location.reload()'>https://aliwixplay.pages.dev</a>
-</div>
+  
 
 </html>
