@@ -45,46 +45,9 @@
 .jw-controls.jw-reset:before{display:none;content:'AliwixPlay';z-index:9;position:absolute;right:0;left:0;bottom:7%;font-family:sans-serif;color:#fff;text-align:center;text-shadow:2px 2px 2px #000;font-size:2vw}
 
 
-.rmp-custom-overlay {
-  -webkit-transition-property: opacity,visibility;
-  -moz-transition-property: opacity,visibility;
-  transition-property: opacity,visibility;
-  -webkit-transition-duration: .4s;
-  -moz-transition-duration: .4s;
-  transition-duration: .4s;
-  -webkit-transition-timing-function: ease-in;
-  -moz-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
-}
 
-.rmp-chrome .rmp-custom-overlay {
-  opacity: 1;
-  visibility: visible;
-}
+  </style>
 
-.rmp-no-chrome .rmp-custom-overlay {
-  opacity: 0;
-  visibility: hidden;
-}
-
-  </style><style>
-  .rmp-custom-overlay {
-    background: rgba(255, 255, 255, 0.7);
-    color: #000000;
-    border: 2px solid #000000;
-    position: absolute;
-    left: 8px;
-    top: 8px;
-    font-size: 14px;
-    padding: 8px;
-    text-align: left;
-    border-radius: 4px;
-  }
-
-  .rmp-custom-overlay > div:first {
-    margin-bottom: 10px;
-  }
-</style>
 
 </head>
 
@@ -100,91 +63,141 @@
       var link = getUrlVars()["src"];
     </script>  
   <script src="https://cdn.radiantmediatechs.com/rmp/7.3.3/js/rmp.min.js"></script>
- 
+
+    
   <div id="rmp"></div>
-  <script>
-    var src = {
+     <script>
+var src = {
     mp4:
     link 
             
         
     };
-     
-    
-    var settings = {
-      iframeMode: true,
+          // create a settings object
+
+          const ss360Config = {
+
+            // your site id
+
+            siteId: 'www.radiantmediaplayer.com',
+
+            // a CSS selector that points to your search  box
+
+            searchBox: {
+
+              selector: '#searchBox',
+
+              searchButton: '#search-button'
+
+            },
+
+            style: {
+
+              themeColor: '#2196f3',
+
+              accentColor: '#1565c0',
+
+              loaderType: 'circle'
+
+            }
+
+          };
+
+        </script> 
+     <script src="https://cdn.sitesearch360.com/v13/sitesearch360-v13.min.js" async></script> 
+     <script src="https://cdn.radiantmediatechs.com/rmp/7.7.0/js/rmp.min.js"></script> 
+     <div id="rmp"></div> 
+     <script>
+
+          const elementID = 'rmp';
+
+          const rmp = new RadiantMP(elementID);
+
+          const src = {
+
+            src: src,
+
+          };
+
+          // We define our first custom module - in this case a 10s rewind module
+
+          const rewindCustomModule = {
+
+           // hint: 'Rewind',
+
+          //  svg: 'https://cdn.radiantmediatechs.com/img/replay-10-icon.svg',
+
+         //   svgHover: 'https://cdn.radiantmediatechs.com/img/replay-10-icon-hover.svg',
+
+            callback: () => {
+
+              rmp.seekTo(rmp.getCurrentTime() - 10000);
+
+            }
+
+          };
+
+          // Then our second custom module - in this case a download video module
+
+          const downloadCustomModule = {
+
+            hint: 'Download',
+
+            svg: 'https://cdn.radiantmediatechs.com/img/download-icon.svg',
+
+            svgHover: 'https://cdn.radiantmediatechs.com/img/download-icon-hover.svg',
+
+            callback: () => {
+
+              rmp.pause();
+
+              window.open(
+
+            src,
+
+                '_blank'
+
+              );
+
+            }
+
+          };
+
+          const customModule = [rewindCustomModule, downloadCustomModule];
+
+          const settings = {
+
+            licenseKey: 'Kl8lbz16cz1rN2l2enM9Z2M9NnZvMnllaT9yb201ZGFzaXMzMGRiMEElXyo=',
+
+            src: src,
+
+            iframeMode: true,
       iframeAllowed: true,
       scaleMode: 'stretch',
-      licenseKey: 'eWZmZ2d2Y3BrdEAxNTMwNjA2',
-      src: src,
-      skin: 's2',  
-      quickRewind: 10,quickForward: 10,
-      skinAccentColor: 'CCCCCC',
-      ads: true,
-    // We pass our adTag here - the player will attempt to load it upon startup
-    adTagUrl: 'https://your-ad-tag-url',
-      contentMetadata: {
-        poster: ['https://i.imgur.com/DaC1wnW.jpg']
-      }, 
-      logo: '', 
+quickRewind: 10,quickForward: 10,
+            customModule: customModule,
+
+            contentMetadata: {
+
+              poster: [
+
+                'https://www.radiantmediaplayer.com/images/poster-rmp-demo.jpg'
+
+              ]
+
+            }, 
+            logo: '', 
       logoPosition: 'topleft',       
       logoWatermark: true      
     };
-    var rmp = new RadiantMP("rmp");
-    rmp.init(settings);
-    // We define our first custom module - in this case a 10s rewind module
-const rewindCustomModule = {
-  hint: 'Rewind',
-  svg: 'https://cdn.radiantmediatechs.com/img/replay-10-icon.svg',
-  svgHover: 'https://cdn.radiantmediatechs.com/img/replay-10-icon-hover.svg',
-  callback: () => {
-    rmp.seekTo(rmp.getCurrentTime() - 10000);
-  }
-};
-// Then our second custom module - in this case a download video module
-const downloadCustomModule = {
-  hint: 'Download',
-  svg: 'https://cdn.radiantmediatechs.com/img/download-icon.svg',
-  svgHover: 'https://cdn.radiantmediatechs.com/img/download-icon-hover.svg',
-  callback: () => {
-    rmp.pause();
-    window.open(
-      'https://url-to-download-media-file.mp4',
-      '_blank'
-    );
-  }
-};
-// customModule must be passed as an Array
-const customModule = [rewindCustomModule, downloadCustomModule];
 
-    // we define our custom overlay div element
-  const rmpContainer = document.getElementById(elementID);
-  const rmpCustomOverlay = document.createElement('div');
-  rmpCustomOverlay.className = 'rmp-custom-overlay';
+          };
+var rmp = new RadiantMP("rmp");
+          // Init player
 
-  // callback that is being run when IP data is fetched from ipify servers
-  function getIP(json) {
-    // add public IP
-    const textFieldIP = document.createElement('div');
-    textFieldIP.textContent = 'Public IP: ' + json.ip;
-    rmpCustomOverlay.appendChild(textFieldIP);
-    // add client bandwidth
-    const textFieldBW = document.createElement('div');
-    textFieldBW.textContent = 'Client bandwidth: ' + Math.round(rmp.getBandwidthEstimate() / 1000) + ' kbps';
-    setInterval(() => {
-      textFieldBW.textContent = 'Client bandwidth: ' + Math.round(rmp.getBandwidthEstimate() / 1000) + ' kbps';
-    }, 1000);
-    rmpCustomOverlay.appendChild(textFieldBW);
-  }
-  // when ready event fires we append our custom overlay div element
-  // so that this element is appended on top of other player elements
-  rmpContainer.addEventListener('ready', () => {
-    rmpContainer.appendChild(rmpCustomOverlay);
-  });
-</script>
-<!-- script to get public IP address from ipify servers - https://www.ipify.org -->
-<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+          rmp.init(settings);
 
+        </script> 
     
 
 
