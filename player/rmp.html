@@ -61,18 +61,19 @@
           return vars;
       }
       var link = getUrlVars()["src"];
+      var src = {
+    mp4:
+    link 
+            
+        
+    };
     </script>  
   <script src="https://cdn.radiantmediatechs.com/rmp/7.3.3/js/rmp.min.js"></script>
 
     
   <div id="rmp"></div>
      <script>
-var src = {
-    mp4:
-    link 
-            
-        
-    };
+
           // create a settings object
 
           const ss360Config = {
@@ -153,7 +154,7 @@ var src = {
 
               window.open(
 
-            src,
+               src ,
 
                 '_blank'
 
@@ -185,14 +186,10 @@ quickRewind: 10,quickForward: 10,
 
               ]
 
-            }, 
-            logo: '', 
-      logoPosition: 'topleft',       
-      logoWatermark: true      
-    };
+            }
 
           };
-var rmp = new RadiantMP("rmp");
+
           // Init player
 
           rmp.init(settings);
