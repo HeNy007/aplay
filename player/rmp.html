@@ -61,12 +61,7 @@
           return vars;
       }
       var link = getUrlVars()["src"];
-      var src = {
-    mp4:
-    link 
-            
-        
-    };
+      
     </script>  
   <script src="https://cdn.radiantmediatechs.com/rmp/7.3.3/js/rmp.min.js"></script>
 
@@ -110,16 +105,14 @@
      <div id="rmp"></div> 
      <script>
 
-          const elementID = 'rmp';
-
-          const rmp = new RadiantMP(elementID);
-
-          const src = {
-
-            src: src,
-
-          };
-
+          var src = {
+    mp4:
+    link 
+            
+        
+    };
+     
+    
           // We define our first custom module - in this case a 10s rewind module
 
           const rewindCustomModule = {
@@ -152,17 +145,7 @@
 
               rmp.pause();
 
-              window.open(
-
-               src ,
-
-                '_blank'
-
-              );
-
-            }
-
-          };
+              window.open( src , '_blank');} };
 
           const customModule = [rewindCustomModule, downloadCustomModule];
 
@@ -191,7 +174,7 @@ quickRewind: 10,quickForward: 10,
           };
 
           // Init player
-
+var rmp = new RadiantMP("rmp");
           rmp.init(settings);
 
         </script> 
