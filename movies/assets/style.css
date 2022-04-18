@@ -99,9 +99,9 @@ div .jordan2 {
   overflow-y: hidden;
   white-space: nowrap;
   display: flex;
-  
+  padding: 2px;
 }
-  img .jordan2 {
+  img.jordan2 {
   
     
        /* height: 250px;*/
@@ -109,9 +109,9 @@ div .jordan2 {
     /* background: #15455800 url(https://aliwixplay.pages.dev/images/imgloading.jpg) fixed; */
     display: block;
     position: relative;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
-    background: transparent url();
+    background: transparent url(https://aliwixplay.pages.dev/images/imgloading.jpg);
     display: flex;
     /* background-repeat: no-repeat; */
     /* background-attachment: fixed; */
