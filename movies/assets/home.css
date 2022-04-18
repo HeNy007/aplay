@@ -85,7 +85,7 @@ a {
   transition: all 0.4s ease-in-out;
 }
 .owl-carousel .owl-item img {
-    background: #1f252e;
+    background: #042453;
     display: block;
     opacity: 2.5;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
@@ -557,7 +557,7 @@ a {
  .scrollToTop svg {
 	fill: #fff
 }.scrollToTop {
-    background-color: #1f252eeb;
+    background-color: #042453eb;
     box-shadow: 0 1px 4px rgb(0 0 0 / 50%);
     bottom: 1em;
     right: 1em;
@@ -688,13 +688,13 @@ a {
   
 body {
   font-family: Arial, Helvetica, sans-serif;
-      background: #1f252e;
+      background: #042453;
 
 }
 
 .topnav {font-family: 'Almarai', sans-serif;
   overflow: hidden;
-  background-color: #1f252e;
+  background-color: #042453;
   position: relative;
 }
 
@@ -715,19 +715,15 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #1f252e;
+  background-color: #042453;
   color: white;
 }
 
 .active {font-family: 'Almarai', sans-serif;
-  background-color: #1f252e;
+  background-color: #042453;
   color: black;
 }
-</style>
-</head>
-        
-<body> 
-<style>
+
 body {
   font-family: Arial;
 }
@@ -782,7 +778,7 @@ body {
   color: #ccc;
 }
 
-.overlay input[type=text@CCORCH@ {
+.overlay input[type=text] {
   padding: 15px;
   font-size: 17px;
   border: none;
@@ -791,7 +787,7 @@ body {
   background: white;
 }
 
-.overlay input[type=text@CCORCH@:hover {
+.overlay input[type=text]:hover {
   background: #f1f1f1;
 }
 
@@ -808,4 +804,3 @@ body {
 .overlay button:hover {
   background: #bbb;
 }
-
