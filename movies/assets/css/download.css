@@ -1,0 +1,173 @@
+
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 14px;
+      outline: 0;
+    }
+
+    input,
+    textarea,
+    button,
+    select {
+      border: 0;
+      outline: 0;
+      font-family: 'FontBold', sans-serif;
+      outline: 0;
+    }
+
+    ul,
+    ol,
+    li {
+      list-style: none;
+      font-family: 'FontBold', sans-serif;
+      padding: 0;
+      margin: 0
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'FontBold', sans-serif;
+      font-weight: 400;
+    }
+
+    *::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    *::-webkit-scrollbar-track {
+      background: #ffffff;
+    }
+
+    *::-webkit-scrollbar-thumb {
+      background-color: #ce0000;
+    }
+
+    img {
+      max-width: 100%
+    }
+
+    :before,
+    :after {
+      clear: both;
+      -webkit-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .container {
+      display: block;
+      margin: 0 auto;
+      width: 97%;
+    }
+
+    .DownloadArea {
+      display: block;
+      margin: 40px 0;
+     direction: rtl;
+    }
+
+    .DownloadBlock .TitleCenteral {
+      background: -webkit-gradient(linear, right top, left top, color-stop(15%, #1e252f), to(#181d2500));
+      background: -o-linear-gradient(right, #1e252f 15%, #181d2500);
+      background: linear-gradient(-90deg, #1e252f 15%, #181d2500);
+      margin: 10px 0 20px;
+      padding: 12px 25px;
+      border-radius: 10px;
+    }
+
+    .DownloadBlock .TitleCenteral h3 {
+      margin: 0;
+    }
+
+    .TitleCenteral {
+      margin: 30px 0;
+    }
+
+    .TitleCenteral h3 {
+      display: table;
+      margin: 0 auto;
+      font-size: 25px;
+      line-height: 30px;
+    }
+
+    .TitleCenteral h3 span {
+      float: left;
+      color: #f5c518;
+      font-family: 'FontBlack';
+      margin: 0 10px;
+      font-size: 30px;
+    }
+
+    ul.download-items {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+
+    a.downloadsLink {
+      display: inline-block;
+      background: #2a3039;
+      color: #fff;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      padding: 16px 65px 16px 16px;
+      line-height: 100%;
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      min-width: 180px;
+      max-width: 240px;
+      overflow: hidden;
+      margin-left: 12px;
+      -webkit-transition: .4s .2s all ease;
+      -o-transition: .4s .2s all ease;
+      transition: .4s .2s all ease;
+    }
+
+    a.downloadsLink>p {}
+
+    a.downloadsLink>span {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 6px;
+      text-transform: capitalize;
+    }
+
+    a.downloadsLink em {
+      position: absolute;
+      left: 14px;
+      bottom: 11px;
+      font-style: normal;
+      font-size: 12px;
+    }
+
+    a.downloadsLink i {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 55px;
+      text-align: center;
+      color: #fff;
+      line-height: 100%;
+      padding-right: 10px;
+      font-size: 32px;
+      -webkit-transform: translate(0px, -50%);
+      -ms-transform: translate(0px, -50%);
+      transform: translate(0px, -50%);
+    }
+
+    a.downloadsLink.ArabSeedServer,
+    a.downloadsLink:hover {
+      background: #3db366;
+    }
+
+    .HoverBefore {
+      overflow: hidden;
+    }
