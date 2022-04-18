@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <title>AliwixPlayer</title>
+  <style>
+    /* This CSS is required to avoid layout issues */
+#rmp {
+  width:100%;
+  height:100%;
+}
+    html,
+    body {
+    height: 100%;
+      width: 100%;
+      background-color: #000;
+       
+      overflow: show;
+      margin: 0;
+      padding: 0;
+       skinButtonColor: "rgba(126, 0, 204, 1.00)",
+        skinAccentColor: "rgba(126, 0, 204, 1.00)",
+    }
+  </style>
+</head>
+
+<body>
+				<script type='text/javascript'>
+      function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+        vars[key] = value;
+      });
+          return vars;
+      }
+      var link = getUrlVars()["src"];
+    </script>  
+  <script src="https://cdn.radiantmediatechs.com/rmp/7.3.3/js/rmp.min.js"></script>
+ <script src="https://cdn.radiantmediatechs.com/rmp/7.7.0/js/rmp-vttjs-shaka.min.js"></script>
+<div id="rmp"></div>
+  <script>
+    var src = {
+   webm: link
+            
+        
+    };
+     
+     // We define our first custom module - in this case a 10s rewind module
+const rewindCustomModule = {
+  hint: 'Rewind',
+  svg: 'https://cdn.radiantmediatechs.com/img/replay-10-icon.svg',
+  svgHover: 'https://cdn.radiantmediatechs.com/img/replay-10-icon-hover.svg',
+  callback: () => {
+    rmp.seekTo(rmp.getCurrentTime() - 10000);
+  }
+};
+// Then our second custom module - in this case a download video module
+const downloadCustomModule = {
+  hint: 'Download',
+  svg: 'https://cdn.radiantmediatechs.com/img/download-icon.svg',
+  svgHover: 'https://cdn.radiantmediatechs.com/img/download-icon-hover.svg',
+  callback: () => {
+    rmp.pause();
+    window.open(
+      link,
+      '_blank'
+    );
+  }
+};
+// customModule must be passed as an Array
+const customModule = [downloadCustomModule];
+
+    
+    
+    var settings = {
+      iframeMode: true,
+      iframeAllowed: true,
+      scaleMode: 'stretch',
+      licenseKey: 'eWZmZ2d2Y3BrdEAxNTMwNjA2',
+      src: src,
+      // Passing custom module data
+  customModule: customModule,
+      skin: 's3' , 
+      quickRewind: 10,quickForward: 10,
+      skinAccentColor: 'CCCCCC',
+      contentMetadata: {
+        poster: ['https://i.imgur.com/JdanwmR.jpg']
+      }, 
+      logo: '/images/aplay.png', 
+      logoPosition: 'topleft',       
+      logoWatermark: true      
+    };
+    var rmp = new RadiantMP("rmp");
+    rmp.init(settings);
+  </script>
+</body>
+
+</html>
