@@ -111,7 +111,7 @@ span.h1 {
   text-align: center;
   font-size: 17px;
   line-height: 2.4;
-  background: #1f252e;
+  background: #042453;
   padding: 0px 7px 3px;
   border-radius: 5px;
   color: #ffffff;
@@ -1182,7 +1182,7 @@ a {
 }
 
 .owl-carousel .owl-item img {
-  background: #1f252e;
+  background: #042453;
   display: block;
   opacity: 2.5;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
@@ -1690,7 +1690,7 @@ unset; */
 }
 
 .scrollToTop {
-  background-color: #1f252eeb;
+  background-color: #042453eb;
   box-shadow: 0 1px 4px rgb(0 0 0 / 50%);
   bottom: 1em;
   right: 1em;
@@ -1770,13 +1770,13 @@ unset; */
 /*! * Ø²Ø± Ø§Ù„ØµØ¹ÙˆØ¯ Ù„Ù„Ø£Ø¹Ù„ÙŠ Ø§Ù„Ø£ØµØ¯Ø§Ø± Ø§Ù„Ø£ÙˆÙ„ v1.0 * Ø¬Ù…ÙŠØ¹ Ø§Ù„Ø­Ù‚ÙˆÙ‚ Ù…Ø­ÙÙˆØ¸Ø© Â© * ØªØµÙ…ÙŠÙ… : Ø´Ø±ÙŠÙ Ø­Ù…Ø¯ÙŠ */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #1f252e;
+  background: #042453;
 }
 
 .topnav {
   font-family: "Almarai", sans-serif;
   overflow: hidden;
-  background-color: #1f252e;
+  background-color: #042453;
   position: relative;
 }
 
@@ -1803,13 +1803,13 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #1f252e;
+  background-color: #042453;
   color: white;
 }
 
 .active {
   font-family: "Almarai", sans-serif;
-  background-color: #1f252e;
+  background-color: #042453;
   color: black;
 }
 
@@ -1911,20 +1911,20 @@ div .jordan2 {
   background: linear-gradient(
     20deg,
     #2c344066 0%,
-    #1f252e 50%,
+    #042453 50%,
     rgb(65 76 92) 100%
   );
   border-radius: 20px;
 }
-.seif_nav {
-  background: #1f252e;
+.HeNy_nav {
+  background: #042453;
   box-shadow: 0 0 30px #00000073;
   height: 80px;
   width: 100%;
   margin-bottom: 20;
 }
 
-.seifmenu {
+.HeNymenu {
   width: 50px;
   height: 55px;
   margin-top: 3px;
@@ -1939,18 +1939,18 @@ label.logo {
   font-weight: bold;
 }
 
-.seif_nav ul {
+.HeNy_nav ul {
   float: right;
   margin-right: 3.5px;
 }
 
-.seif_nav ul li {
+.HeNy_nav ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
 
-.seif_nav ul li a {
+.HeNy_nav ul li a {
   color: white;
   font-size: 17px;
   padding: 7px 13px;
@@ -1958,8 +1958,8 @@ label.logo {
   text-transform: uppercase;
 }
 
-.seif_nav ul li a.active,
-.seif_nav ul li a:hover {
+.HeNy_nav ul li a.active,
+.HeNy_nav ul li a:hover {
   background: #ce0000;
   color: #ffffff;
   transition: 0.5s;
@@ -1977,14 +1977,14 @@ label.logo {
 }
 
 *::-webkit-scrollbar-track {
-  background: #1f252e;
+  background: #042453;
   box-shadow: 0 0 30px #00000073;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: #ce0000;
 }
-.seif_logo_img {
+.HeNy_logo_img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -2157,7 +2157,7 @@ label.logo {
   font-family: "Almarai";
   text-align: center;
 }
-.seifnet {
+.HeNynet {
   line-height: 35px;
   display: table;
   background: #333d4d6e;
@@ -2168,13 +2168,13 @@ label.logo {
   cursor: pointer;
 }
 
-.seifnet:hover {
+.HeNynet:hover {
   background: #ffffff;
   color: #000000;
   transition: all 0.3s ease-out;
 }
 
-.seifnet > span {
+.HeNynet > span {
   float: right;
   line-height: 46px;
   margin-left: 9px;
@@ -2183,7 +2183,7 @@ label.logo {
   margin-top: 18px;
 }
 
-.seifnet > h2 {
+.HeNynet > h2 {
   color: #ff7171;
   font-style: normal;
   float: left;
@@ -2192,14 +2192,14 @@ label.logo {
   font-family: "FontBold", sans-serif;
 }
 
-.seifnet h2 a {
+.HeNynet h2 a {
   text-decoration: none;
   color: #ffffff;
   font-size: 18px;
   outline: 0;
 }
 
-img.seifnet2 {
+img.HeNynet2 {
   height: 80px;
   width: 80px;
   display: block;
@@ -2222,7 +2222,7 @@ img.seifnet2 {
   width: 350px;
 }
 
-.search-box .seifsearch {
+.search-box .HeNysearch {
   height: 100%;
   width: 100%;
   border: none;
@@ -2236,7 +2236,7 @@ img.seifnet2 {
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.search-box .seifsearch.active {
+.search-box .HeNysearch.active {
   opacity: 1;
 }
 
@@ -2263,7 +2263,7 @@ img.seifnet2 {
   height: 50px;
   width: 50px;
   color: #ffffff;
-  background: #1f252e;
+  background: #042453;
   line-height: 50px;
   font-size: 20px;
   transform: translateY(-50%) rotate(360deg);
@@ -2317,7 +2317,7 @@ img.seifnet2 {
   font-size: 18px;
   border: none;
   outline: none;
-    background: #1f252e;
+    background: #042453;
     box-shadow: 0 0 30px #00000073;
   color: white;
   cursor: pointer;
