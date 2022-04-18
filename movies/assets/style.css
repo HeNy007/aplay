@@ -99,9 +99,9 @@ div .jordan2 {
   overflow-y: hidden;
   white-space: nowrap;
   display: flex;
-  padding: 2px;
+  
 }
-  .jordan2 .img {
+  img .jordan2 {
   
     
        /* height: 250px;*/
