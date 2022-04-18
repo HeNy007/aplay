@@ -362,13 +362,30 @@ img:not([src]) {
   line-height: 1;
 }
 
-.movieDiv .poster {
-  background: rgba(255, 255, 255, 0.05);
-  display: block;
-  position: relative;
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
+ .movieDiv .poster {
+  /*   height: 250px;
+    background: rgb(162 182 221);
+    background: #15455800 url(https://i.imgur.com/JdanwmR.jpg) fixed;
+    background-size: cover;
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex; */
+    
+    
+       height: 250px;
+    /* background: rgb(162 182 221); */
+    /* background: #15455800 url(https://i.imgur.com/JdanwmR.jpg) fixed; */
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background: transparent url(https://i.imgur.com/nDzqpqV.png);
+    display: flex;
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    background-position: center;
 }
 
 .movieDiv span.dubbed {
@@ -1814,7 +1831,7 @@ body {
 }
 
 .slider {
-  width: 100%;
+  width: 95%;
   /* height: 235px */
   overflow: hidden;
   position: relative;
