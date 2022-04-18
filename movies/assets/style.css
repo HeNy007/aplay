@@ -101,6 +101,24 @@ div .jordan2 {
   display: flex;
   padding: 2px;
 }
+  .jordan2 .img {
+  
+    
+       /* height: 250px;*/
+    /* background: rgb(162 182 221); */
+    /* background: #15455800 url(https://aliwixplay.pages.dev/images/imgloading.svg) fixed; */
+    display: block;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    background: transparent url();
+    display: flex;
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    background-position: center;
+
+
+  }
 
 .word {
   text-align: center;
@@ -381,7 +399,7 @@ img:not([src]) {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    background: transparent url(https://i.imgur.com/nDzqpqV.png);
+    background: transparent url(https://aliwixplay.pages.dev/images/imgloading.svg);
     display: flex;
     /* background-repeat: no-repeat; */
     /* background-attachment: fixed; */
