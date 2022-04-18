@@ -111,7 +111,7 @@ div .jordan2 {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    background: transparent url(https://aliwixplay.pages.dev/images/imgloading.jpg);
+    /* background: transparent url(https://aliwixplay.pages.dev/images/imgloading.jpg); */
     display: flex;
     /* background-repeat: no-repeat; */
     /* background-attachment: fixed; */
