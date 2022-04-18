@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+ <head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="movies/assets/css/style.css"> 
+  <link rel="stylesheet" href="movies/assets/css/server.css"> 
+  <link rel="stylesheet" href="movies/assets/css/download.css"> 
+  <link rel="stylesheet" type="text/css" href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <link rel="shortcut icon" href="css/favicon.ico"> 
+  <title>الكبير أوي ج6</title> 
+  <style>
+        .loading {
+            /* Absolute position */
+            left: 0;
+            position: absolute;
+            top: 0;
+
+            /* Take full size */
+            height: 100%;
+            width: 100%;
+
+            /* Center */
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+    </style> 
+ </head> 
+ <body> 
+  <nav class="HeNy_nav"> 
+   <img class="HeNy_logo_img" src="images/play.png" id="HeNyhome" alt="Heny007" style="display: block; margin-left: auto; margin-right: auto; height: 84px; cursor: pointer;"> 
+  </nav> 
+  <div id="main"> 
+   <div class="movietitleHeNy"> 
+    <div class="titleSection LeftA"> 
+     <div class="rightTitleSection" style="text-align: center;">
+      <span> مشاهدة مسلسل الكبير أوي ج6 الحلقة الأولي</span>
+     </div> 
+    </div> 
+   </div> 
+   <div class="WatcherArea"> 
+    <div class="container_HeNy"> 
+     <div class="containerServers"> 
+      <div class="infotitle">
+       <i class="fas fa-camera-movie"></i>
+       <span>سيرفرات <b>المشاهدة</b></span>
+      </div> 
+      <ul> 
+       <li data-server="api_servers.php?type=akwam&amp;url=https://akwam.im/watch/103846/5" class=""><i class="fal fa-play"></i><span>السيرفر الرئيسي</span></li> 
+      </ul> 
+     </div> 
+     <div class="containerIframe"> 
+      <div id="spinner" class="spinner" style="display: none;">
+       <div class="rect1"></div>
+       <div class="rect2"></div>
+       <div class="rect3"></div>
+       <div class="rect4"></div>
+       <div class="rect5"></div>
+      </div> 
+      <iframe id="IFRAME_TAG" style="opacity: 0" src="" frameborder="0" marginwidth="0" marginheight="0" scrolling="NO" width="1280" height="664" allowfullscreen></iframe> 
+     </div> 
+     <div style="clear: both;"></div> 
+    </div> 
+   </div> 
+  </div>  
+  <script>
+        // Query the elements
+        const iframeEle = document.getElementById('IFRAME_TAG');
+        const loadingEle = document.getElementById('spinner');
+    </script> 
+  <script>
+        $("body").on('click', '.containerServers>ul>li', function(event) {
+            event.preventDefault();
+            $(this).addClass('active').siblings().removeClass('active');
+            // $(".containerIframe").html('<div class="spinner"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div>')
+            loadingEle.style.display = 'block';
+            iframeEle.style.opacity = 0;
+            $("#IFRAME_TAG").attr("src", $(this).data('server'));
+            iframeEle.addEventListener('load', function() {
+                // Hide the loading indicator
+                loadingEle.style.display = 'none';
+                // $("#spinner").fadeOut(2000);
+
+                // Bring the iframe back
+                iframeEle.style.opacity = 1;
+            });
+
+        });
+    </script>    
+ </body>
+</html>
