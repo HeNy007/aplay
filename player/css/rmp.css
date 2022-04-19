@@ -8,13 +8,6 @@
 
  .rmp-overlay-levels-area{direction:ltr}.rmp-error-text:before{font-size:17px;content:"البث غير متاح الان اضغط تحدث لاعادة التحميل";font-family:Changa,"Segoe UI";font-weight:bold}.rmp-error-text{font-size:0}.rmp-time-elapsed.rmp-color-bg:before{content:"مباشر";margin-left:5px}
 .rmp-i-resize-full::before{float:right;padding-right:30px}
-.rmp-time-elapsed.rmp-color-bg:after{content:"\2022";color:#ff0000;font-size:35px;vertical-align:middle}
-.rmp-quality-hd{background:#ff0000d9;border:1px solid #f00}.rmp-quality.rmp-module.rmp-color-bg,
-.rmp-overlay-button.rmp-color-bg,.rmp-module~.rmp-module{background:initial}button.rmp-fullscreen.rmp-button.rmp-i.rmp-i-resize-small{right:-80px}
-.rmp-button.rmp-quality.rmp-module.rmp-color-bg {bottom:10px;top:auto;right:130px}.rmp-button.rmp-pip.rmp-module.rmp-color-bg{bottom:10px;top:auto;right:85px}
-.rmp-control-bar.rmp-color-bg{background-color:#151515;border-radius:100px;bottom:10px;left:10px;right:10px;width:auto}.rmp-time-elapsed-text,.rmp-fullscreen 
-.rmp-control-bar-hint,.rmp-play-pause .rmp-control-bar-hint,.rmp-quick-rewind-or-forward .rmp-control-bar-hint,.rmp-hint.rmp-color-bg,.rmp-desktop-volume-indicator.rmp-color-bg,.rmp-desktop-volume-hint.rmp-color-bg{display:none}
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500;600&display=swap');
 
 @import url('https://arbfonts.com//wp-content/fonts/new-arabic-fonts//Dubai-Regular.ttf');
     
