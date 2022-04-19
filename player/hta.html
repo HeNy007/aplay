@@ -1,0 +1,371 @@
+ <html lang="en">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+  <meta name="copyright" content="HeNy007"> 
+  <meta property="og:url" content="https://aliwixplay.netlify.app/"> 
+  <meta property="og:type" content="website"> 
+  <meta property="og:title" content="تطبيق أليويكس بلاي ‫-‬ Aliwix Play"> 
+  <meta property="og:description" content="أليويكس تي في - التطبيق التونسي المجاني الأول لمشاهدة المئات من القنوات التلفزيونية الفضائية والمشفرة بالإضافة لمكتبة منوعة من الأفلام و المسلسلات التونسية و العالمية العربية والأجنبية المترجمة بجودة عالية وبدون تقطيع بواسطة هاتفك الذكي أو باستخدام جهازك اللوحي أو " التلفزيون الذكي" مجاناً aliwix play, play apk, تحميل تطبيق أليويكس بلاي"> 
+  <meta name="keywords" content="apk,Aliwix Play,Aliwix,tv,تطبيق أليويكس بلاي،أليويكس تي في،تحميل أليويكس بلاي"> 
+  <meta property="og:image" content="https://scontent.ftun1-2.fna.fbcdn.net/v/t1.18169-9/546944_397294267029195_1490068599_n.png?_nc_cat=101&ccb=1-5&_nc_sid=85a577&efg=eyJpIjoidCJ9&_nc_ohc=pJJlaPArf88AX9KWsoq&tn=7NzN8heELjMGeCNw&_nc_ht=scontent.ftun1-2.fna&oh=00_AT9ePpvxwiGkcsS3Z1By18o8TOsXs6vAVHPGS8zuiVm1Zg&oe=622D271B"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <title>Aliwix Video Player</title> 
+  <!-- DNS Prefetech --> 
+  <link href="https://www.blogger.com" rel="dns-prefetch"> 
+  <link href="https://script.google.com" rel="dns-prefetch"> 
+  <link href="https://fonts.gstatic.com" rel="dns-prefetch"> 
+  <link href="https://fonts.googleapis.com" rel="dns-prefetch"> 
+  <link href="https://1.bp.blogspot.com" rel="dns-prefetch"> 
+  <link href="https://2.bp.blogspot.com" rel="dns-prefetch"> 
+  <link href="https://3.bp.blogspot.com" rel="dns-prefetch"> 
+  <link href="https://4.bp.blogspot.com" rel="dns-prefetch"> 
+  <link href="https://pagead2.googlesyndication.com" rel="dns-prefetch"> 
+  <link href="https://accounts.google.com" rel="dns-prefetch"> 
+  <link href="https://resources.blogblog.com" rel="dns-prefetch"> 
+  <link href="https://www.google.com" rel="dns-prefetch"> 
+  <link href="https://connect.facebook.net" rel="dns-prefetch"> 
+  <link href="https://www.facebook.com" rel="dns-prefetch"> 
+  <!-- Required --> 
+  <meta content="" property="fb:pages"> 
+  <meta content="" property="fb:app_id"> 
+  <meta content="" property="fb:admins"> 
+  <meta content="" name="twitter:site"> 
+  <meta content="" name="twitter:creator"> 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/heny007/AliwixPlayer/assets/plyr/style.css"> 
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css"> 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/castjs/4.1.2/cast.min.js"></script>
+ <style>
+      
+   body {
+   margin: 0;
+   font-family: Roboto;
+   background-color: #262626;
+   }
+   
+   .q-audio {
+   display: flex;
+   align-items: center;
+   height: 100vh;
+   justify-content: center;
+   }
+   
+   .q-hls .plyr {
+   height: 100vh;
+   }
+   
+   .plyr__menu__container {
+   max-height: calc(100vh - 100% - 20px);
+   overflow-y: auto;
+   }
+   
+   .container {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: #000;
+   z-index: 1000;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+   }
+   
+   .loader {
+   border: 4px solid #000;
+   border-top: 4px solid #fff;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   animation: spin .75s linear infinite;
+   }
+   
+   .hidden {
+   display: none;
+   }
+   
+   @keyframes spin {
+   0% {
+   transform: rotate(0deg);
+   }
+   
+   100% {
+   transform: rotate(360deg);
+   }
+   }
+   
+   .plyr--video:before{font-family: Changa,"Segoe UI";font-size:2.5vw;color:#fff;position:absolute;right:0;bottom:0;left:0;z-index:1;display:flex;flex-direction:column;justify-content:center;align-items:center;pointer-events:none;background:linear-gradient(transparent,);height:150px}
+   .plyr,.plyr__video-wrapper{width:100% !important;height:100% !important}
+   .plyr audio,.plyr video{height:100%!important}
+   
+   
+   
+   html,body {height:100%; width:100%; padding:0px; margin:0px; }
+   .players{position:fixed; height:100%;width:100%; padding:0px; margin:0px;}
+   video{  object-fit: fill; }
+   
+   .dots {content: '';width: 10px;height: 10px;background: #fb6f13;position: absolute;z-index: 1;border-radius: 50%;margin:10px}
+   .dots::before {content: '';position: relative;display: block;width: 300%;height: 300%;box-sizing: border-box;margin-left: -100%;margin-top: -100%;border-radius: 45px;background-color: #fb6f13;animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;}
+   .dots::after {content: '';position: absolute;left: 0;top: 0;display: block;width: 100%;height: 100%;border-radius: 15px;box-shadow: 0 0 8px rgba(0,0,0,0.3);animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite}
+   .item-post .post-body {font-family: 'Inter', sans-serif;font-size: 15.3px}
+   .plyr {--plyr-color-main: #ff6600;box-shadow: 0px 0px 19px rgba(30,30,30,.1);border-radius: 0;}
+   .plyr__volume {min-width: 190px}
+   #idch {right: 2%;position: fixed;/bottom: 12.9%/}
+   .plyr__video-wrapper::before {position:absolute;top:45%;z-index:2;opacity:.7;content:'';height:100%;width:100px;background:url('https://raw.githack.com/HeNy007/AliwixPlayer/main/assets/plyr/aliwixteamlogo.png') no-repeat;background-size:100px auto,auto;right:5%;}
+   .plyr_controlsitem.plyr_volume::before {content: 'LIVE';font-weight: 900;margin-right: 5px}
+   @keyframes pulse-ring {
+   0% {
+   transform: scale(0.33);
+   }
+   100%, 100% {
+   opacity: 0;
+   }
+   }
+   @keyframes pulse-dot {
+   0% {
+   transform: scale(0.8);
+   }
+   100% {
+   transform: scale(1);
+   }
+   100% {
+   transform: scale(0.8);
+   }
+   }
+   
+   
+   
+   .preloader {
+   position: fixed;
+   left: 0;
+   top: 0;
+   z-index: 999;
+   width: 100%;
+   height: 100%;
+   background: #130014 url("https://github.com/HeNy007/HeNy007.github.io/raw/main/img/coverjwplayer.jpg");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   background-attachment: fixed;
+   }
+   
+   
+	#dlna { position: fixed; z-index: 99999999; left: 25px; text-align: center; border-radius: 50%;  bottom: 35px; } 
+	
+
+   
+  
+  
+  
+  
+ 
+  
+   
+    .clossalert { position: absolute; right: 17px; font-size: 14px; border-radius: 50%; width: 30px; height: 30px; top: -35px;  border: unset !important; } 
+   
+   
+  
+   
+   .circle {
+   position: relative;
+   width: 60px;
+   height: 60px;
+   }
+   .circle svg {
+   fill: none;
+   stroke: red;
+   stroke-linecap: round;
+   stroke-width: 3;
+   stroke-dasharray: 1;
+   stroke-dashoffset: 0;
+   animation: stroke-draw 6s ease-out infinite alternate;
+   }
+   .circle img {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   width: 43px;
+   border-radius: 50%;
+   }
+    @keyframes stroke-draw {
+    from {
+    stroke: red;
+    stroke-dasharray: 1;
+    }
+    to {
+    stroke: yellow;
+    transform: rotate(180deg);
+    stroke-dasharray: 8;
+    }
+    }
+    .c-slider {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    }
+    
+    .c-slide {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+    flex: 2;
+    
+    }
+   </style>
+ </head> 
+ <body class="q-hls"> 
+  <div class="container loading">
+   <span class="loader"></span>
+  </div> 
+  <div class="container error hidden">
+   حدث خطأ ما لدى تشغيل الفيديو، المرجو المحاولة لاحقا
+  </div> 
+  <video crossorigin playsinline controls autoplay></video> 
+
+   <span class="dots"></span> 
+   <video id="video" poster="" width="100%" height="100%" controls="" crossorigin="" playsinline="">
+    <source type="application/x-mpegURL" onclick.src="iptv"> 
+   </video> 
+  </div> 
+  <div id="dlna"> 
+   <div id="dlna_message"> 
+    <button class="clossalert" onclick="document.getElementById(&quot;dlna&quot;).style.display=&quot;none&quot;;">X</button> 
+    <div class="c-slider"> 
+     <div class="c-slider"> 
+      <div class="c-slide"> 
+       <div onclick="mx()" class="circle"> 
+        <img src="https://cdn.theorg.com/82efa49c-c459-4b71-83fb-68b9da555349_thumb.png"> 
+        <svg viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;" xml:space="preserve"> 
+         <circle cx="50" cy="50" r="40"></circle> 
+        </svg> 
+       </div> 
+       <div class="c-slide"> 
+        <div onclick="wuffy()" class="circle"> 
+         <img src="https://scontent.ftun1-2.fna.fbcdn.net/v/t1.6435-9/fr/cp0/e15/q65/72368682_110561740414824_5464656146772000768_n.jpg?_nc_cat=110&amp;ccb=1-5&amp;_nc_sid=110474&amp;efg=eyJpIjoidCJ9&amp;_nc_ohc=zrYFOkPGOpEAX8WB2r_&amp;_nc_ht=scontent.ftun1-2.fna&amp;oh=00_AT8FkMExU3AmThOt5NWyN1YPAH5UhhbiUWX_w1UACDN07Q&amp;oe=6226AA47" alt=""> 
+         <svg viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;" xml:space="preserve"> 
+          <circle cx="50" cy="50" r="40"></circle> 
+         </svg> 
+        </div> 
+       </div> 
+       <div class="c-slide"> 
+        <div onclick="dlna()" class="circle"> 
+         <img src="https://play-lh.googleusercontent.com/4xUYWX2Z6LhCeyxjxfPl4d9v8DNGXiXJvR4gHcgTR3YCVoarhhGdfroTp1QvYI8pIQ" alt=""> 
+         <svg viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;" xml:space="preserve"> 
+          <circle cx="50" cy="50" r="40"></circle> 
+         </svg> 
+        </div> 
+       </div>
+      </div>
+
+     </div> 
+
+   
+
+   
+
+
+  <script>
+  	
+     // externalplayer
+   function dlna(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link2}else{location.href="wvc-x-callback://open?url=http://"+link2+"&secure_uri=true"}};
+   function wuffy(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link2}else{location.href="intent://"+btoa("http://"+link2)+"#Intent;scheme=xmtv;package=co.wuffy.player;end"}};
+   function mx(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="intent://"+link2+"#Intent;scheme=http;type=video/*;package=com.mxtech.videoplayer.ad;S.browser_fallback_url=market://details?id=com.mxtech.videoplayer.ad;S.title=AliwixPlay;end"}};
+   function vlc(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="vlc-x-callback:// protocol, my link2 is vlc-x-callback://x-callback-url/stream?url=http://"+link2+"&sub=AliwixPlay"}};
+  	function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
+var n="[\\?&]"+e+"=([^&#]*)",
+l=new RegExp(n),
+c=l.exec(window.location.href);
+return null==c?"mmn.mypsx.net:1935/live/mmnhdsport/playlist.m3u8":unescape(c[1])}
+var video=gup("src");
+var link=(video); 
+    function debounce(func, delay) {
+      let inDebounce
+      return function() {
+        const context = this
+        const args = arguments
+        clearTimeout(inDebounce)
+        inDebounce = setTimeout(() => func.apply(context, args), delay)
+      }
+    }
+    function load(source) {
+      const video = document.querySelector('video');
+      const defaultOptions = {};
+
+      function updateQuality(newQuality) {
+        window.hls.levels.forEach(function (level, levelIndex) {
+          if (level.height === newQuality) {
+            window.hls.currentLevel = levelIndex;
+          }
+        });
+      }
+      video.addEventListener('ready', function () {
+        document.querySelector('.loading').classList.add('hidden');
+      });
+
+      if (!Hls.isSupported()) {
+        new Plyr(video, defaultOptions);
+        video.src = source;
+        document.querySelector('.loading').classList.add('hidden');
+      } else {
+        const hls = new Hls({
+          manifestLoadingTimeOut: 60000,
+          manifestLoadingMaxRetry: 10,
+          levelLoadingMaxRetry: 10,
+          fragLoadingMaxRetry: 10
+        });
+        var link2 = (source || link); 
+        hls.loadSource(link2);
+        hls.on(Hls.Events.ERROR, function (event, data) {
+          if (data.fatal) {
+            document.querySelector('.error').classList.remove('hidden');
+            // debounce(function () {
+            //   hls.destroy();
+            //   load();
+            // }, 1000)();
+          }
+        });
+        hls.on(Hls.Events.FRAG_LOADED, function (event, data) {
+          document.querySelector('.error').classList.add('hidden');
+        });
+        hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
+          const availableQualities = hls.levels.map(function (l) {
+            return l.height;
+          });
+
+          defaultOptions.quality = {
+            default: availableQualities[0],
+            options: availableQualities,
+            forced: true,
+            onChange: updateQuality,
+          };
+
+          new Plyr(video, defaultOptions);
+        });
+        hls.attachMedia(video);
+        window.hls = hls;
+      }
+    }
+    fetch('https://token.kube.easybroadcast.fr/authtoken?url=http://apphta.easybroadcast.fr/apphta?' + Date.now()).then(function (r) {
+      return r.text();
+    }).then(function (t) {
+      load(link + t);
+    });
+  </script> 
+
+<script src="https://cdn.plyr.io/3.6.9/plyr.js"></script> 
+     <script src="https://cdn.jsdelivr.net/npm/hls.js@canary"></script>  
+      <script src="https://cdn.jsdelivr.net/gh/heny007/AliwixPlayer/AliwixPlay/heny007-ad.js"></script>  
+  
+ </body>
+</html>
