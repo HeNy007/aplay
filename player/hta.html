@@ -278,10 +278,12 @@
   <script>
   	
      // externalplayer
-   function dlna(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link2}else{location.href="wvc-x-callback://open?url=http://"+link2+"&secure_uri=true"}};
-   function wuffy(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link2}else{location.href="intent://"+btoa("http://"+link2)+"#Intent;scheme=xmtv;package=co.wuffy.player;end"}};
-   function mx(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="intent://"+link2+"#Intent;scheme=http;type=video/*;package=com.mxtech.videoplayer.ad;S.browser_fallback_url=market://details?id=com.mxtech.videoplayer.ad;S.title=AliwixPlay;end"}};
-   function vlc(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="vlc-x-callback:// protocol, my link2 is vlc-x-callback://x-callback-url/stream?url=http://"+link2+"&sub=AliwixPlay"}};
+   function dlna(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="wvc-x-callback://open?url="+link2+"&secure_uri=true"}};
+   function wuffy(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="intent://"+btoa(link2)+"#Intent;scheme=xmtv;package=co.wuffy.player;end"}};
+   function mx(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="intent:"+link2+"#Intent;package=com.mxtech.videoplayer.ad;S.title=AliwixPlay;end
+   function vlc(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="vlc-x-callback:// protocol, my link is vlc-x-callback://x-callback-url/stream?url="+link2+"&sub=AliwixPlay"}};
+  	
+     
   	function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
 var n="[\\?&]"+e+"=([^&#]*)",
 l=new RegExp(n),
@@ -289,6 +291,7 @@ c=l.exec(window.location.href);
 return null==c?"mmn.mypsx.net:1935/live/mmnhdsport/playlist.m3u8":unescape(c[1])}
 var video=gup("src");
 var link=(video); 
+
     function debounce(func, delay) {
       let inDebounce
       return function() {
@@ -324,7 +327,7 @@ var link=(video);
           levelLoadingMaxRetry: 10,
           fragLoadingMaxRetry: 10
         });
-        var link2 = (source || link); 
+        const link2 = (source || link); 
         hls.loadSource(link2);
         hls.on(Hls.Events.ERROR, function (event, data) {
           if (data.fatal) {
