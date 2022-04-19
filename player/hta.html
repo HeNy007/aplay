@@ -278,12 +278,10 @@
   <script>
   	
      // externalplayer
-   function dlna(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="wvc-x-callback://open?url="+link2+"&secure_uri=true"}};
-   function wuffy(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="intent://"+btoa(link2)+"#Intent;scheme=xmtv;package=co.wuffy.player;end"}};
-   function mx(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="intent:"+link2+"#Intent;package=com.mxtech.videoplayer.ad;S.title=AliwixPlay;end
-   function vlc(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="vlc-x-callback:// protocol, my link is vlc-x-callback://x-callback-url/stream?url="+link2+"&sub=AliwixPlay"}};
-  	
-     
+   function dlna(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link2}else{location.href="wvc-x-callback://open?url="+link2+"&secure_uri=true"}};
+   function wuffy(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link2}else{location.href="intent://"+btoa(+link2)+"#Intent;scheme=xmtv;package=co.wuffy.player;end"}};
+   function mx(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="intent:"+link2+"#Intent;package=com.mxtech.videoplayer.ad;S.title=AliwixPlay;end"}};
+   function vlc(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="vlc-x-callback:// protocol, my link2 is vlc-x-callback://x-callback-url/stream?url="+link2+"&sub=AliwixPlay"}};
   	function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
 var n="[\\?&]"+e+"=([^&#]*)",
 l=new RegExp(n),
@@ -291,7 +289,6 @@ c=l.exec(window.location.href);
 return null==c?"mmn.mypsx.net:1935/live/mmnhdsport/playlist.m3u8":unescape(c[1])}
 var video=gup("src");
 var link=(video); 
-
     function debounce(func, delay) {
       let inDebounce
       return function() {
