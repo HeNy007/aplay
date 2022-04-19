@@ -1,3 +1,57 @@
+  
+.rmp-time-elapsed.rmp-color-bg {
+    background: #151515;
+}
+ .rmp-duration {
+    height: 24px;
+    top: 8px;
+    line-height: 24px;
+    left: 36%;
+    width: 12%;
+    background:#151515;
+}
+.rmp-mobile .rmp-time-elapsed.rmp-color-bg {
+    left: 24%;
+    background: #151515;
+}
+
+
+ .rmp-overlay-levels-area{direction:ltr}.rmp-error-text:before{font-size:17px;content:"البث غير متاح الان اضغط تحدث لاعادة التحميل";font-family:Changa,"Segoe UI";font-weight:bold}.rmp-error-text{font-size:0}.rmp-time-elapsed.rmp-color-bg:before{content:"مباشر";margin-left:5px}.rmp-i-resize-full::before{float:right;padding-right:30px}.rmp-time-elapsed.rmp-color-bg:after{content:"\2022";color:#ff0000;font-size:35px;vertical-align:middle}.rmp-quality-hd{background:#ff0000d9;border:1px solid #f00}.rmp-quality.rmp-module.rmp-color-bg,.rmp-overlay-button.rmp-color-bg,.rmp-module~.rmp-module{background:initial}button.rmp-fullscreen.rmp-button.rmp-i.rmp-i-resize-small{right:-80px}.rmp-button.rmp-quality.rmp-module.rmp-color-bg {bottom:10px;top:auto;right:130px}.rmp-button.rmp-pip.rmp-module.rmp-color-bg{bottom:10px;top:auto;right:85px}.rmp-control-bar.rmp-color-bg{background-color:#151515;border-radius:100px;bottom:10px;left:10px;right:10px;width:auto}.rmp-time-elapsed-text,.rmp-fullscreen .rmp-control-bar-hint,.rmp-play-pause .rmp-control-bar-hint,.rmp-quick-rewind-or-forward .rmp-control-bar-hint,.rmp-hint.rmp-color-bg,.rmp-desktop-volume-indicator.rmp-color-bg,.rmp-desktop-volume-hint.rmp-color-bg{display:none}
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500;600&display=swap');
+
+@import url('https://arbfonts.com//wp-content/fonts/new-arabic-fonts//Dubai-Regular.ttf');
+    
+    /* This CSS is required to avoid layout issues */
+
+
+    
+    
+    
+    
+      .videos-channel{position:absolute;z-index:2;left:-10px;top:15px;right:10px;height:0 ;   margin-left: 15px;
+    }
+    .videos-channel .button{    text-decoration: none;
+        font-family: 'Baloo Bhaijaan 2';
+    background:#242121;cursor:pointer;font-size:14px;float:left;display:block;border-radius:4px;height:25px;text-align:center;line-height:25px;text-shadow:0 1px 1px #000;color:#fff;padding:0 10px;position:relative;z-index:99}
+    .videos-channel .refresh{float:left}
+    
+    
+    .site-link{font-family: 'Baloo Bhaijaan 2';text-shadow:2px 2px 2px #000;z-index:99999999999999;bottom:25%;position:fixed;width:100%;height:0%;text-align:center;color:#fff;    font-size: 20px;
+    /*font-size:2vw*/;display:none1}
+.jw-controls.jw-reset:before{display:none;content:'yalla-shoot-new.com | يلا شوت الجديد';z-index:9;position:absolute;right:0;left:0;bottom:7%;font-family:sans-serif;color:#fff;text-align:center;text-shadow:2px 2px 2px #000;font-size:2vw}
+
+img.rmp-logo.rmp-force-show.rmp-logo-top-left {
+    width: 50px;
+}
+
+.rmp-time-total {
+    height: 100%;
+    top: 0;
+    border: 1px solid #fff;
+    background: rgba(255,255,255,.4);
+    display: none;
+}
+  
 #rmp {
   width:100%;
   height:100%;
@@ -14,6 +68,7 @@
        skinButtonColor: "rgba(126, 0, 204, 1.00)",
         skinAccentColor: "rgba(126, 0, 204, 1.00)",
     }
+
  #dlna { position: fixed; z-index: 99999999; left: 25px; text-align: center; border-radius: 50%;  bottom: 35px; } 
 	
 
