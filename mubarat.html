@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>mubarat.net - Soccer News, Live Soccer News, Live Football,</title>
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5fd780d131bcda0018126ec5&product=sop' async='async'></script>
+<META NAME="DESCRIPTION" CONTENT="All Arabic Soccer News, Live Soccer Score, Watch Live Football on iPhone, Watch Live Soccer on android">
+<link rel="manifest" href="https://mubarat.net/manifest.json">
+	  	<script src="https://mubarat.net/js/hlsjs.0.11.js"></script>
+	  	<script src="https://mubarat.net/js/simplepeer_9_7_2.min.js?id=55e1448211"></script>
+	  	<script src="https://mubarat.net/js/lz-string.min.js"></script>
+	  	<script src="https://mubarat.net/js/vidictPeer_server_mubarat.min.js?id=211"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="True" name="HandheldFriendly">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://mubarat.net/css/jquery.mobile-1.4.1.min.css">
+<script src="https://mubarat.net/js/jquery-1.10.2.min.js"></script>
+<script src="https://mubarat.net/js/jquery.mobile-1.4.2.min.js"></script>
+
+<style>
+	@media screen 
+and (min-width : 240px) 
+and (max-width : 360px) {
+	
+	.wrapper, .header, .mca{max-width:100%;margin:0 auto;}
+	.add{width:300px !important;height:50px;margin:0 auto; }
+	.mca_box{margin:0 auto;}
+	.add{text-align:center}
+	.mca h1{font-size:18px;}
+	.mca_box a{font-family: "Trebuchet MS";font-size:24px;line-height:46px;text-decoration:none; display:block;}
+	.mca_box2{margin:0 auto;}
+	.mca_box2 a{font-family: "Trebuchet MS";font-size:16px !important;text-decoration:none; display:block;}
+	.contact{width:100%;margin:0 auto; }
+	.con-text{width:100%;margin:0 auto;}
+	.con-box{width: 179px !important;margin:0 auto;  }
+	.dropdown_box{width:90% !important; }
+	.form{width:88%!important; }
+	.con-mes-box{width:182px !important; }
+}
+
+/* 480px */
+
+@media screen 
+and (min-width : 361px) 
+and (max-width : 600px) {
+	.mca_box{margin:0 auto;}
+	.add{width:320px;height:50px;margin:0 auto; }
+	.mca_box2{margin:0 auto;}
+	.contact{width:100%;margin:0 auto; }
+	.mca_box2 a{font-family: "Trebuchet MS";font-size:16px !important;text-decoration:none; display:block;}
+	.con-box{width: 180px !important;margin:0 auto;}
+	.dropdown_box{width:80% !important; }
+	.form{width:88% !important; }
+	.con-mes-box{width:182px !important; }
+	
+}
+
+.ui-dialog-contain>.ui-header {
+    background:  #042453;
+    color: white;
+}
+.ui-content.p {
+	background: #0e0e0e;
+}
+body {overflow-x: hidden;
+background:  #042453;
+ }
+
+#content, #adContainer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#contentElement {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#playButton {
+  margin-top:10px;
+  vertical-align: top;
+  width: 350px;
+  height: 60px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #2c3e50;
+  border: 0;
+  border-bottom: 2px solid #22303f;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #22303f;
+  box-shadow: inset 0 -2px #22303f;
+}
+.movecontainer {
+	margin-top: -2em;
+}
+                        video::-webkit-media-controls-timeline {
+                                display: none;
+                        }
+                        video::-webkit-media-controls-mute-button {
+                                margin-left: auto;
+                        }
+                        video::-moz-media-controls-timeline {
+                                display: none;
+                        }
+                        video::-moz-media-controls-mute-button {
+                                margin-left: auto;
+                        }
+                        video::-webkit-media-controls-current-time-display {
+                                display: none;
+                        }
+
+                        video::-webkit-media-controls-time-remaining-display {
+                                display: none;
+                        }
+						video::-webkit-media-controls-play-button {
+							display: block;
+						}
+body {font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  min-height: 300px;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #808080;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 11%;
+  margin-top: 35%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.subscribe_buttons {
+	width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.twitter-follow-button {
+	align-self: center !important;
+}
+.infoDiv {
+	display: flex;
+    background: #042453;
+    color: #0e0e0e;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+</style>
+ </head>
+
+
+ <body style="background:  #042453;"  >
+
+
+
+
+<div class="wrapper" data-role="page" id="pageone" style="background:  #042453;" >
+<div class="header" style="background:  #042453;">
+<a href="" data-transition="fade"><img src="https://aliwixplay.pages.dev/images/movies.png" alt="AliwixPlay" /></a>
+</div>
+<div class="add1">
+<center>
+    <iframe width="300" height="250" src="https://rebrand.ly/eti4fsv"></iframe>
+</center>
+</div><br>
+<div class="mca" id="channels">
+</div><br>
+<div class="add1">
+<center>
+<a href="https://rebrand.ly/zbtga3h" target="_blank" rel="noopener"><img class="alignnone size-medium wp-image-1935" src="https://mubarat.net/images/cta-1.jpg" alt="" width="300" height="250" /></a>
+</center>
+</div>
+
+<center><p style="background:  #042453;"> &copy; AliwixPlay</p></center>
+<div class="clear"></div>
+</div
+><!--#############################wrapper 1 END #############################-->
+
+<div class="wrapper" data-role="page" id="pagetwo" style="background:  #042453;" >
+<div class="header" style="background:  #042453;">
+<a href="" data-transition="fade"><img src="https://aliwixplay.pages.dev/images/movies.png" alt="AliwixPlay" /></a>
+</div>
+<div class="add1">
+
+<center>
+<a href="https://rebrand.ly/zatmlmr" target="_blank" rel="noopener"><img class="alignnone size-medium wp-image-1935" src="https://mubarat.net/images/cta-2.jpeg" alt="" width="300" height="250" /></a>
+</center>
+
+</div>
+
+<div class="mca" id="streams">
+</div>
+
+<div class="add1">
+<center>
+</center>
+</div>
+<center><p style="background:  #042453;"> &copy; AliwixPlay</p></center>
+<div class="clear"></div>
+</div>
+
+<!--#############################wrapper 2 END #############################-->
+
+<div class="wrapper" data-role="page" id="video" style="background:  #042453;" >
+<div class="header" style="background:  #042453;">
+<a href="https://www.mubarat.net/" data-transition="fade"><img src="images/logo.png" alt="" 
+
+/></a>
+</div>
+<div class="add1">
+<center>
+<a href="https://play.google.com/store/apps/details?id=com.vpnmaskjanjua.app" target="_blank" rel="noopener"><img class="alignnone size-medium wp-image-1935" src="https://mubarat.net/images/ad.jpg" alt="" width="300" height="250" /></a>
+</center>
+<br>
+</div>
+
+
+
+<div class="mca" id="videoDiv" style="position: relative; display: block; z-index: 100; height: 100%;">
+</div>
+<div class="add">
+<center>
+
+</div>
+<center><p style="background:  #042453;"> &copy; AliwixPlay</p></center>
+
+<div class="clear"></div>
+</div>
+
+<!--#############################wrapper 5 END #############################-->
+
+<script type="text/javascript" src="https://mubarat.net/js/mubarat.js?id=4451278"></script>
+
+<script>
+	var data;
+	var sn = "T7De-IWDL-2icS-D8LD-6a3gc";
+	var videoPlayer;
+	var ea = "";
+//	showChannels("c79e76a7cc9ff67d7165d60e5cb7299d4b20be8577ef55142d6090e8a67a880e0d");
+
+    $.ajax({url: "https://tvportremote.com/loadbalancer",
+                dataType: "text",
+        type: "GET",
+        success: function(data) {
+                ea = data.split('=')[1];
+            	showChannels("c79e76a7cc9ff67d7165d60e5cb7299d4b20be8577ef55142d6090e8a67a880e0d");
+        }
+    });
+
+	function performGet (url){
+		console.log("GETTING URL: " + url);
+		try{
+			var request = new XMLHttpRequest();
+			request.open('GET', url, false);  // `false` makes the request synchronous
+			request.send(null);
+			console.log("request.status: " + request.status);
+			if (request.status === 200) {
+				console.log(request.responseText);
+				return request.responseText;
+			}
+		} catch (e){
+			console.log(e);
+		}
+	}
+
+	function clear (myNode){
+		while (myNode.firstChild) {
+			myNode.removeChild(myNode.firstChild);
+		}
+	}
+
+					jQuery.loadScript = function (url, callback) {
+					    jQuery.ajax({
+					        url: url,
+					        dataType: 'script',
+					        success: callback,
+					        async: true
+					    });
+					}	
+	
+$(function(){
+    $.each(["show","hide", "toggleClass", "addClass", "removeClass"], function(){
+        var _oldFn = $.fn[this];
+        $.fn[this] = function(){
+            var hidden = this.find(":hidden").add(this.filter(":hidden"));
+            var visible = this.find(":visible").add(this.filter(":visible"));
+            var result = _oldFn.apply(this, arguments);
+            hidden.filter(":visible").each(function(){
+                $(this).triggerHandler("show");
+            });
+            visible.filter(":hidden").each(function(){
+                $(this).triggerHandler("hide");
+            });
+            return result;
+        }
+    });
+});
+
+$("#pageone").bind("show", function(){
+	if (document.getElementById("stream_id_0") == null) { 
+		window.location='https://www.mubarat.net';
+	}
+	if (document.getElementById("videoplayer") != null) {
+		//var player = document.getElementById("videoplayer");
+		videoPlayer.pause();
+		videoPlayer = null;
+        //put in comment 27.09.2020
+        //console.log("reload page one video player");
+		window.location.reload(true);
+	}
+});
+
+$("#video").bind("show", function(){
+	if (document.getElementById("videoplayer") == null) {
+        //put in comment 27.09.2020
+        //console.log("reload video show")
+		window.location='https://www.mubarat.net';
+	}
+});
+</script>
+</body>
+<script>
+  if ('serviceWorker' in navigator) {
+    console.log("Will the service worker register?");
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(function(reg){
+        console.log("Yes, it did.");
+      }).catch(function(err) {
+        console.log("No it didn't. This happened: ", err)
+      });
+  }
+</script>
+<script>
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent Chrome 67 and earlier from automatically showing the prompt
+  e.preventDefault();
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WK1PZYJ9GF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WK1PZYJ9GF');
+</script>
+</html>
