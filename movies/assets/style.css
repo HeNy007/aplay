@@ -1849,30 +1849,26 @@ body {
 }
 
 .slider {
-  width: 92%;
-  /* height: 235px */
-  overflow: hidden;
-  position: relative;
-  margin: auto;
-  top: auto;
-  left: auto;
+	width: 100%; /* height: 235px */;
+	overflow:hidden;
+	position:relative;
+	margin:auto;
+	top:auto;
+	left:auto;
 }
 
 .slide {
-  width: 100%;
-  height: 100%;
-  transition: left 0, transform 0;
-  position: absolute;
-  left: 0;
-  top: 0;
-  transition-timing-function: ease-out;
-  border-radius: 2vmin;
-  text-align: center;
-  color: black;
-  font-weight: bold;
-  font-style: italic;
-  text-shadow: -1px -1px 1px black, -1px 1px 1px black, 1px -1px 1px black,
-    1px 1px 1px black;
+	width: 100%; height: 100%;
+	transition:left 0.0, transform 0.0;
+	position:absolute;
+	left:0; top:0;
+	transition-timing-function:ease-out;
+	border-radius:2vmin;
+	text-align:center;
+	color: black;
+	font-weight:bold;
+	font-style:italic;
+	text-shadow:-1px -1px 1px black, -1px 1px 1px black, 1px -1px 1px black, 1px 1px 1px black;
 }
 
 /*Buttons*/
