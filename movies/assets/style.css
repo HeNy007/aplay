@@ -392,7 +392,7 @@ img:not([src]) {
     display: flex; */
     
     
-       height: 250px;
+      /*  height: 250px; */
     /* background: rgb(162 182 221); */
     /* background: #15455800 url(https://i.imgur.com/JdanwmR.jpg) fixed; */
     display: block;
