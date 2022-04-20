@@ -488,14 +488,8 @@ img:not([src]) {
 }
 
 .page-template-page-home .grid__item.pinned a {
-  background: #09f;
-  background: linear-gradient(
-    320deg,
-    rgba(0, 153, 255, 1) 0%,
-    rgba(0, 204, 153, 1) 50%,
-    rgba(0, 211, 88, 1) 100%
-  );
-  padding: 2px;
+  background: #fff;
+  padding: 1px;
   border-radius: 10px;
 }
 
