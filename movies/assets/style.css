@@ -489,7 +489,7 @@ img:not([src]) {
 
 .page-template-page-home .grid__item.pinned a {
   background: #fff;
-  padding: 1px;
+  padding: 2px;
   border-radius: 10px;
 }
 
