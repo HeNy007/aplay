@@ -68,7 +68,7 @@
  }
  
  
- .activee{
+ .activ{
  flex-grow: 1;
  transition-duration: 1s;
  opacity: 1;
@@ -76,7 +76,7 @@
  border-radius: 25px;
  padding-bottom: 10px
  }
- .nonActivee{
+ .nonactiv{
  flex-grow: 0;
  opacity: .5
  }
@@ -103,7 +103,7 @@
  .slidee{
  width: 20px;
  }
- .activee{
+ .activ{
  border-radius: 25px
  }
  }
@@ -112,7 +112,7 @@
  </style>
           	  
 <div class="HeNyslider">        
-        <div class="slidee slidee1 active ">
+        <div class="slidee slidee1 activ ">
             <span></span> 
           </div>
           
@@ -141,16 +141,16 @@
    let i=0 ;
    
    $('.slidee').click(function(){
-   $('.activee').addClass('nonActivee').find('span').empty()
-   $(this).removeClass('nonActivee').addClass('activee')
+   $('.activ').addClass('nonactiv').find('span').empty()
+   $(this).removeClass('nonactiv').addClass('activ')
    i= $(this).index()
    })
    
    setItner = setInterval(go,4000);
    
    function go(){
-   $('.activee').addClass('nonActive').find('span').empty()
-   $($('.slidee')[i%6]).removeClass('nonActivee').addClass('activee')
+   $('.activ').addClass('nonactiv').find('span').empty()
+   $($('.slidee')[i%6]).removeClass('nonactiv').addClass('activ')
    i++;
    }
    
