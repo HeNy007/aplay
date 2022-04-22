@@ -38,60 +38,124 @@
 	</head>
 	<body>
  
-          		<div class = "slider">
-			
+          		
 <!-- SLIDER BLANTER -->
-<div class='sliderbanner container'>
-  <div class='owl-carousel owl-theme' id='blanter-carousel'>
-    <!-- START -->
-    
-     <div class='blanter-owl-image'>
-      <a href='go:la3b3' title='Slider'>
-        <img alt='Slider' src='https://shahidstatic5.akamaized.net//mediaObject/2021/AMREID/aa/untitled0/Thump_The_game_3/original/Thump_The_game_3.jpg?croppingPoint=&version=1&type=webp' />
-      </a>
-    </div>
+  <style> 
+.HeNyslider{
+ width: 100%;
+ height: 200px;  
+ 
+ display: flex;
+ margin: auto;
+ 
+ justify-content: center;
+ 
+ }
+ .slidee{
+ min-width: 10px;
+ width: 50px;
+ height: 100%;
+ justify-content: center;
+ cursor: pointer;
+ margin: 0 3px;
+ border-radius: 50px;
+ display: flex;
+ align-items: flex-end;
+ background-size: cover;
+ background-position: center;
+ box-shadow: 3px 3px 5px black;
+ opacity: .5;
+ }
+ 
+ 
+ .active{
+ flex-grow: 1;
+ transition-duration: 1s;
+ opacity: 1;
+ padding: 0 10px;
+ border-radius: 25px;
+ padding-bottom: 10px
+ }
+ .nonActive{
+ flex-grow: 0;
+ opacity: .5
+ }
+ .slidee:nth-of-type(1){
+ background-image: url('https://cdn.wallpapersafari.com/68/12/9a2wy5.jpeg')
+ }
+ .slidee:nth-of-type(2){
+ background-image: url('https://cdn.wallpapersafari.com/3/53/0xgnyc.jpg')
+ }
+ .slidee:nth-of-type(3){
+ background-image: url('https://mcdn.wallpapersafari.com/medium/28/35/fslPOF.jpg')
+ }
+ .slidee:nth-of-type(4){
+ background-image: url('https://mcdn.wallpapersafari.com/medium/18/88/gsAVlZ.jpg')
+ }
+ .slidee:nth-of-type(5){
+ background-image: url('https://mcdn.wallpapersafari.com/medium/7/54/v7t0ST.jpg')
+ }
+ .slidee:nth-of-type(6){
+ background-image: url('https://mcdn.wallpapersafari.com/medium/16/66/Iv6KfC.jpg')
+ }
+ 
+ @media screen and (max-width: 700px) {
+ .slidee{
+ width: 20px;
+ }
+ .active{
+ border-radius: 25px
+ }
+ }
+  
+  
+ </style>
+          	  
+<div class="HeNyslider">        
+        <div class="slidee slidee1 active ">
+            <span></span> 
+          </div>
+          
+          <div class="slidee slidee2">
+          </div>
+          
+          <div class="slidee slidee3">
+          </div>
+          
+          <div class="slidee slidee4">
+          </div>
+          
+          <div class="slidee slidee5">
+          </div>
+          
+          <div class="slidee slidee6">
+          </div>  
+        </div>  
+   <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<script>
+        function myFunction() {
+            document.getElementById('container-fluid').style.display = "none";
+        }
 
-         <div class='blanter-owl-image'>
-      <a href='go:MAZON' title='Slider'>
-        <img alt='Slider' src='https://shahidstatic3.akamaized.net//mediaObject/2021/AMREID/aa/untitled0/Thump_ALBa3ad_La_yathahab_Lel_Mazoun_Maratayen_AR/original/Thump_ALBa3ad_La_yathahab_Lel_Mazoun_Maratayen_AR.jpg' />
-      </a>
-    </div>
-       <div class='blanter-owl-image'>
-      <a href='go:fr85bra' title='Slider'>
-        <img alt='Slider' src='https://shahidstatic4.akamaized.net//mediaObject/Curation_2022/Hero/JAN/Thump_SB73-3_ar/original/Thump_SB73-3_ar.jpg?&type=webp' />
-      </a>
-    </div>
- <div class='blanter-owl-image'>
-     <a href='go:gasra' title='Slider'>
-        <img alt='Slider' src='https://shahidstatic4.akamaized.net//mediaObject/2021/NOV/Amjad/untitled/Thump_The-bridge/original/Thump_The-bridge.jpg?&type=webp' />
-      </a>
-    </div>
-  <div class='blanter-owl-image'>
-      <a href='go:7ameda7b' title='Slider'>
-        <img alt='Slider' src='https://i.imgur.com/qAUdmug.jpg' />
-      </a>
-    </div>
-    <div class='blanter-owl-image'>
-      <a href='go:A5' title='Slider'>
-        <img alt='Slider' src='https://shahidstatic3.akamaized.net//mediaObject/2021/MARCH/amjad/untitled/untitled0/Thump_ahmed_noterdam/original/Thump_ahmed_noterdam.jpg' />
-      </a>
-    </div>
-    <div class='blanter-owl-image'>
-      <a href='go:E1' title='Slider'>
-        <img alt='Slider' src='https://i.imgur.com/CSLEFpq.jpg' />
-      </a>
-    </div>
-    <div class='blanter-owl-image'>
-      <a href='go:3oalm' title='Slider'>
-        <img alt='Slider' src='https://shahidstatic1.akamaized.net//mediaObject/2021/AMREID/Thump_hidden_worlds_AR/original/Thump_hidden_worlds_AR.jpg' />
-      </a>
-    </div>
-   
-   
     
-    <!-- END -->
-  </div>
-</div>
+   let i=0 ;
+   
+   $('.slidee').click(function(){
+   $('.active').addClass('nonActive').find('span').empty()
+   $(this).removeClass('nonActive').addClass('active')
+   i= $(this).index()
+   })
+   
+   setItner = setInterval(go,4000);
+   
+   function go(){
+   $('.active').addClass('nonActive').find('span').empty()
+   $($('.slidee')[i%6]).removeClass('nonActive').addClass('active')
+   i++;
+   }
+   
+   
+   $(".jt") .cluetip({ positionBy: 'fixed' }); $("img.lazy") .lazyload({ effect: "fadeIn" }); </script> </div> </div>
 <!-- END SLIDER BLANTER -->
 
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
