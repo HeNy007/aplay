@@ -1,3 +1,17 @@
+/* Extra Small Devices, .visible-xs-* */
+    @media (max-width: 767px) {}
+
+    /* Small Devices, .visible-sm-* */
+    @media (min-width: 768px) and (max-width: 991px) {}
+
+    /* Medium Devices, .visible-md-* */
+    @media (min-width: 992px) and (max-width: 1199px) {}
+
+    /* Large Devices, .visible-lg-* */
+    @media (min-width: 1200px) {} 
+
+
+
 @font-face {
   font-family: FontBlack;
   src: url(Bahij_TheSansArabic-Bold.ttf);
@@ -89,7 +103,7 @@ body {
   background: #bbb;
 }
 
-img.sherif {
+img.H007 {
   width: 145px;
   height: 220px;
 }
