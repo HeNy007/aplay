@@ -37,11 +37,20 @@
           		
 <!-- SLIDER BLANTER -->
   <style> 
-
+.zoom div img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.zoom div:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
 
 .HeNyslider{
  width: 100%;
- height: 300px;  
+ height: 400px;  
  padding: 10px;
  display: flex;
  margin: auto;
@@ -51,6 +60,7 @@
  }
  .slidee{
 background: rgb(162 182 221);
+ background-repeat: no-repeat;
     display: block;
     position: relative;
     overflow: hidden;
@@ -184,7 +194,7 @@ background: rgb(162 182 221);
 <div class="grid__item pinned">
 <a class="movieDiv" href="tunisia/series/har9a2">
 <div class="poster">
-<img class="brighten H007" style="border-radius: 5px;"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvUyhXO3E68sIj3sebR-F9p6dtqWgLreyVsw&usqp=CAU" width="115px" height="175px" />
+<img class="zoom H007" style="border-radius: 5px;"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvUyhXO3E68sIj3sebR-F9p6dtqWgLreyVsw&usqp=CAU" width="115px" height="175px" />
 <span class="quality">2022</span></div>
 <div class="content">
 <span class="h6">حرقة ج 2</span></div>
@@ -200,7 +210,7 @@ background: rgb(162 182 221);
 <div class="grid__item pinned">
 <a class="movieDiv" href="tunisia/series/baraa2">
 <div class="poster">
-<img class="brighten H007" style="border-radius: 5px;"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZPjzbHTHPi_71iJQe9x1Y15mauzgcv0UgPA&usqp=CAU" width="115px" height="175px" />
+<img class="zoom H007" style="border-radius: 5px;"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZPjzbHTHPi_71iJQe9x1Y15mauzgcv0UgPA&usqp=CAU" width="115px" height="175px" />
 <span class="quality">2022</span></div>
 <div class="content">
 <span class="h6"> براءة</span></div>
@@ -217,13 +227,13 @@ background: rgb(162 182 221);
 <div class="grid__item pinned">
 <a class="movieDiv" href="tunisia/series/Foundou2">
 <div class="poster">
-<img class="brighten H007" style="border-radius: 5px;"src="https://cima4u.ink/wp-content/uploads/1-1758.jpg" width="115px" height="175px" />
-<span class="quality">2022</span></div>
+<img class="zoom H007" style="border-radius: 5px;"src="https://cima4u.ink/wp-content/uploads/1-1758.jpg" width="115px" height="175px" />
+<!---<span class="quality">2022</span>-----></div>
 <div class="content">
 <span class="h6">الفوندو ج2</span></div>
 
 <span class="seCount">★<small>5/10</small></span>
-<span class="dubbed green">عرض مستمر</span> 
+<!---<span class="dubbed green">عرض مستمر</span> ----->
 <span class="dubbed"> مكتمل </span>
 
 </a></div>   
