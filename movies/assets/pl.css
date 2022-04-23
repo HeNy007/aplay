@@ -54,7 +54,7 @@ a img {
 
 /* Style the active class, and buttons on mouse-over */
 .active, .btn:hover {
-  background: #12151a;
+  background: #042453;
   color: white;
   text-decoration: none;
     box-shadow: 0 5px 2px 0 #101318;
@@ -166,7 +166,7 @@ html{
 body {
 	 height:100%;
     margin: 0px;
-    background: #042453;
+    background: #151515;
     font-family: Changa,Droid Arabic Kufi,tahoma;
     font-weight: 100;
     font-size: 16px;
