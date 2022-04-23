@@ -647,35 +647,6 @@ for (var i = 0; i < btns.length; i++) {
 
 
 
-info="<style type=&#34;text/css&#34;>
-.bottom-sticky-ads{position:fixed;bottom:0;left:0;width:100%;min-height:70px;max-height:200px;padding:5px 0;box-shadow:0 -6px 18px 0 rgba(9,32,76,.1);-webkit-transition:all .1s ease-in;transition:all .1s ease-in;display:flex;align-items:center;justify-content:center;background-color:#fefefe;z-index:20;}
-.sticky-ads-close{width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:12px 0 0;position:absolute;right:0;top:-30px;background-color:#fefefe;box-shadow:0 -6px 18px 0 rgba(9,32,76,.08);}
-.bottom-sticky-ads .sticky-ads-close svg{width:24px;height:24px;fill:#000;}
-.bottom-sticky-ads .sticky-ads-content{overflow:hidden;display:block;position:relative;height:70px;width:100%;margin-right:10px;margin-left:10px;}
-</style>
-<div id=&#34;attribution&#34;>
-        <center><script src=&#34;//static.surfe.pro/js/net.js&#34;></script>
-<ins class=&#34;surfe-be&#34; data-sid=&#34;329078&#34;></ins> 
-<script>(adsurfebe = window.adsurfebe || []).push({});</script></center></div>
-    	
-<div class=&#39;bottom-sticky-ads&#39; id=&#39;bottom-sticky-ads&#39;>
-<div class=&#39;sticky-ads-close&#39; onclick=&#39;closeads()&#39;><svg viewBox=&#39;0 0 512 512&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39;><path d=&#39;M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z&#39;/></svg></div>
-<div class=&#39;sticky-ads-content&#39;><center>
-<script type=&#34;text/javascript&#34;>
-	atOptions = {
-		&#39;key&#39; : &#39;b932b5205db76edc14546bae2cd61a16&#39;,
-		&#39;format&#39; : &#39;iframe&#39;,
-		&#39;height&#39; : 60,
-		&#39;width&#39; : 468,
-		&#39;params&#39; : {}
-	};
-	document.write(&#39;<scr&#39; + &#39;ipt type=&#34;text/javascript&#34; src=&#34;http&#39; + (location.protocol === &#39;https:&#39; ? &#39;s&#39; : &#39;&#39;) + &#39;://www.effectivedisplayformats.com/b932b5205db76edc14546bae2cd61a16/invoke.js&#34;></scr&#39; + &#39;ipt>&#39;);
-</script> 
-</center></div>
-</div></div>"
-
-document.write(info)
-
 //<![CDATA[
 function closeads() {
 document.getElementById('bottom-sticky-ads').style.display='none';
