@@ -161,7 +161,8 @@ span.h1 {
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  width: 215px;
+  height: 260px;
 }
 
 .h1,
