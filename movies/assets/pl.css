@@ -11,7 +11,7 @@ a img {
     margin: 0 0 0px;
 }
    .btn2 {
-        background: #1f252e url(/images/JdanwmR.jpg) fixed;
+        background: #042453 url(/images/JdanwmR.jpg) fixed;
     background-size: contain;
     /* background: #0000001a; */
     /* box-shadow: 0 5px 0px #27303c; */
@@ -28,7 +28,7 @@ a img {
 } 
 /* Style the buttons */
 .btn {
-    background: #1f252e url(/images/JdanwmR.jpg) fixed;
+    background: #042453 url(/images/JdanwmR.jpg) fixed;
     background-size: contain;
     border-radius: 2px;
     padding: 10px 1%;
@@ -257,7 +257,7 @@ i.bi.bi-play-btn-fill {
     text-align: center;
     padding: 5px 0 4px;
     color: #ffffff;
-    background: #1f252e;
+    background: #042453;
     -webkit-transform: rotate( 
 -40deg);
     -ms-transform: rotate(-40deg);
@@ -269,7 +269,7 @@ i.bi.bi-play-btn-fill {
     position: fixed;
     bottom: 11px;
     background: #ffffffe0;
-    color: #1f252e;
+    color: #042453;
     border: 1px solid #263545;
     /* box-shadow: 0 2px 0px #27303c; */
     border-radius: 6px;
@@ -318,7 +318,7 @@ img.jordan3 {
 a.e1 {
     background: #2c333e;
     border-radius: 5px;
-    text-shadow: 0 1px 1px #1f252e;
+    text-shadow: 0 1px 1px #042453;
     padding: 10px;
     font-size: 15px;
     text-align: center;
@@ -326,5 +326,4 @@ a.e1 {
     text-decoration: none;
     margin: 5px;
 }
-
 
