@@ -2375,3 +2375,38 @@ img.HeNynet2 {
       -webkit-transform: scaleY(1.0);
   }
 }
+* {
+      box-sizing: border-box;
+  }
+
+  #myInput {
+      background-image: url(https://www.iconsdb.com/icons/preview/white/search-3-xxl.png);
+      background-position: 10px 12px;
+      background-repeat: no-repeat;
+      width: 95%;
+      height: 50px;
+      font-size: 16px;
+      padding: 12px 20px 12px 40px;
+      border: 5px solid #fff;
+      border-radius: 50px;
+      font-family: 'Almarai', cairo;
+      text-align: center;
+      margin-bottom: 12px;margin-top: 5px;
+      
+      
+  }
+
+  #myUL {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      font-family: 'Almarai', cairo;
+
+  }
+
+  #myUL li a {}
+
+  #myUL li a:hover:not(.header) {
+      background-color: yellow ;
+  }
+ 
