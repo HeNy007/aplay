@@ -161,7 +161,7 @@ span.h1 {
 
 .img-fluid {
   max-width: 100%;
-  max-height: 100%;
+  height: auto;
 }
 
 .h1,
@@ -2394,7 +2394,7 @@ img.HeNynet2 {
       border-radius: 50px;
       font-family: 'Almarai', cairo;
       text-align: center;
-      margin-bottom: 15px;margin-top: 9px;
+      margin-bottom: 20px;margin-top: 5px;
       
       
   }
