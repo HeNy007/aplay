@@ -160,8 +160,8 @@ span.h1 {
 }
 
 .img-fluid {
-  width: 215px;
-  height: 260px;
+  width: 342;
+  height: 513;
 }
 
 .h1,
@@ -397,8 +397,6 @@ img:not([src]) {
     display: flex; */
     
     
-      
-  height: 260px;
     /* background: rgb(162 182 221); */
     /* background: #15455800 url(https://i.imgur.com/JdanwmR.jpg) fixed; */
     display: block;
