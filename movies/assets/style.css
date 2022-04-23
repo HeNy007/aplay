@@ -428,8 +428,8 @@ img:not([src]) {
   position: absolute;
   width: 150px;
   height: 28px;
-  background: green;
-  color: yellow;
+  background: yellow ;
+  color: f9f9f9;
   top: 16px;
   left: -44px;
   text-align: center;
@@ -442,14 +442,12 @@ img:not([src]) {
 }
 
 .movieDiv .seCount {
-  position: absolute;
-  bottom: 170px;
-  right: 6px;
+  position: top-right;
   
   border-radius: 6px;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  
   line-height: 1;
   font-size: 30px;
   font-weight: 400;
