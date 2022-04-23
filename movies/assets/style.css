@@ -442,7 +442,9 @@ img:not([src]) {
 }
 
 .movieDiv .seCount {
-  position: bottom-right;
+position : absolute ;
+  bottom: 175px;
+  right: 6px;
   
   border-radius: 6px;
   display: flex;
