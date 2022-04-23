@@ -425,13 +425,25 @@ img:not([src]) {
 }
 
 .movieDiv span.dubbed.green {
-  background: #fff;
-  
+  position: absolute;
+  width: 150px;
+  height: 28px;
+  background: green;
+  color: yellow;
+  top: 16px;
+  left: -44px;
+  text-align: center;
+  z-index: 1;
+  transform: rotate(-44deg);
+  font-size: 13px;
+  padding: 4px;
+  font-weight: 400;
+  right: auto;
 }
 
 .movieDiv .seCount {
   position: absolute;
-  bottom: 180px;
+  bottom: 170px;
   right: 6px;
   
   border-radius: 6px;
