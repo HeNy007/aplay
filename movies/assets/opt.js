@@ -640,3 +640,8 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 
+if($(window).width() > '1300') {
+  $('body').css({
+    'height': '100%' /* etc */
+  });
+}
