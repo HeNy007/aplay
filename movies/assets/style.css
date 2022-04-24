@@ -1956,8 +1956,19 @@ label.logo {
 }
 
 
+*::-webkit-scrollbar {
+  width: 2px;
+}
+
+*::-webkit-scrollbar-track {
+	width: 2px;
+  background: #042453;
+  box-shadow: 0 0 30px #00000073;
+}
+
 *::-webkit-scrollbar-thumb {
-  background-color: #fff;
+  background-color: #fff
+	  width: 2px;
 }
 .HeNy_logo_img {
   display: block;
