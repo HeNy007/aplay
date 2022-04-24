@@ -268,7 +268,7 @@ i.bi.bi-play-btn-fill {
 }
 .Goback {
     position: fixed;
-    bottom : 25px;
+    top : 25px;
     background: #ffffffe0;
     color: #042453;
     border: 1px solid #263545;
