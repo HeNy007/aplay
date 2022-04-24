@@ -268,15 +268,15 @@ i.bi.bi-play-btn-fill {
 }
 .Goback {
     position: fixed;
-    top: 5px;
+    bottom : 25px;
     background: #ffffffe0;
     color: #042453;
     border: 1px solid #263545;
-    /* box-shadow: 0 2px 0px #27303c; */
+    box-shadow: 0 2px 0px #27303c;
     border-radius: 10px;
     text-shadow: 0 1px 1px #ffffff;
     padding: 1px 1%;
-    font-size: 15px;
+    font-size: 18px;
     text-align: center;
     text-decoration: none;
     margin: 5px;
