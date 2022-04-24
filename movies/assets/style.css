@@ -161,7 +161,7 @@ span.h1 {
 
 .img-fluid {
   max-width: 100%;
-  height: 220px;
+  height: 315px;
   
 }
 
@@ -396,8 +396,7 @@ img:not([src]) {
     border-radius: 10px;
     overflow: hidden;
     display: flex; */
-    
-    height: 250px;
+
     /* background: rgb(162 182 221); */
     /* background: #15455800 url(https://i.imgur.com/JdanwmR.jpg) fixed; */
     display: block;
@@ -447,7 +446,7 @@ img:not([src]) {
 
 .movieDiv .seCount {
 position : absolute ;
-  bottom: 190px;
+  bottom: 200px;
   right: 6px;
   
   border-radius: 6px;
