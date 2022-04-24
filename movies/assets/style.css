@@ -446,7 +446,7 @@ img:not([src]) {
 
 .movieDiv .seCount {
 position : absolute ;
-  bottom: 215px;
+  bottom: 220px;
   right: 6px;
   
   border-radius: 6px;
