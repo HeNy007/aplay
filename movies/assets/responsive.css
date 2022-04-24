@@ -1,7 +1,6 @@
 @media only screen and (min-width: 320px) {
 
-  body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+  html { width: 100%;  margin: 0px auto; }
 
 }
 
@@ -137,158 +136,130 @@ $xl : "extra-large";
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) {
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 320px) {
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 /**********
 iPad 3
 **********/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 /* Large screens ----------- */
 @media only screen  and (min-width : 1824px) {
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 /* iPhone 4 ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 /* iPhone 5 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 /* iPhone 6, 7, 8 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 /* iPhone 6+, 7+, 8+ ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 /* iPhone X ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 /* iPhone XS Max, XR ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 /* Samsung Galaxy S3 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 /* Samsung Galaxy S4 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 /* Samsung Galaxy S5 ----------- */
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-body { width: 100%; text-align: center; }
-html { width: 900px;  margin: 0px auto; }
+html { width: 100%;  margin: 0px auto; }
 }
