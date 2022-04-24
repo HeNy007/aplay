@@ -218,7 +218,7 @@ a.button {
 }
 
 i.bi.bi-play-btn-fill {
-    float: right;
+    float: left;
     margin: 8px;
     padding: 5px;
     margin-top: -3px;
@@ -269,14 +269,14 @@ i.bi.bi-play-btn-fill {
 .Goback {
     position: fixed;
     top : 5px;
-    background: #ffffffe0;
+    background: #042453;
     color: #042453;
     border: 1px solid #263545;
     box-shadow: 0 2px 0px #27303c;
     border-radius: 20px;
     text-shadow: 0 1px 1px #ffffff;
     padding: 1px 1%;
-    font-size: 10px;
+    font-size: 15px;
     text-align: center;
     text-decoration: none;
     margin: 5px;
