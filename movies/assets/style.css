@@ -446,7 +446,7 @@ img:not([src]) {
 
 .movieDiv .seCount {
 position : absolute ;
-  bottom: 200px;
+  bottom: 210px;
   right: 6px;
   
   border-radius: 6px;
@@ -1957,11 +1957,10 @@ label.logo {
 
 
 *::-webkit-scrollbar {
-  width: 2px;
+  width: 6px;
 }
 
 *::-webkit-scrollbar-track {
-	width: 2px;
   background: #042453;
   box-shadow: 0 0 30px #00000073;
 }
