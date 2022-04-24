@@ -100,8 +100,8 @@ img.H008 {
 }
 
 div .jordan2 {
-  overflow-x: scroll;
-  overflow-y: hidden;
+   overflow-x: hidden ; 
+     overflow-y: hidden; 
   white-space: nowrap;
   display: flex;
   padding: 2px;
@@ -447,7 +447,7 @@ img:not([src]) {
 
 .movieDiv .seCount {
 position : absolute ;
-  bottom: 180px;
+  bottom: 190px;
   right: 6px;
   
   border-radius: 6px;
@@ -1647,53 +1647,46 @@ a {
 
 /*homeblog7.blogspot.com CSS ends*/
 /*! * Ù‚Ø§Ø¦Ù…Ø© Ø¬Ø§Ù†Ø¨ÙŠØ© Â© * Ø¬Ù…ÙŠØ¹ Ø§Ù„Ø­Ù‚ÙˆÙ‚ Ù…Ø­ÙÙˆØ¸Ø© Â© * ØªØµÙ…ÙŠÙ… : Ø´Ø±ÙŠÙ Ø­Ù…Ø¯ÙŠ */
-/*! * Ø²Ø± Ø§Ù„ØµØ¹ÙˆØ¯ Ù„Ù„Ø£Ø¹Ù„ÙŠ Ø§Ù„Ø£ØµØ¯Ø§Ø± Ø§Ù„Ø£ÙˆÙ„ v1.0 * Ø¬Ù…ÙŠØ¹ Ø§Ù„Ø­Ù‚ÙˆÙ‚ Ù…Ø­ÙÙˆØ¸Ø© Â© * ØªØµÙ…ÙŠÙ…
-: Ø´Ø±ÙŠÙ Ø­Ù…Ø¯ÙŠ */
+/*!
+ * زر الصعود للأعلي الأصدار الأول v1.0
+ * جميع الحقوق محفوظة ©
+ HeNy007
+ */
 .scrollToTop {
-  outline: 0;
-  border: 0;
-  font-size: 14 px;
-  cursor: pointer;
+	outline: 0;border: 0;font-size: 14 px;cursor: pointer
+}.scrollToTop svg {
+	display: block
+}.scrollToTop {
+	position: fixed;z-index: 9999;opacity: 0;pointer-events: none;transition: opacity .3 s,
+	background .3 s,
+	-webkit - transform .3 s;transition: transform .3 s,
+	opacity .3 s,
+	background .3 s;transition: transform .3 s,
+	opacity .3 s,
+	background .3 s,
+	-webkit - transform .3 s; - webkit-transform: translateY(-2e m);transform: translateY(-2e m)
+}.scrollToTop.visible {
+	pointer-events: all;
+	opacity: 1;  
+    webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+ .scrollToTop svg {
+	fill: #fff
+}.scrollToTop {
+    background-color: #1f252eeb;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 50%);
+    bottom: 1em;
+    right: 1em;
+    padding: 0.5em;
+    border-radius: 40px;
 }
 
-.scrollToTop svg {
-  display: block;
-}
-
-.scrollToTop {
-  position: fixed;
-  z-index: 9999;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3 s, background 0.3 s, -webkit - transform 0.3 s;
-  transition: transform 0.3 s, opacity 0.3 s, background 0.3 s;
-  transition: transform 0.3 s, opacity 0.3 s, background 0.3 s,
-    -webkit - transform 0.3 s;
-  -webkit-transform: translateY(-2e m);
-  transform: translateY(-2e m);
-}
-
-.scrollToTop.visible {
-  pointer-events: all;
-  opacity: 1;
-  webkit-transform: translateY(0);
-  transform: translateY(0);
-}
-
-.scrollToTop svg {
-  fill: #fff;
-}
-
-.scrollToTop {
-  background-color: #042453eb;
-  box-shadow: 0 1px 4px rgb(0 0 0 / 50%);
-  bottom: 1em;
-  right: 1em;
-  padding: 0.5em;
-  border-radius: 40px;
-}
-
-/*! * Ø²Ø± Ø§Ù„ØµØ¹ÙˆØ¯ Ù„Ù„Ø£Ø¹Ù„ÙŠ Ø§Ù„Ø£ØµØ¯Ø§Ø± Ø§Ù„Ø£ÙˆÙ„ v1.0 * Ø¬Ù…ÙŠØ¹ Ø§Ù„Ø­Ù‚ÙˆÙ‚ Ù…Ø­ÙÙˆØ¸Ø© Â© * ØªØµÙ…ÙŠÙ… : Ø´Ø±ÙŠÙ Ø­Ù…Ø¯ÙŠ */
+/*!
+ * زر الصعود للأعلي الأصدار الأول v1.0
+ * جميع الحقوق محفوظة ©
+HeNy007
+ */
 /*! * Ù„ÙˆØ¬Ùˆ Ø´Ø§Ù‡Ø¯ v1.0 * Ø¬Ù…ÙŠØ¹ Ø§Ù„Ø­Ù‚ÙˆÙ‚ Ù…Ø­ÙÙˆØ¸Ø© Â© * ØªØµÙ…ÙŠÙ… : Ø´Ø±ÙŠÙ Ø­Ù…Ø¯ÙŠ */
 .ShahidHeaderContainer_container__3vk3K {
   width: 100%;
@@ -1869,8 +1862,8 @@ button {
 }
 
 div .jordan {
-  overflow-x: scroll;
-  overflow-y: hidden;
+   overflow-x: hidden ; 
+     overflow-y: hidden; 
   white-space: nowrap;
 }
 
@@ -1885,8 +1878,8 @@ button {
 }
 
 div .jordan2 {
-  overflow-x: scroll;
-  overflow-y: hidden;
+   overflow-x: hidden ; 
+     overflow-y: hidden; 
   white-space: nowrap;
   direction: rtl;
 }
