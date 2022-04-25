@@ -505,7 +505,7 @@ margin-top:20px;
 }
 #input_2:checked ~ .circle,
 #input_2:checked ~ div div .indicator {
-  left: 0;
+  right: 0;
 }
 
 #input_3:checked ~ [for="input_3"] > .fa {
@@ -517,7 +517,7 @@ margin-top:20px;
 }
 #input_3:checked ~ .circle,
 #input_3:checked ~ div div .indicator {
-  left: 66%;
+  right: 66%;
 }
 /*!
  * HeNy Footer v1.0
