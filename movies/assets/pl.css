@@ -267,7 +267,7 @@ i.bi.bi-play-btn-fill {
     font-size: 13px;
 }
 .Goback {
-    position:   absolute;
+    position:   fixed;
     top:        5px;
     left:       5px;
     text-align: left;
@@ -279,7 +279,7 @@ i.bi.bi-play-btn-fill {
     border-radius: 15px;
     text-shadow: 0 1px 1px #ffffff;
     padding: 1px 1%;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     text-decoration: none;
     margin: 5px;
