@@ -1,7 +1,27 @@
   @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500;600&display=swap');
 
 @import url('https://arbfonts.com//wp-content/fonts/new-arabic-fonts//Dubai-Regular.ttf');
-
+html {
+  @media only screen and (orientation: portrait) and (max-width: 555px) {
+    transform: rotate(90deg);
+    width: calc(155%);
+    .content {
+      width: calc(155%);
+    }
+  }
+}
+@media screen and (orientation:landscape) { 
+ 
+  body { 
+    -ms-transform: rotate(-90deg); /* IE 9 */ 
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */ 
+    transform: rotate(-90deg); 
+    width: /* screen width */ ; 
+    height: /* screen height */ ; 
+    overflow: scroll; 
+ a transform: translate(x, y) ;
+  } 
+} 
 
  .rmp-overlay-levels-area{direction:ltr}.rmp-error-text:before{font-size:17px;content:"البث غير متاح حاليا سيتم إصلاح المشكل في اقرب وقت - ";font-family:Changa,"Segoe UI";font-weight:bold}.
 
