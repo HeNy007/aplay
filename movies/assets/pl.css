@@ -267,11 +267,9 @@ i.bi.bi-play-btn-fill {
     font-size: 13px;
 }
 .Goback {
-    position: fixed;
+    position: top-left;
     padding: 10px;
-    float: left; 
-    text-align: left;
-    top : 5px;
+    top: 5px;
     background: #ffffffe0;
     color: #042453;
     border: 1px solid #263545;
