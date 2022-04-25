@@ -341,9 +341,9 @@ HeNy007
     bottom: 0;
     width: 100%;
     text-align: center;
-    background: #001c44;
+    background: #fff;
     margin-top: 50px;
-    box-shadow: 0px -4px 0px rgb(4 36 83);
+    box-shadow: 0px -3px 0px rgb(4 36 83);
 }
 .phone {
 	width: 100%;
@@ -493,7 +493,7 @@ margin-top:20px;
 }
 #input_1:checked ~ .circle,
 #input_1:checked ~ div div .indicator {
-  left: -66%;
+  right: -66%;
 }
 
 #input_2:checked ~ [for="input_2"] > .fa {
