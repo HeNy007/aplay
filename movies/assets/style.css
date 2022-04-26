@@ -2420,7 +2420,10 @@ HeNy Fixed Menu
   box-sizing: border-box;
 }
 
-
+li {
+  color: #ffff;
+  text-decoration: none;
+}
 
 
 /* -------------------------------- 
