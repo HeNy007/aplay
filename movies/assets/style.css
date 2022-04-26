@@ -2417,6 +2417,23 @@ HeNy Fixed Menu
 
 /* -------------------------------- 
 
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+
+
+/* -------------------------------- 
+
 Modules - reusable parts of our design
 
 -------------------------------- */
@@ -2433,19 +2450,18 @@ Modules - reusable parts of our design
   clear: both;
 }
 
-
-
 #cd-nav ul {
-	text-decoration: none ;
-	text-align: left;
+	
   /* mobile first */
+  text-align : left ;
+  text-decoration : none ;
   position: fixed;
   width: 90%;
   max-width: 400px;
   right: 5%;
   bottom: 20px;
   border-radius: 0.25em;
-  box-shadow: 0 0 10px rgb(40 40 40 / 40%);
+  box-shadow: 0 0 10px #fff;
   background: #042453;
   visibility: hidden;
   /* remove overflow:hidden if you want to create a drop-down menu - but then remember to fix/eliminate the list items animation */
@@ -2468,7 +2484,6 @@ Modules - reusable parts of our design
   -moz-transition: -moz-transform 0.3s, visibility 0s 0.3s;
   transition: transform 0.3s, visibility 0s 0.3s;
 }
-
 #cd-nav ul.is-visible {
   visibility: visible;
   -webkit-transform: scale(1);
@@ -2507,21 +2522,13 @@ Modules - reusable parts of our design
   animation: cd-slide-in 0.6s;
 }
 #cd-nav li a {
-  display: block;
+  display: flex;
   padding: 1.6em;
-  text-decoration: none ;
-    
-}
-#cd-nav li:hover {
-  display: block;
-  padding: 1em;
-  
-}
-#cd-nav li:last-child a {
-  border-bottom: none;
+  border-bottom: 1px solid #eff2f6;
 }
 @media only screen and (min-width: 1170px) {
   #cd-nav ul {
+  	
     /* the navigation moves to the top */
     position: absolute;
     width: auto;
@@ -2540,6 +2547,17 @@ Modules - reusable parts of our design
     -moz-transition: all 0s;
     transition: all 0s;
   }
+  
+  #cd-nav li a {
+    opacity: 1;
+    padding: .4em;
+    margin-left: 1.6em;
+    border-bottom: none;
+    color : #fff ;
+  }
+  #cd-nav li a:hover {
+    color: yellow;
+  }
   #cd-nav.is-fixed ul {
     /* when the user scrolls down, the navigation moves to the bottom right in Fixed position - as on touch devices */
     position: fixed;
@@ -2547,7 +2565,7 @@ Modules - reusable parts of our design
     max-width: 400px;
     bottom: 20px;
     top: auto;
-    background: black;
+    background: white;
     visibility: hidden;
     box-shadow: 0 0 10px rgba(232, 74, 100, 0.4);
     -webkit-transform: scale(0);
@@ -2556,13 +2574,13 @@ Modules - reusable parts of our design
     -o-transform: scale(0);
     transform: scale(0);
   }
-  #cd-nav.is-fixed ul li {
-    display: block;
-  }
+  
+ 
   #cd-nav.is-fixed ul li a {
     padding: 1.6em;
     margin-left: 0;
     border-bottom: 1px solid #eff2f6;
+    color:#fff ;
   }
   #cd-nav ul.has-transitions {
     /* this class is used to bring back transitions when the navigation moves at the bottom right */
@@ -2603,7 +2621,7 @@ Modules - reusable parts of our design
   height: 44px;
   background: #fff;
   border-radius: 0.25em;
-  box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 10px #000;
   /* image replacement */
   overflow: hidden;
   text-indent: 100%;
@@ -2616,7 +2634,7 @@ Modules - reusable parts of our design
   display: block;
   width: 20px;
   height: 2px;
-  background: #042453;
+  background: #000;
   top: 50%;
   margin-top: -1px;
   left: 50%;
@@ -2661,13 +2679,13 @@ Modules - reusable parts of our design
   transform: rotate(0);
 }
 .cd-nav-trigger.menu-is-open {
-  box-shadow: #fff;
+  box-shadow: #000;
 }
 .cd-nav-trigger.menu-is-open span {
   background: rgba(232, 74, 100, 0);
 }
 .cd-nav-trigger.menu-is-open span::before, .cd-nav-trigger.menu-is-open span::after {
-  background: #042453;
+  background: #000;
 }
 .cd-nav-trigger.menu-is-open span::before {
   top: 0;
