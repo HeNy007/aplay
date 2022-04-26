@@ -2426,12 +2426,6 @@ html * {
 }
 
 
-.footer {
-    text-align: left;
-    margin: 0px;
-    text-align: center;
-    direction: ltr;
-}
 a {
   color: #042453;
   text-decoration: none;
