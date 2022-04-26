@@ -2426,10 +2426,7 @@ html * {
 }
 
 
-a {
-  color: #042453;
-  text-decoration: none;
-}
+
 
 
 /* -------------------------------- 
@@ -2442,6 +2439,7 @@ Modules - reusable parts of our design
   width: 90%;
   max-width: 1170px;
   margin: 0 auto;
+ direction: ltr;
 }
 .cd-container::after {
   /* clearfix */
