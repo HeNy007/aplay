@@ -372,6 +372,7 @@ Modules - reusable parts of our design
 
 
 #cd-nav ul {
+	text-decoration: none ;
 	text-align: left;
   /* mobile first */
   position: fixed;
@@ -380,8 +381,8 @@ Modules - reusable parts of our design
   right: 5%;
   bottom: 20px;
   border-radius: 0.25em;
-  box-shadow: 0 0 10px rgb(40 40 40 / 40%);
-  background: white;
+  box-shadow: 0 0 20px #000;
+  background: #042453;
   visibility: hidden;
   /* remove overflow:hidden if you want to create a drop-down menu - but then remember to fix/eliminate the list items animation */
   overflow: hidden;
@@ -403,11 +404,7 @@ Modules - reusable parts of our design
   -moz-transition: -moz-transform 0.3s, visibility 0s 0.3s;
   transition: transform 0.3s, visibility 0s 0.3s;
 }
-#cd-nav ul li {
-  /* Force Hardware Acceleration in WebKit */
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
+
 #cd-nav ul.is-visible {
   visibility: visible;
   -webkit-transform: scale(1);
@@ -449,8 +446,8 @@ Modules - reusable parts of our design
   display: block;
   padding: 1.6em;
   border-bottom: 1px solid #eff2f6;
-    color: #042453;
-}
+  text-decoration: none ;
+ }
 #cd-nav li:hover {
   display: block;
   padding: 1em;
@@ -486,7 +483,7 @@ Modules - reusable parts of our design
     max-width: 400px;
     bottom: 20px;
     top: auto;
-    background: white;
+    background: black;
     visibility: hidden;
     box-shadow: 0 0 10px rgba(232, 74, 100, 0.4);
     -webkit-transform: scale(0);
@@ -600,7 +597,7 @@ Modules - reusable parts of our design
   transform: rotate(0);
 }
 .cd-nav-trigger.menu-is-open {
-  box-shadow: #000;
+  box-shadow: #fff;
 }
 .cd-nav-trigger.menu-is-open span {
   background: rgba(232, 74, 100, 0);
