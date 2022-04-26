@@ -2414,11 +2414,6 @@ img.HeNynet2 {
 HeNy Fixed Menu 
 
 -------------------------------- */
-html * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2481,11 +2476,7 @@ Modules - reusable parts of our design
   -moz-transition: -moz-transform 0.3s, visibility 0s 0.3s;
   transition: transform 0.3s, visibility 0s 0.3s;
 }
-#cd-nav ul li {
-  /* Force Hardware Acceleration in WebKit */
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
+
 #cd-nav ul.is-visible {
   visibility: visible;
   -webkit-transform: scale(1);
