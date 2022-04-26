@@ -2414,17 +2414,6 @@ img.HeNynet2 {
 HeNy Fixed Menu 
 
 -------------------------------- */
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-a {
-  color: #ffff;
-  text-decoration: none;
-}
-
 
 /* -------------------------------- 
 
@@ -2520,14 +2509,13 @@ Modules - reusable parts of our design
 #cd-nav li a {
   display: block;
   padding: 1.6em;
-  border-bottom: 1px solid #eff2f6;
   text-decoration: none ;
     
 }
 #cd-nav li:hover {
   display: block;
   padding: 1em;
-  border-bottom: 1px solid #eff2f6;
+  
 }
 #cd-nav li:last-child a {
   border-bottom: none;
