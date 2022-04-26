@@ -394,9 +394,94 @@ background: rgb(162 182 221);
 </button>
  <!--  end scroll ---------> 
    <!-- فوتر ---------> 
+
 <style>
 
-    #cd-nav ul {
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+a {
+  color: #042453;
+  text-decoration: none;
+}
+
+
+/* -------------------------------- 
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+.cd-container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.cd-container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+header {
+  position: relative;
+  height: 200px;
+  background: white;
+  text-align: center;
+  margin-bottom: 1em;
+  padding-top: 3em;
+}
+header #cd-logo {
+  margin-bottom: 3em;
+}
+header h1 {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+@media only screen and (min-width: 768px) {
+  header {
+    margin-bottom: 4em;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  header {
+    height: 400px;
+    padding-top: 11em;
+  }
+  header #cd-logo {
+    position: absolute;
+    top: 40px;
+    left: 5%;
+  }
+  header h1 {
+    font-size: 40px;
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+}
+
+
+#cd-nav ul {
   /* mobile first */
   position: fixed;
   width: 90%;
@@ -404,8 +489,8 @@ background: rgb(162 182 221);
   right: 5%;
   bottom: 20px;
   border-radius: 0.25em;
-  box-shadow: 0 0 10px rgba(232, 74, 100, 0.4);
-  background: #042453;
+  box-shadow: 0 0 10px rgb(40 40 40 / 40%);
+  background: white;
   visibility: hidden;
   /* remove overflow:hidden if you want to create a drop-down menu - but then remember to fix/eliminate the list items animation */
   overflow: hidden;
@@ -516,7 +601,7 @@ background: rgb(162 182 221);
     max-width: 400px;
     bottom: 20px;
     top: auto;
-    background: #042453;
+    background: white;
     visibility: hidden;
     box-shadow: 0 0 10px rgba(232, 74, 100, 0.4);
     -webkit-transform: scale(0);
@@ -570,13 +655,13 @@ background: rgb(162 182 221);
   right: 5%;
   width: 44px;
   height: 44px;
-  background: #042453 ;
+  background: #042453;
   border-radius: 0.25em;
   box-shadow: 0 0 10px rgba(232, 74, 100, 0.4);
   /* image replacement */
   overflow: hidden;
   text-indent: 100%;
-  #042453-space: nowrap;
+  white-space: nowrap;
   z-index: 2;
 }
 .cd-nav-trigger span {
@@ -585,7 +670,7 @@ background: rgb(162 182 221);
   display: block;
   width: 20px;
   height: 2px;
-  background: #e84a64;
+  background: #ffffff;
   top: 50%;
   margin-top: -1px;
   left: 50%;
@@ -636,7 +721,7 @@ background: rgb(162 182 221);
   background: rgba(232, 74, 100, 0);
 }
 .cd-nav-trigger.menu-is-open span::before, .cd-nav-trigger.menu-is-open span::after {
-  background: #e84a64;
+  background: #ffffff;
 }
 .cd-nav-trigger.menu-is-open span::before {
   top: 0;
@@ -806,77 +891,81 @@ background: rgb(162 182 221);
   }
 }
 
+
 </style>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet" />
-<div id="cd-nav">
-		<a href="#" class="cd-nav-trigger">الصفحة الرئيسية<span></span></a>
+
+
+
+	<div id="cd-nav">
+		<a href="#0" class="cd-nav-trigger">Menu<span></span></a>
 
 		<nav id="cd-main-nav">
 			<ul>
-				<li><a href="/index">الصفحة الرئيسية</a></li>
-				<li><a href="/movies">أفلام و مسلسلات</a></li>
-				<li><a href="anime">أنمي مدبلج</a></li>
-				<li><a href="/live">بث مباشر</a></li>
-				<li><a href="/today-match">مباريات اليوم</a></li>
-			<li><a href="iptv">ملفات M3U</a></li>
-			
-</ul>
+				<li><a href="#0">Homepage</a></li>
+				<li><a href="#0">Services</a></li>
+				<li><a href="#0">Portfolio</a></li>
+				<li><a href="#0">Pricing</a></li>
+				<li><a href="#0">Contact</a></li>
+			</ul>
 		</nav>
 	</div>
-	<script>
-jQuery(document).ready(function($){
-	// browser window scroll (in pixels) after which the "menu" link is shown
-	var offset = 300;
 
-	var navigationContainer = $('#cd-nav'),
-		mainNavigation = navigationContainer.find('#cd-main-nav ul');
 
-	//hide or show the "menu" link
-	checkMenu();
-	$(window).scroll(function(){
-		checkMenu();
-	});
 
-	//open or close the menu clicking on the bottom "menu" link
-	$('.cd-nav-trigger').on('click', function(){
-		$(this).toggleClass('menu-is-open');
-		//we need to remove the transitionEnd event handler (we add it when scolling up with the menu open)
-		mainNavigation.off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend').toggleClass('is-visible');
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+      <script id="rendered-js" >
+jQuery(document).ready(function ($) {
+  // browser window scroll (in pixels) after which the "menu" link is shown
+  var offset = 300;
 
-	});
+  var navigationContainer = $('#cd-nav'),
+  mainNavigation = navigationContainer.find('#cd-main-nav ul');
 
-	function checkMenu() {
-		if( $(window).scrollTop() > offset && !navigationContainer.hasClass('is-fixed')) {
-			navigationContainer.addClass('is-fixed').find('.cd-nav-trigger').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(){
-				mainNavigation.addClass('has-transitions');
-			});
-		} else if ($(window).scrollTop() <= offset) {
-			//check if the menu is open when scrolling up
-			if( mainNavigation.hasClass('is-visible')  && !$('html').hasClass('no-csstransitions') ) {
-				//close the menu with animation
-				mainNavigation.addClass('is-hidden').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-					//wait for the menu to be closed and do the rest
-					mainNavigation.removeClass('is-visible is-hidden has-transitions');
-					navigationContainer.removeClass('is-fixed');
-					$('.cd-nav-trigger').removeClass('menu-is-open');
-				});
-			//check if the menu is open when scrolling up - fallback if transitions are not supported
-			} else if( mainNavigation.hasClass('is-visible')  && $('html').hasClass('no-csstransitions') ) {
-					mainNavigation.removeClass('is-visible has-transitions');
-					navigationContainer.removeClass('is-fixed');
-					$('.cd-nav-trigger').removeClass('menu-is-open');
-			//scrolling up with menu closed
-			} else {
-				navigationContainer.removeClass('is-fixed');
-				mainNavigation.removeClass('has-transitions');
-			}
-		} 
-	}
+  //hide or show the "menu" link
+  checkMenu();
+  $(window).scroll(function () {
+    checkMenu();
+  });
+
+  //open or close the menu clicking on the bottom "menu" link
+  $('.cd-nav-trigger').on('click', function () {
+    $(this).toggleClass('menu-is-open');
+    //we need to remove the transitionEnd event handler (we add it when scolling up with the menu open)
+    mainNavigation.off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend').toggleClass('is-visible');
+
+  });
+
+  function checkMenu() {
+    if ($(window).scrollTop() > offset && !navigationContainer.hasClass('is-fixed')) {
+      navigationContainer.addClass('is-fixed').find('.cd-nav-trigger').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
+        mainNavigation.addClass('has-transitions');
+      });
+    } else if ($(window).scrollTop() <= offset) {
+      //check if the menu is open when scrolling up
+      if (mainNavigation.hasClass('is-visible') && !$('html').hasClass('no-csstransitions')) {
+        //close the menu with animation
+        mainNavigation.addClass('is-hidden').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function () {
+          //wait for the menu to be closed and do the rest
+          mainNavigation.removeClass('is-visible is-hidden has-transitions');
+          navigationContainer.removeClass('is-fixed');
+          $('.cd-nav-trigger').removeClass('menu-is-open');
+        });
+        //check if the menu is open when scrolling up - fallback if transitions are not supported
+      } else if (mainNavigation.hasClass('is-visible') && $('html').hasClass('no-csstransitions')) {
+        mainNavigation.removeClass('is-visible has-transitions');
+        navigationContainer.removeClass('is-fixed');
+        $('.cd-nav-trigger').removeClass('menu-is-open');
+        //scrolling up with menu closed
+      } else {
+        navigationContainer.removeClass('is-fixed');
+        mainNavigation.removeClass('has-transitions');
+      }
+    }
+  }
 });
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-
+//# sourceURL=pen.js
+    </script>
    <!-- فوتر --------->  
    <script src="//cdn.jsdelivr.net/gh/imintweb/Js/scrollup.min.js"></script> 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
