@@ -89,8 +89,7 @@ img.rmp-logo.rmp-force-show.rmp-logo-top-left {
     </script>  
     
    <script src="https://cdn.radiantmediatechs.com/rmp/7.3.3/js/rmp.min.js"></script>
- <script src="https://cdn.radiantmediatechs.com/rmp/7.7.0/js/rmp-vttjs-shaka.min.js"></script>
-
+ 
   <div id="rmp"></div>
   <script>
     var src = {
@@ -102,32 +101,7 @@ img.rmp-logo.rmp-force-show.rmp-logo-top-left {
         
     };
      
-      // We define our first custom module - in this case a 10s rewind module
-const rewindCustomModule = {
-  hint: 'Rewind',
-  svg: 'https://cdn.radiantmediatechs.com/img/replay-10-icon.svg',
-  svgHover: 'https://cdn.radiantmediatechs.com/img/replay-10-icon-hover.svg',
-  callback: () => {
-    rmp.seekTo(rmp.getCurrentTime() - 10000);
-  }
-};
-// Then our second custom module - in this case a download video module
-const downloadCustomModule = {
-  hint: 'Download',
-  svg: 'https://cdn.radiantmediatechs.com/img/download-icon.svg',
-  svgHover: 'https://cdn.radiantmediatechs.com/img/download-icon-hover.svg',
-  callback: () => {
-    rmp.pause();
-    window.open(
-      link,
-      '_blank'
-    );
-  }
-};
-// customModule must be passed as an Array
-const customModule = [downloadCustomModule];
-
-    
+      
     var settings = {
       iframeMode: true,
       iframeAllowed: true,
