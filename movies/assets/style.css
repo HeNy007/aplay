@@ -2447,7 +2447,7 @@ Modules - reusable parts of our design
   /* mobile first */
   text-decoration: none ;
 	text-align: left;
-  position: fixed;
+  position: absolute;
   width: 90%;
   max-width: 400px;
   right: 5%;
