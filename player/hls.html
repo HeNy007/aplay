@@ -2,13 +2,10 @@
 <html lang="en">
 
 <head>
-      <link rel="shortcut icon" type="image/x-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimH-_YaQmA01Uwb7ynCSjCPVV7E6SoWUZy3h00EVmE996NFz2dU_09eh44qjOtP8mvCntYxGAjluVaLN6FRGe_nX-5J57EM_yD6aUaIi8GdYGLMPNm9_YxZJntZsWaUoq1DP1Un7kxcECVDmF6k5zZBlg5w0_4pPQPilDOCU-HbDNyAPtX2rLlIiPzpg/s256/1238418_ico.ico">
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <title>Sky Pler</title>
-    <link href='https://1.bp.blogspot.com/-e_Mi25wCt4o/YMFaAgEymDI/AAAAAAAABG0/L0fKRI5d5QoMYiZ_vn9MY2NAXAsuN5j2QCLcBGAsYHQ/s0/E0mRkGh.png' rel='image_src'/>
-  <style>
+  <title>AliwixPlayer</title>
+   <style>
 
 .rmp-time-elapsed.rmp-color-bg {
     background: #151515;
@@ -74,10 +71,76 @@ img.rmp-logo.rmp-force-show.rmp-logo-top-left {
     display: none;
 }
   </style>
+<style>
+	#dlna { position: fixed; z-index: 99999999; left: 25px; text-align: center; border-radius: 50%;  bottom: 35px; } 
+	
+
+   
+  
+  
+  
+  
+ 
+  
+   
+    .clossalert { position: absolute; right: 17px; font-size: 14px; border-radius: 50%; width: 30px; height: 30px; top: -35px;  border: unset !important; } 
+   
+   
+  
+   
+   .circle {
+   position: relative;
+   width: 60px;
+   height: 60px;
+   }
+   .circle svg {
+   fill: none;
+   stroke: red;
+   stroke-linecap: round;
+   stroke-width: 3;
+   stroke-dasharray: 1;
+   stroke-dashoffset: 0;
+   animation: stroke-draw 6s ease-out infinite alternate;
+   }
+   .circle img {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   width: 43px;
+   border-radius: 50%;
+   }
+    @keyframes stroke-draw {
+    from {
+    stroke: red;
+    stroke-dasharray: 1;
+    }
+    to {
+    stroke: yellow;
+    transform: rotate(180deg);
+    stroke-dasharray: 8;
+    }
+    }
+    .c-slider {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    }
+    
+    .c-slide {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+    flex: 2;
+    
+    }</style>
+ 
 </head>
 
 <body>
-	<script type='text/javascript'>
+				<script type='text/javascript'>
       function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
 var n="[\\?&]"+e+"=([^&#]*)",
 l=new RegExp(n),
@@ -119,16 +182,41 @@ var link=atob(video);
        </div>
       </div>    </div>
 
-
+    
   <script>
     var src = {
    hls: 'https://'+link, 
-
-
+            
+        
     };
+     
+     // We define our first custom module - in this case a 10s rewind module
+const rewindCustomModule = {
+  hint: 'Rewind',
+  svg: 'https://cdn.radiantmediatechs.com/img/replay-10-icon.svg',
+  svgHover: 'https://cdn.radiantmediatechs.com/img/replay-10-icon-hover.svg',
+  callback: () => {
+    rmp.seekTo(rmp.getCurrentTime() - 10000);
+  }
+};
+// Then our second custom module - in this case a download video module
+const downloadCustomModule = {
+  hint: 'Download',
+  svg: 'https://cdn.radiantmediatechs.com/img/download-icon.svg',
+  svgHover: 'https://cdn.radiantmediatechs.com/img/download-icon-hover.svg',
+  callback: () => {
+    rmp.pause();
+    window.open(
+      'https://'+link, 
+      '_blank'
+    );
+  }
+};
+// customModule must be passed as an Array
+//const customModule = [downloadCustomModule];
 
-
-
+    
+    
     var settings = {
       iframeMode: true,
       iframeAllowed: true,
@@ -136,11 +224,13 @@ var link=atob(video);
       pip: true, 
       licenseKey: 'eWZmZ2d2Y3BrdEAxNTMwNjA2',
       src: src,
+      // Passing custom module data
+      customModule: customModule,
       skin: 's3', 
       quickRewind: 10,quickForward: 10,
       skinAccentColor: 'CCCCCC',
       ads: true,
-    adTagUrl: vast,
+    adTagUrl: 'https://bit.ly/AliwixVAST',
     // ad-blocker detection settings
     adBlockerDetection: true,
     adBlockerDetectedPreventPlayback: true, 
@@ -151,12 +241,12 @@ var link=atob(video);
       contentMetadata: {
       	poster: ['/images/cover.png']
       }, 
-
+      
       logo: '/images/header.png', 
       logoPosition: 'topleft',       
       logoWatermark: true      
     };
-
+    
     var rmp = new RadiantMP("rmp");
     rmp.init(settings);
     $(window).on("orientationchange", () => {
@@ -173,4 +263,6 @@ var link=atob(video);
    function mx(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="intent://"+link+"#Intent;scheme=https;type=video/*;package=com.mxtech.videoplayer.ad;S.browser_fallback_url=market://details?id=com.mxtech.videoplayer.ad;S.title=AliwixPlay;end"}};
    function vlc(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="vlc://https://"+link+"&sub=AliwixPlay"}};
   </script>
-	</body>    </html>
+</body>
+
+</html>
