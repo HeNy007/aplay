@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <title>AliwixPlayer</title>
+  <style>
+    /* This CSS is required to avoid layout issues */
+#rmp {
+  width:100%;
+  height:100%;
+}
+    html,
+    body {
+    height: 100%;
+      width: 100%;
+      background-color: #000;
+       
+      overflow: show;
+      margin: 0;
+      padding: 0;
+       skinButtonColor: "rgba(126, 0, 204, 1.00)",
+        skinAccentColor: "rgba(126, 0, 204, 1.00)",
+    }
+  </style><style>
+	#dlna { position: fixed; z-index: 99999999; left: 25px; text-align: center; border-radius: 50%;  bottom: 35px; } 
+	
+
+   
+  
+  
+  
+  
+ 
+  
+   
+    .clossalert { position: absolute; right: 17px; font-size: 14px; border-radius: 50%; width: 30px; height: 30px; top: -35px;  border: unset !important; } 
+   
+   
+  
+   
+   .circle {
+   position: relative;
+   width: 60px;
+   height: 60px;
+   }
+   .circle svg {
+   fill: none;
+   stroke: red;
+   stroke-linecap: round;
+   stroke-width: 3;
+   stroke-dasharray: 1;
+   stroke-dashoffset: 0;
+   animation: stroke-draw 6s ease-out infinite alternate;
+   }
+   .circle img {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   width: 43px;
+   border-radius: 50%;
+   }
+    @keyframes stroke-draw {
+    from {
+    stroke: red;
+    stroke-dasharray: 1;
+    }
+    to {
+    stroke: yellow;
+    transform: rotate(180deg);
+    stroke-dasharray: 8;
+    }
+    }
+    .c-slider {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    }
+    
+    .c-slide {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+    flex: 2;
+    
+    }</style>
+ 
+</head>
+
+<body>
+				<script type='text/javascript'>
+      function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
+var n="[\\?&]"+e+"=([^&#]*)",
+l=new RegExp(n),
+c=l.exec(window.location.href);
+return null==c?"YWRtZG4xLmNkbi5tYW5nb21vbG8uY29tL2Fkc3BvcnRzMS9zbWlsOmFkc3BvcnRzMS5zdHJlYW0uc21pbC9wbGF5bGlzdC5tM3U4":unescape(c[1])}
+var video=gup("src");
+var link=atob(video);
+    </script>  
+  <script src="https://cdn.radiantmediatechs.com/rmp/7.3.3/js/rmp.min.js"></script>
+ <script src="https://cdn.radiantmediatechs.com/rmp/7.7.0/js/rmp-vttjs-shaka.min.js"></script>
+<div id="rmp">
+<div id="dlna"> 
+   <div id="dlna_message"> 
+    <button class="clossalert" onclick="document.getElementById(&quot;dlna&quot;).style.display=&quot;none&quot;;">X</button> 
+    <div class="c-slider"> 
+     <div class="c-slider"> 
+      <div class="c-slide"> 
+       <div onclick="mx()" class="circle"> 
+        <img src="/player/img/82efa49c-c459-4b71-83fb-68b9da555349_thumb (2).png"> 
+        <svg viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;" xml:space="preserve"> 
+         <circle cx="50" cy="50" r="40"></circle> 
+        </svg> 
+       </div> 
+       <div class="c-slide"> 
+        <div onclick="wuffy()" class="circle"> 
+         <img src="/player/img/72368682_110561740414824_5464656146772000768_n.jpg" alt=""> 
+         <svg viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;" xml:space="preserve"> 
+          <circle cx="50" cy="50" r="40"></circle> 
+         </svg> 
+        </div> 
+       </div> 
+       <div class="c-slide"> 
+        <div onclick="dlna()" class="circle"> 
+         <img src="/player/img/unnamed.webp" alt=""> 
+         <svg viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;" xml:space="preserve"> 
+          <circle cx="50" cy="50" r="40"></circle> 
+         </svg> 
+        </div> 
+       </div>
+      </div>    </div>
+
+    
+  <script>
+    var src = {
+   hls: 'https://'+link, 
+            
+        
+    };
+     
+     // We define our first custom module - in this case a 10s rewind module
+const rewindCustomModule = {
+  hint: 'Rewind',
+  svg: 'https://cdn.radiantmediatechs.com/img/replay-10-icon.svg',
+  svgHover: 'https://cdn.radiantmediatechs.com/img/replay-10-icon-hover.svg',
+  callback: () => {
+    rmp.seekTo(rmp.getCurrentTime() - 10000);
+  }
+};
+// Then our second custom module - in this case a download video module
+const downloadCustomModule = {
+  hint: 'Download',
+  svg: 'https://cdn.radiantmediatechs.com/img/download-icon.svg',
+  svgHover: 'https://cdn.radiantmediatechs.com/img/download-icon-hover.svg',
+  callback: () => {
+    rmp.pause();
+    window.open(
+      'https://'+link, 
+      '_blank'
+    );
+  }
+};
+// customModule must be passed as an Array
+const customModule = [downloadCustomModule];
+
+    
+    
+    var settings = {
+      iframeMode: true,
+      iframeAllowed: true,
+      scaleMode: 'stretch',
+      pip: true, 
+      licenseKey: 'eWZmZ2d2Y3BrdEAxNTMwNjA2',
+      src: src,
+      // Passing custom module data
+      customModule: customModule,
+      skin: 's2', 
+      quickRewind: 10,quickForward: 10,
+      skinAccentColor: 'CCCCCC',
+      ads: true,
+    adTagUrl: 'https://bit.ly/AliwixVAST',
+    // ad-blocker detection settings
+    adBlockerDetection: true,
+    adBlockerDetectedPreventPlayback: true, 
+    adSkipButton: true,
+        adDelayBeforeSkip: 5,
+        adShowRemainingTime: true,
+        adUseWatermarkCountdownAndMessage: true,
+      contentMetadata: {
+      	poster: ['/images/cover.png']
+      }, 
+      
+      logo: '/images/header.png', 
+      logoPosition: 'topleft',       
+      logoWatermark: true      
+    };
+    
+    var rmp = new RadiantMP("rmp");
+    rmp.init(settings);
+    $(window).on("orientationchange", () => {
+   if(screen.width > screen.height){
+   // change to landscape
+   } else {
+   // change to portrait
+   }
+});
+
+// externalplayer
+   function dlna(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="wvc-x-callback://open?url=https://"+link+"&secure_uri=true"}};
+   function wuffy(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="intent://"+btoa("https://"+link)+"#Intent;scheme=xmtv;package=co.wuffy.player;end"}};
+   function mx(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="intent://"+link+"#Intent;scheme=https;type=video/*;package=com.mxtech.videoplayer.ad;S.browser_fallback_url=market://details?id=com.mxtech.videoplayer.ad;S.title=AliwixPlay;end"}};
+   function vlc(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="vlc://https://"+link+"&sub=AliwixPlay"}};
+  </script>
+</body>
+
+</html>
