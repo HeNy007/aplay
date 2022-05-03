@@ -90,8 +90,9 @@ document.onreadystatechange = function () {
   </div>
 </div>
   <!-- loder ---->
-<script>var vast= "https://www.videosprofitnetwork.com/watch.xml?key=38402c8fa17d94a3e0798bbd057eca5b";
-
+<script>var vast= "https://www.videosprofitnetwork.com/watch.xml?key=38402c8fa17d94a3e0798bbd057eca5b";</script>
+<body>
+<script type='text/javascript'>
       function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
 var n="[\\?&]"+e+"=([^&#]*)",
 l=new RegExp(n),
@@ -136,12 +137,38 @@ var link=atob(video);
     
   <script>
     var src = {
-   hls: 'https://'+link, 
+   hls: 'http://'+link, 
             
         
     };
      
-   
+     // We define our first custom module - in this case a 10s rewind module
+//const rewindCustomModule = {
+  hint: 'Rewind',
+  svg: 'https://cdn.radiantmediatechs.com/img/replay-10-icon.svg',
+  svgHover: 'https://cdn.radiantmediatechs.com/img/replay-10-icon-hover.svg',
+  callback: () => {
+    rmp.seekTo(rmp.getCurrentTime() - 10000);
+  }
+};
+// Then our second custom module - in this case a download video module
+//const downloadCustomModule = {
+  hint: 'Download',
+  svg: 'https://cdn.radiantmediatechs.com/img/download-icon.svg',
+  svgHover: 'https://cdn.radiantmediatechs.com/img/download-icon-hover.svg',
+  callback: () => {
+    rmp.pause();
+    window.open(
+      'http://'+link, 
+      '_blank'
+    );
+  }
+};
+// customModule must be passed as an Array
+//const customModule = [downloadCustomModule];
+
+    
+    
     var settings = {
       iframeMode: true,
       iframeAllowed: true,
@@ -155,7 +182,7 @@ var link=atob(video);
       quickRewind: 10,quickForward: 10,
       skinAccentColor: 'CCCCCC',
       ads: true,
-    adTagUrl:vast,
+    adTagUrl: 'https://www.videosprofitnetwork.com/watch.xml?key=1266e051dd028dd7340e192e6276e605',
     // ad-blocker detection settings
     adBlockerDetection: true,
     adBlockerDetectedPreventPlayback: true, 
