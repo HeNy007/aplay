@@ -24,3 +24,7 @@ if(document.referrer.indexOf("http://aliwixplay.tn/") == -1) {
 {top.location.replace("http://aliwixplay.tn/");}} 
 if (self === top) {var antiClickjack = document.getElementById("antiClickjack");
 antiClickjack.parentNode.removeChild(antiClickjack);} 
+
+if(window.location.protocol != 'https:') {
+  location.href =   location.href.replace("https://", "http://");
+}
