@@ -141,33 +141,7 @@ var link=atob(video);
         
     };
      
-     // We define our first custom module - in this case a 10s rewind module
-const rewindCustomModule = {
-  hint: 'Rewind',
-  svg: 'https://cdn.radiantmediatechs.com/img/replay-10-icon.svg',
-  svgHover: 'https://cdn.radiantmediatechs.com/img/replay-10-icon-hover.svg',
-  callback: () => {
-    rmp.seekTo(rmp.getCurrentTime() - 10000);
-  }
-};
-// Then our second custom module - in this case a download video module
-const downloadCustomModule = {
-  hint: 'Download',
-  svg: 'https://cdn.radiantmediatechs.com/img/download-icon.svg',
-  svgHover: 'https://cdn.radiantmediatechs.com/img/download-icon-hover.svg',
-  callback: () => {
-    rmp.pause();
-    window.open(
-      'https://'+link, 
-      '_blank'
-    );
-  }
-};
-// customModule must be passed as an Array
-//const customModule = [downloadCustomModule];
-
-    
-    
+   
     var settings = {
       iframeMode: true,
       iframeAllowed: true,
@@ -181,7 +155,7 @@ const downloadCustomModule = {
       quickRewind: 10,quickForward: 10,
       skinAccentColor: 'CCCCCC',
       ads: true,
-    adTagUrl: 'https://bit.ly/AliwixVAST',
+    adTagUrl:vast,
     // ad-blocker detection settings
     adBlockerDetection: true,
     adBlockerDetectedPreventPlayback: true, 
