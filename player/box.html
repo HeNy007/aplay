@@ -71,61 +71,11 @@
         -webkit-appearance: none;
         outline: none;
     }
+    iframe { 
+background-color:black;
+border:1px solid white;
+}
 </style> 
-  <!-- loder ----> 
-  <style>
-#loader-main {
-  position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: #000;
-      z-index: 1000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-    }
-#loader {
-  border: 5px solid #000;
-      border-top: 5px solid #fff;
-      border-radius: 50%;
-      width: 80px;
-      height: 80px;
-      animation: spin .75s linear infinite;
-    }
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-</style> 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
-  <script>
-    /*  Page Loading */
-document.onreadystatechange = function () {
-  var state = document.readyState;
-  if (state == "interactive") {
-    document.getElementById("mainbody").style.visibility = "hidden";
-  } else if (state == "complete") {
-    setTimeout(function () {
-      document.getElementById("interactive");
-      document.getElementById("loader-main").style.visibility = "hidden";
-      document.getElementById("mainbody").style.visibility = "visible";
-    }, 500);
-  }
-};
- </script> 
-  <div id="loader-main"> 
-   <div id="loader"> 
-   </div> 
-  </div> 
-  <!-- loder ----> 
   <div id="background-wrapper"> 
    <div id="background-image" class="image" style="background-image:url('https://heny007.github.io/live/heny/3-35462_soccer-wallpaper-hd-football-dp-for-whatsapp.jpg')"></div> 
    <div class="background-overlay solid-color" style="background-color:#101928;opacity:0.6"></div> 
@@ -133,7 +83,8 @@ document.onreadystatechange = function () {
   <div class="inner-wrap"> 
    <div class="inner-content"> 
     <h2 onclick="goto();" class="cmp-title animated ">⛔ AliwixPlay ⛔</h2> 
-    <br> 
+     <h1></h1> 
+   
     <div class="content"> 
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clappr/0.3.9/clappr.min.js"></script> 
      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6956329261304142" crossorigin="anonymous"></script>
@@ -156,9 +107,9 @@ document.onreadystatechange = function () {
 var n="[\\?&]"+e+"=([^&#]*)",
 l=new RegExp(n),
 c=l.exec(window.location.href);
-return null==c?"admdn1.cdn.mangomolo.com/adsports1/smil:adsports1.stream.smil/playlist.m3u8":unescape(c[1])}
+return null==c?"YWRtZG41LmNkbi5tYW5nb21vbG8uY29tL2Fkc3BvcnRzMi9zbWlsOmFkc3BvcnRzMi5zdHJlYW0uc21pbC9wbGF5bGlzdC5tM3U4":unescape(c[1])}
 var video=gup("src");
-var iptv=atob(video);
+var iptv=(video);
 
 
 
@@ -212,7 +163,7 @@ var iptv=atob(video);
        location.href = "https://aliwixplay.tn/"
    }
    window.onload = function(){
-   var link = "https://aliwixplay.tn/player/hls?src=" +iptv
+   var link = "http://aliwixplay.tn/player/hls?src=" +iptv
 var iframe = document.createElement('iframe');
 iframe.frameBorder=0;
 iframe.width="99%";
