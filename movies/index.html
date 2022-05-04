@@ -394,74 +394,141 @@ background: rgb(162 182 221);
    <!-- فوتر ---------> 
 
 
-<div id="cd-nav">
-		<a href="#" class="cd-nav-trigger">Menu<span></span></a>
-
-		<nav id="cd-main-nav">
-			<ul>
-				<li><a style="color:#042453;" href="/index.html">الصفحة الرئيسية</a></li>
-				<li><a style="color:#042453;" href="/movies">أفلام و مسلسلات</a></li>
-				<li><a style="color:#042453;" href="/anime">أنمي مدبلج</a></li>
-				<li><a style="color:#042453;" href="/live">بث مباشر</a></li>
-				<li><a style="color:#042453;" href="/today">مبارايات اليوم</a></li>
-				<li><a style="color:#042453;" href="/iptv">ملف m3u</a></li>
-			</ul>
-		</nav>
-	</div>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet">
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-      <script id="rendered-js" >
-jQuery(document).ready(function ($) {
-  // browser window scroll (in pixels) after which the "menu" link is shown
-  var offset = 300;
+   <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.15.0/css/pro.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+<div class="footer">
+<div class="nav">
+  <div class="nav-item active">
+      <i class="material-icons home-icon">
+home
+      </i>
+      <span class="nav-text">الرئيسية</span>
+  </div>
+  <div class="nav-item">
+      <i class="material-icons favorite-icon">
+tv
+      </i>
+      <span class="nav-text">بث مباشر</span>
+  </div>
+  <div class="nav-item">
+      <i class="material-icons search-icon">
+camera
+      </i>
+      <span class="nav-text">مسلسلات</span>
+  </div>
+  <div class="nav-item">
+      <i class="material-icons person-icon">
+favorite
+      </i>
+      <span class="nav-text">أنمي مدبلج</span>
+  </div>
+</div></div>
+<style>
+	.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 0px -4px 0px #000;
+}
+	.nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    background-color: #fff;
+    padding: 10px 0px;
+    border-bottom-left-radius: 30px; 
+    border-bottom-right-radius: 30px; 
+    box-shadow: 0px 5px 40px rgba(0,0,0,0.8);
+}
 
-  var navigationContainer = $('#cd-nav'),
-  mainNavigation = navigationContainer.find('#cd-main-nav ul');
+.nav-item {
+	
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
 
-  //hide or show the "menu" link
-  checkMenu();
-  $(window).scroll(function () {
-    checkMenu();
-  });
+.nav-text {
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    font-weight: 500;
+    display: none;
+    transition: all 0.3s ease;
+}
 
-  //open or close the menu clicking on the bottom "menu" link
-  $('.cd-nav-trigger').on('click', function () {
-    $(this).toggleClass('menu-is-open');
-    //we need to remove the transitionEnd event handler (we add it when scolling up with the menu open)
-    mainNavigation.off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend').toggleClass('is-visible');
+.material-icons {
+    display: inline;
+    font-size: 32px;
+    transition: color .3s;
+}
+.nav-item.active {
+    flex-grow: 3;
+    border-radius: 30px;
+    background: #eee;
+    justify-content: flex-start;
+}
 
-  });
+.nav-item.active > .nav-text {
+    display: inline-block;
+}
 
-  function checkMenu() {
-    if ($(window).scrollTop() > offset && !navigationContainer.hasClass('is-fixed')) {
-      navigationContainer.addClass('is-fixed').find('.cd-nav-trigger').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
-        mainNavigation.addClass('has-transitions');
-      });
-    } else if ($(window).scrollTop() <= offset) {
-      //check if the menu is open when scrolling up
-      if (mainNavigation.hasClass('is-visible') && !$('html').hasClass('no-csstransitions')) {
-        //close the menu with animation
-        mainNavigation.addClass('is-hidden').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function () {
-          //wait for the menu to be closed and do the rest
-          mainNavigation.removeClass('is-visible is-hidden has-transitions');
-          navigationContainer.removeClass('is-fixed');
-          $('.cd-nav-trigger').removeClass('menu-is-open');
-        });
-        //check if the menu is open when scrolling up - fallback if transitions are not supported
-      } else if (mainNavigation.hasClass('is-visible') && $('html').hasClass('no-csstransitions')) {
-        mainNavigation.removeClass('is-visible has-transitions');
-        navigationContainer.removeClass('is-fixed');
-        $('.cd-nav-trigger').removeClass('menu-is-open');
-        //scrolling up with menu closed
-      } else {
-        navigationContainer.removeClass('is-fixed');
-        mainNavigation.removeClass('has-transitions');
-      }
-    }
-  }
-});
-//# sourceURL=pen.js
-    </script>
+.nav-item.active > .material-icons.home-icon {
+    color: #5a35b5;
+}
+
+.material-icons.home-icon ~ .nav-text {
+    color: #5a35b5;
+}
+
+.nav-item.active > .material-icons.favorite-icon {
+    color: #c9329a;
+}
+
+.material-icons.favorite-icon ~ .nav-text {
+    color: #c9329a;
+}
+
+.nav-item.active > .material-icons.search-icon {
+    color: #e5a023;
+}
+
+.material-icons.search-icon ~ .nav-text {
+    color: #e5a023;
+}
+
+.nav-item.active > .material-icons.person-icon {
+    color: #0091a9;
+}
+
+.material-icons.person-icon ~ .nav-text {
+    color: #0091a9;
+}
+	</style>
+	<script>
+		const navItems = document.getElementsByClassName('nav-item');
+
+for (let i = 0; i < navItems.length; i++) {
+    navItems[i].addEventListener('click', () => {
+        for(let j = 0; j < navItems.length; j++) 
+            navItems[j].classList.remove('active');
+        
+        navItems[i].classList.add('active');
+    });
+}
+</script>
    <!-- فوتر --------->  
    <script src="//cdn.jsdelivr.net/gh/imintweb/Js/scrollup.min.js"></script> 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
