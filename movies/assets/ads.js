@@ -18,9 +18,9 @@ document.getElementById('bottom-sticky-ads').style.display='none';
 }
 //]]>
 var elem=document.getElementById("close_ad");elem.addEventListener("click touchstart",handler,!1);elem.addEventListener("click",handler,!1);function handler(b){var a=document.getElementById("ad_asd");b=a.classList.contains("slide_in");setTimeout(function(){a.parentNode.removeChild(a)},500);a.setAttribute("class",b?"slide_out":"slide_in")};setTimeout(function(){document.getElementById("ad_asd").style.display="block"},3E3);
-  
 
 $('html[manifest=saveappoffline.appcache]').attr('content', '');
+
 function setCookie(name,value,days) {
     var expires = "";
     if (days) {
