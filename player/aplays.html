@@ -83,14 +83,13 @@
  <h3>ان لم يكن لديك المشغل انقر هنا لتحميله</h3>
  </header>
   <div class="main">
-   <li class="circleborder" onclick="wuffy()"> <img class="face" src="img/72368682_110561740414824_5464656146772000768_n.jpg" alt="wuffyplayer" width="120" height="120"></li>
-   <li class="circleborder" onclick="mx()"> <img class="face" src="img/82efa49c-c459-4b71-83fb-68b9da555349_thumb (2).png" alt="mxplayer" width="120" height="120"></li>
-   <li class="circleborder" onclick="dlna2()"> <img class="face" src="img/unnamed.webp" alt="webvideo cast" width="120" height="120"></li>
-   
-   
+    <ul id="matchKey">
+   <li class="menu2" onclick="wuffy()"> <img src="img/72368682_110561740414824_5464656146772000768_n.jpg" alt="wuffyplayer"></li>
+   <li class="menu2" onclick="mx()"> <img title="mxplayer" src="img/82efa49c-c459-4b71-83fb-68b9da555349_thumb (2).png"></li>
+   <li class="menu2" onclick="dlna2()"> <img src="img/unnamed.webp" alt="webvideo cast"> </li>
    
 
-   </div>
+   </ul> </div> </div>
    <br> 
    <div dir="rtl" style="text-align: right;" trbidi="on"> 
    <div style="text-align: center;"> 
@@ -254,9 +253,9 @@ function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
 var n="[\\?&]"+e+"=([^&#]*)",
 l=new RegExp(n),
 c=l.exec(window.location.href);
-return null==c?"admdn5.cdn.mangomolo.com/adsports2/smil:adsports2.stream.smil/playlist.m3u8":unescape(c[1])}
+return null==c?"YWRtZG41LmNkbi5tYW5nb21vbG8uY29tL2Fkc3BvcnRzMi9zbWlsOmFkc3BvcnRzMi5zdHJlYW0uc21pbC9wbGF5bGlzdC5tM3U4":unescape(c[1])}
 var video=gup("src");
-var link=(video);
+var link=decodeURIComponent(atob(video));
 
 
 $(window).on("orientationchange", () => {
