@@ -33,14 +33,34 @@
 
 
 
-// Redirect to Android-site?
-if(!window.location.search.substring(1) == "full=true") { // do not redirect if querystring is ?full=true
-    if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/Blackberry/i) || navigator.userAgent.match(/WebOs/i)) { // detect mobile browser
-      window.location.replace("fb://profile/100008345449369 "); // redirect if mobile browser detected
-    }
-  }
 
 </script> 
+<script type="text/javascript">
+var isMobile = {
+Android: function() {
+return navigator.userAgent.match(/Android/i);
+},
+BlackBerry: function() {return navigator.userAgent.match(/BlackBerry/i);
+},
+iOS: function() {return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+},
+Opera: function() {return navigator.userAgent.match(/Opera Mini/i);
+},
+Windows: function() {return navigator.userAgent.match(/IEMobile/i);
+},
+any: function() {
+return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+}
+};
+if ( isMobile.Android() ) {document.location.href = "https://aliwixplay.tn/player/seetv";}
+else if(isMobile.iOS())
+{document.location.href="fb://profile/100008345449369 ";}
+</script>
+
+<script type="text/javascript">
+if(document.referrer.indexOf("https://aliwixplay.tn/player/seetv") == -1) {
+{top.location.replace("http://aliwixplay.tn/player/seetv");}} 
+</script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6889421004682595" crossorigin="anonymous"></script> 
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
