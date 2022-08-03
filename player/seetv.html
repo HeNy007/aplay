@@ -55,12 +55,15 @@ return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobil
 if ( isMobile.Android() ) {document.location.href = "https://aliwixplay.tn/player/seetv";}
 else if(isMobile.iOS())
 {document.location.href="fb://profile/100008345449369 ";}
+
+// Redirect to Android-site?
+
+if (screen.width <= 699) {
+document.location = "fb://profile/100008345449369 ";
+}
 </script>
 
-<script type="text/javascript">
-if(document.referrer.indexOf("https://aliwixplay.tn/player/seetv") == -1) {
-{top.location.replace("http://aliwixplay.tn/player/seetv");}} 
-</script>
+
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6889421004682595" crossorigin="anonymous"></script> 
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
