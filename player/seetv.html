@@ -35,6 +35,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-PZLCWHD');</script>
 <style>
 * {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.content {
+  width: 900px;
+  margin: auto;
+  background: red;
+}
+
+@media screen and (max-width:768px) {
+  .wrapper {
+    padding: 15px;
+  }
+  .content{
+    width: auto;
+  }
+}
+* {
     outline: 0px;
     padding: 0px;
     margin: 0px;
@@ -72,7 +91,7 @@ body{
 
 
 #embedd {
-    width: 75%;
+    width: 99%;
     text-align: center;
     direction: 1tr;
     font-size: 17px;
