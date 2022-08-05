@@ -11,7 +11,7 @@ a img {
     margin: 0 0 0px;
 }
    .btn2 {
-        background: #042453 url(/images/JdanwmR.jpg) fixed;
+        background: #000000 url(/images/JdanwmR.jpg) fixed;
     background-size: contain;
     /* background: #0000001a; */
     /* box-shadow: 0 5px 0px #27303c; */
@@ -28,7 +28,7 @@ a img {
 } 
 /* Style the buttons */
 .btn {
-    background: #042453 url(/images/JdanwmR.jpg) fixed;
+    background: #000000 url(/images/JdanwmR.jpg) fixed;
     background-size: contain;
     border-radius: 2px;
     padding: 10px 1%;
@@ -54,7 +54,7 @@ a img {
 
 /* Style the active class, and buttons on mouse-over */
 .active, .btn:hover {
-  background: #042453;
+  background: #000000;
   color: white;
   text-decoration: none;
     box-shadow: 0 5px 2px 0 #101318;
@@ -258,7 +258,7 @@ i.bi.bi-play-btn-fill {
     text-align: center;
     padding: 5px 0 4px;
     color: #ffffff;
-    background: #042453;
+    background: #000000;
     -webkit-transform: rotate( 
 -40deg);
     -ms-transform: rotate(-40deg);
@@ -273,7 +273,7 @@ i.bi.bi-play-btn-fill {
     text-align: left;
     padding: 10px;
     background: #ffffff;
-    color: #042453;
+    color: #000000;
     border: 1px solid #263545;
     box-shadow: 0 2px 0px #27303c;
     border-radius: 15px;
@@ -322,7 +322,7 @@ img.jordan3 {
 a.e1 {
     background: #2c333e;
     border-radius: 5px;
-    text-shadow: 0 1px 1px #042453;
+    text-shadow: 0 1px 1px #000000;
     padding: 10px;
     font-size: 15px;
     text-align: center;
