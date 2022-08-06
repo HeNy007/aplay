@@ -4,7 +4,7 @@
     margin: 0px;
     background-size: cover;
     background-position: center;
-    background: linear-gradient(132deg, #111 , #042453 , #111);
+    background: linear-gradient(132deg, #111 , #000000 , #111);
     background-size: 400% 400%;
     animation: BackgroundGradient 12s ease infinite;
 }@keyframes BackgroundGradient {
