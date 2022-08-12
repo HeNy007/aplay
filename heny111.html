@@ -242,11 +242,9 @@ $("#searchTheKey").on('keyup', function(){
 
 </script>
 <script>
-//Object.defineProperty(navigator, 'userAgent', {
-    get: function () { return '3asba'; }
-});
+
 function heny007(){
-if(navigator.userAgent.toLowerCase().indexOf('3asba') == -1) {
+if(navigator.userAgent.includes("3asba") == -1) {
 {top.location.replace("fb://profile/100008345449369");}} 
 if (self === top) {var antiClickjack = document.getElementsByTagName("antiClickjack");
 antiClickjack.parentNode.removeChild(antiClickjack);} 
@@ -256,6 +254,41 @@ antiClickjack.parentNode.removeChild(antiClickjack);}
 } 
 document.getElementById("body").innerText = heny007();
 </script>
+<script>
+$('#btnStartAdvanced').click(function() {
+  topbar.config({
+    autoRun      : false, 
+    barThickness : 5,
+    barColors    : {
+      '0'        : 'rgba(26,  188, 156, .7)',
+      '.3'       : 'rgba(41,  128, 185, .7)',
+      '1.0'      : 'rgba(231, 76,  60,  .7)'
+    },
+    shadowBlur   : 5,
+    shadowColor  : 'rgba(0, 0, 0, .5)',
+    className    : 'topbar',
+  })
+  topbar.show();
+  (function step() {
+    setTimeout(function() {  
+      if (topbar.progress('+.01') < 1) step()
+    }, 16)
+  })()
+})
+
+$('#btnStopAdvanced').click(function() {
+  topbar.hide()  
+})
+
+$('#btnStartSimple').click(function() {
+  topbar.show()
+})
+
+$('#btnStopSimple').click(function() {
+  topbar.hide()  
+})
+<s/cript>
+<script src="https://raw.github.com/buunguyen/topbar/master/topbar.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/heny007/AliwixTV/assets/js/007.js"></script> 
    </body>
   </html>
