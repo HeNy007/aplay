@@ -134,7 +134,7 @@ span.h1 {
   text-align: center;
   font-size: 17px;
   line-height: 2.4;
-  background: #042453;
+  background: #000000;
   padding: 0px 7px 3px;
   border-radius: 5px;
   color: #ffffff;
@@ -1671,7 +1671,7 @@ a {
 	transform: translateY(0);
 }
  .scrollToTop svg {
-	fill: #042453
+	fill: #000000
 }.scrollToTop {
     background-color: #fff;
     box-shadow: 0 1px 4px rgb(0 0 0 / 50%);
@@ -1757,13 +1757,13 @@ HeNy007
 /*! * Ø²Ø± Ø§Ù„ØµØ¹ÙˆØ¯ Ù„Ù„Ø£Ø¹Ù„ÙŠ Ø§Ù„Ø£ØµØ¯Ø§Ø± Ø§Ù„Ø£ÙˆÙ„ v1.0 * Ø¬Ù…ÙŠØ¹ Ø§Ù„Ø­Ù‚ÙˆÙ‚ Ù…Ø­ÙÙˆØ¸Ø© Â© * ØªØµÙ…ÙŠÙ… : Ø´Ø±ÙŠÙ Ø­Ù…Ø¯ÙŠ */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #042453;
+  background: #000000;
 }
 
 .topnav {
   font-family: "Almarai", sans-serif;
   overflow: hidden;
-  background-color: #042453;
+  background-color: #000000;
   position: relative;
 }
 
@@ -1790,13 +1790,13 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #042453;
+  background-color: #000000;
   color: white;
 }
 
 .active {
   font-family: "Almarai", sans-serif;
-  background-color: #042453;
+  background-color: #000000;
   color: black;
 }
 
@@ -1894,13 +1894,13 @@ div .jordan2 {
   background: linear-gradient(
     20deg,
     #2c344066 0%,
-    #042453 50%,
+    #000000 50%,
     rgb(65 76 92) 100%
   );
   border-radius: 20px;
 }
 .HeNy_nav {
-  background: #042453;
+  background: #000000;
   box-shadow: 0 0 30px #00000073;
   height: 80px;
   width: 100%;
@@ -1961,7 +1961,7 @@ label.logo {
 }
 
 *::-webkit-scrollbar-track {
-  background: #042453;
+  background: #000000;
   box-shadow: 0 0 30px #00000073;
 }
 
@@ -2247,7 +2247,7 @@ img.HeNynet2 {
   height: 50px;
   width: 50px;
   color: #ffffff;
-  background: #042453;
+  background: #000000;
   line-height: 50px;
   font-size: 20px;
   transform: translateY(-50%) rotate(360deg);
@@ -2301,7 +2301,7 @@ img.HeNynet2 {
   font-size: 18px;
   border: none;
   outline: none;
-    background: #042453;
+    background: #000000;
     box-shadow: 0 0 30px #00000073;
   color: white;
   cursor: pointer;
@@ -2641,7 +2641,7 @@ Modules - reusable parts of our design
   display: block;
   width: 20px;
   height: 2px;
-  background: #042453;
+  background: #000000;
   top: 50%;
   margin-top: -1px;
   left: 50%;
@@ -2692,7 +2692,7 @@ Modules - reusable parts of our design
   background: rgba(232, 74, 100, 0);
 }
 .cd-nav-trigger.menu-is-open span::before, .cd-nav-trigger.menu-is-open span::after {
-  background: #042453;
+  background: #000000;
 }
 .cd-nav-trigger.menu-is-open span::before {
   top: 0;
