@@ -85,7 +85,7 @@ a {
   transition: all 0.4s ease-in-out;
 }
 .owl-carousel .owl-item img {
-    background: #042453;
+    background: #000000;
     display: block;
     opacity: 2.5;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
@@ -557,7 +557,7 @@ a {
  .scrollToTop svg {
 	fill: #fff
 }.scrollToTop {
-    background-color: #042453eb;
+    background-color: #000000eb;
     box-shadow: 0 1px 4px rgb(0 0 0 / 50%);
     bottom: 1em;
     right: 1em;
@@ -688,13 +688,13 @@ a {
   
 body {
   font-family: Arial, Helvetica, sans-serif;
-      background: #042453;
+      background: #000000;
 
 }
 
 .topnav {font-family: 'Almarai', sans-serif;
   overflow: hidden;
-  background-color: #042453;
+  background-color: #000000;
   position: relative;
 }
 
@@ -715,12 +715,12 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #042453;
+  background-color: #000000;
   color: white;
 }
 
 .active {font-family: 'Almarai', sans-serif;
-  background-color: #042453;
+  background-color: #000000;
   color: black;
 }
 
