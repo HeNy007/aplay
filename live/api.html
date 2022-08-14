@@ -128,17 +128,17 @@ body{
       </div>
       <script>
 var usrAgent = navigator.userAgent;
-function detectMobile() 
+function detectAndroid() 
 {
-    if(usrAgent.match(/Mobile/i))
+    if(usrAgent.match(/Android/i))
     {
-        return "Mobile";
+        return "Android";
     }
 }
 
-var isMobile = detectMobile();
+var isAndroid = detectAndroid();
 
-if(isMobile)
+if(isAndroid)
 {
     window.location = "index";
 }
@@ -146,7 +146,6 @@ else
 {
     window.location = "http://aliwixplay.tn/livepc";
 }
-
 </script>
    </body>
 </html>
