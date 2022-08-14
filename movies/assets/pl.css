@@ -54,7 +54,7 @@ a img {
 
 /* Style the active class, and buttons on mouse-over */
 .active, .btn:hover {
-  background: #000000;
+  background: #8B0000;
   color: white;
   text-decoration: none;
     box-shadow: 0 5px 2px 0 #101318;
