@@ -231,65 +231,17 @@
 <video 
 id="my-video" class="video-js" 
 controls  poster="https://aliwixplay.tn/images/cover.png" data-setup='' loop>
-<source id="ga7af" src="" type='video/webm'/>
+<source id="ga7af" src="https://heny007.github.io/hls/download/001.mp4" type='video/webm'/>
 </video>
 <script src="https://cdn.jsdelivr.net/gh/sh20raj/SopPlayer@main/CatSu/catsu.min.js"></script>
 <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" />
   </div> 
-  <div id="dlna"> 
-   <div id="dlna_message"> 
-    <button class="clossalert" onclick="document.getElementById(&quot;dlna&quot;).style.display=&quot;none&quot;;">X</button> 
-    <div class="c-slider"> 
-     <div class="c-slider"> 
-      <div class="c-slide"> 
-       <div onclick="mx()" class="circle"> 
-        <img src="https://cdn.theorg.com/82efa49c-c459-4b71-83fb-68b9da555349_thumb.png"> 
-        <svg viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;" xml:space="preserve"> 
-         <circle cx="50" cy="50" r="40"></circle> 
-        </svg> 
-       </div> 
-       <div class="c-slide"> 
-        <div onclick="wuffy()" class="circle"> 
-         <img src="https://scontent.ftun1-2.fna.fbcdn.net/v/t1.6435-9/fr/cp0/e15/q65/72368682_110561740414824_5464656146772000768_n.jpg?_nc_cat=110&amp;ccb=1-5&amp;_nc_sid=110474&amp;efg=eyJpIjoidCJ9&amp;_nc_ohc=zrYFOkPGOpEAX8WB2r_&amp;_nc_ht=scontent.ftun1-2.fna&amp;oh=00_AT8FkMExU3AmThOt5NWyN1YPAH5UhhbiUWX_w1UACDN07Q&amp;oe=6226AA47" alt=""> 
-         <svg viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;" xml:space="preserve"> 
-          <circle cx="50" cy="50" r="40"></circle> 
-         </svg> 
-        </div> 
-       </div> 
-       <div class="c-slide"> 
-        <div onclick="dlna()" class="circle"> 
-         <img src="https://play-lh.googleusercontent.com/4xUYWX2Z6LhCeyxjxfPl4d9v8DNGXiXJvR4gHcgTR3YCVoarhhGdfroTp1QvYI8pIQ" alt=""> 
-         <svg viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;" xml:space="preserve"> 
-          <circle cx="50" cy="50" r="40"></circle> 
-         </svg> 
-        </div> 
-       </div>
-      </div>
-
-     </div> 
+  
      <script>
    document.getElementById('ga7af').setAttribute('src', link2);
    
    
-// externalplayer
-   function dlna2(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="wvc-x-callback://open?url=https://"+link+"&secure_uri=true"}};
-   function wuffy(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="intent://"+btoa("https://"+link)+"#Intent;scheme=xmtv;package=co.wuffy.player;end"}};
-   function mx(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="intent://"+link+"#Intent;scheme=https;type=video/*;package=com.mxtech.videoplayer.ad;S.browser_fallback_url=market://details?id=com.mxtech.videoplayer.ad;S.title=AliwixPlay;end"}};
-   function vlc(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="vlc-x-callback://x-callback-url/stream?url=https://"+link+"&sub=AliwixPlay"}};
-   function aliwixplay(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="http://aliwix-lite.blogspot.com/p/plyr-http.html?src="+link}};
-   function chromecast(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="googlechrome://navigate?url=https://aliwix-lite.blogspot.com/p/chromecast.html?src=http://"+link}};
-   function chromecasts(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="googlechrome://navigate?url=https://aliwix-lite.blogspot.com/p/chromecast.html?src=https://"+link}};
-   
-   
-function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
-var n="[\\?&]"+e+"=([^&#]*)",
-l=new RegExp(n),
-c=l.exec(window.location.href);
-return null==c?"YWRtZG41LmNkbi5tYW5nb21vbG8uY29tL2Fkc3BvcnRzMi9zbWlsOmFkc3BvcnRzMi5zdHJlYW0uc21pbC9wbGF5bGlzdC5tM3U4":unescape(c[1])}
-var video=gup("src");
-var link=decodeURIComponent(atob(video));
-var link2 = "https://"+link;
 
 
 $(window).on("orientationchange", () => {
