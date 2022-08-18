@@ -264,7 +264,7 @@
 
      </div> 
      <script>
-   document.getElementById('ga7af').setAttribute('src', link);
+   document.getElementById('ga7af').setAttribute('src', link2);
    // externalplayer
    function dlna(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="wvc-x-callback://open?url=https://"+link+"&secure_uri=true"}};
    function wuffy(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="intent://"+btoa("https://"+link)+"#Intent;scheme=xmtv;package=co.wuffy.player;end"}};
@@ -278,10 +278,10 @@ function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
 var n="[\\?&]"+e+"=([^&#]*)",
 l=new RegExp(n),
 c=l.exec(window.location.href);
-return null==c?"heny007.github.io/hls/download/001.mp4":unescape(c[1])}
+return null==c?"YWRtZG4xLmNkbi5tYW5nb21vbG8uY29tL2Fkc3BvcnRzMS9zbWlsOmFkc3BvcnRzMS5zdHJlYW0uc21pbC9wbGF5bGlzdC5tM3U4":unescape(c[1])}
 var video=gup("src");
-var link=(video);
-var link="https://"+link;
+var link=atob(video);
+var link2="https://"+link;
 document.addEventListener('DOMContentLoaded', () => {
 
     
