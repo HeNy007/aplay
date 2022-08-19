@@ -5,7 +5,7 @@ document.writeln("</style>");
 document.writeln("<div id=\"ad_asd\" class=\"slide_in\" style=\"display: none;\">");
 document.writeln("<span title=\"Close\" id=\"close_ad\">X</span>");
 document.writeln("<div class=\"center_ad\">");
-document.writeln("<iframe data-aa='2065631' src='//ad.a-ads.com/2065631?size=300x250' style='width:300px; height:250px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>");
+document.writeln("document.write(unescape('%3Cscript%20type%3D%22text/javascript%22%3E%0A%09atOptions%20%3D%20%7B%0A%09%09%27key%27%20%3A%20%27d09c34e4a259126a64f12a4252047134%27%2C%0A%09%09%27format%27%20%3A%20%27iframe%27%2C%0A%09%09%27height%27%20%3A%20250%2C%0A%09%09%27width%27%20%3A%20300%2C%0A%09%09%27params%27%20%3A%20%7B%7D%0A%09%7D%3B%0A%09document.write%28%27%3Cscr%27%20+%20%27ipt%20type%3D%22text/javascript%22%20src%3D%22http%27%20+%20%28location.protocol%20%3D%3D%3D%20%27https%3A%27%20%3F%20%27s%27%20%3A%20%27%27%29%20+%20%27%3A//www.effectivecreativeformats.com/d09c34e4a259126a64f12a4252047134/invoke.js%22%3E%3C/scr%27%20+%20%27ipt%3E%27%29%3B%0A%3C/script%3E'))");
 document.writeln("</div>");
 document.writeln("</div>");
 var elem=document.getElementById("close_ad");elem.addEventListener("click touchstart",handler,!1);elem.addEventListener("click",handler,!1);function handler(b){var a=document.getElementById("ad_asd");b=a.classList.contains("slide_in");setTimeout(function(){a.parentNode.removeChild(a)},500);a.setAttribute("class",b?"slide_out":"slide_in")};setTimeout(function(){document.getElementById("ad_asd").style.display="block"},3E3);
