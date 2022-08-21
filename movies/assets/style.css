@@ -1900,8 +1900,17 @@ div .jordan2 {
   border-radius: 20px;
 }
 .HeNy_nav {
-  background: #000;
-  box-shadow: 0 2px 4px 0 #fff;
+  color: #ffffff;
+    font-size: 1.3rem;
+    direction: rtl;
+    background-image: linear-gradient(to right, #111, #710011, #111);
+    padding: 10px;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    border-bottom: 5px solid #fff;
+    border-radius: 0px 0px 25px 25px;
   height: 80px;
   width: 100%;
   margin-bottom: 10;
