@@ -37,11 +37,12 @@
  
           	<br>	
 <!-- SLIDER BLANTER -->
-    <div class="carousel">
+    
+        <div class="carousel">
           <span class="slider-id">1</span>
             <di class="controls">
-                <span class="arrow prev">Prev</span>
-                <span class="arrow next">Next</span>
+                <span class="araw3a prevx">Prev</span>
+                <span class="araw3a nextx">Next</span>
             </di>            
             <div class="slider">
                 <section id="1" class="slide">
@@ -87,18 +88,14 @@
     box-sizing: border-box;
 }
 
-
-
-
 .carousel {   
+	padding-bottom : 10px;
 	text-align: center;
 	border-radius: 30px;
-
 margin: 0px auto;
     z-index: 10;
-    width: 98%;
-    height: 200px;
-    min-height: 200px;
+    width: 96%;
+    height: 210px;
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -126,7 +123,7 @@ span.slider-id{
     
 }
 
-.arrow {
+.araw3a {
     z-index: 19;
     color: #fff;
     font-size: 20px;
@@ -140,12 +137,12 @@ span.slider-id{
     top: 50%;
     transform: translateY(-50%);
 }
-span.prev{
+span.prevx{
     left: 0;
     border-radius:  0 30% 30% 0 ;
 }
 
-span.next{
+span.nextx{
     right: 0;
     border-radius: 30% 0 0 30%;
 }
@@ -218,8 +215,8 @@ const carousel  = document.querySelector(".carousel");
 const sliderId  = document.querySelector(".slider-id");
 const slider    = document.querySelector(".slider");
 const slides    = document.querySelectorAll(".slide");
-const prev      = document.querySelector(".prev");
-const next      = document.querySelector(".next");
+const prevx      = document.querySelector(".prevx");
+const nextx      = document.querySelector(".nextx");
 const balls     = document.querySelector(".balls");
 const mainSliderBall      = document.querySelectorAll(".main-slider-ball");
 
@@ -287,8 +284,8 @@ maineSlider(slider,slidesLength);
 
 
 
-// To Next Slide
-function toNext() {
+// To nextx Slide
+function tonextx() {
     let current = parseInt(document.querySelector(".active").id);
     console.log(current);
     let moveSize = 100 / slidesLength;
@@ -298,7 +295,7 @@ function toNext() {
         slides.forEach(element => {
         element.classList.remove("active");
         });
-    // check if the next slide is not the last slide to make the effect
+    // check if the nextx slide is not the last slide to make the effect
     if(current < slidesLength){   
         slides[current].classList.add("active");      
         slider.style.transform = `translateX(calc(-${moveSize}% * ${current}))`;
@@ -322,8 +319,8 @@ function toNext() {
         }, 2000);
 }
 
-// To Previous slide
-function toPrev() {
+// To prevxious slide
+function toprevx() {
     let current = parseInt(document.querySelector(".active").id);
     let moveSize = 100 / slidesLength;
 
@@ -333,7 +330,7 @@ function toPrev() {
         slides.forEach(element => {
         element.classList.remove("active");
         });        
-    // check if the next slide is not the last slide to make the effect
+    // check if the nextx slide is not the last slide to make the effect
     if(current > 1){  
         current -= 2;
         slides[current].classList.add("active"); 
@@ -359,9 +356,9 @@ function toPrev() {
         }, 2000);
 }
 
-//Call the PREV & NEXT functions.
-prev.onclick = toPrev;
-next.onclick = toNext;
+//Call the prevx & nextx functions.
+prevx.onclick = toprevx;
+nextx.onclick = tonextx;
 
 // Power the balls
 
