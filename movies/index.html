@@ -41,8 +41,8 @@
         <div class="carousel">
           <span class="slider-id">1</span>
             <di class="controls">
-                <span class="araw3a prevx">Prev</span>
-                <span class="araw3a nextx">Next</span>
+                <span class="araw3a HeNyprev">Prev</span>
+                <span class="araw3a HeNynext">Next</span>
             </di>            
             <div class="slider">
                 <section id="1" class="slide">
@@ -89,7 +89,7 @@
 }
 
 .carousel {   border: 0.1em solid #fff;
-	padding-bottom : 10px;
+	padding-bottom : 16px;
 	text-align: center;
 	border-radius: 30px;
 margin: 0px auto;
@@ -127,7 +127,7 @@ span.slider-id{
     z-index: 19;
     color: #fff;
     font-size: 20px;
-    background-color: rgba(4, 43, 105, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);;
     width: 90px;
     height: 60px;
     line-height: 60px;
@@ -137,12 +137,12 @@ span.slider-id{
     top: 50%;
     transform: translateY(-50%);
 }
-span.prevx{
+span.HeNyprev{
     left: 0;
     border-radius:  0 30% 30% 0 ;
 }
 
-span.nextx{
+span.HeNynext{
     right: 0;
     border-radius: 30% 0 0 30%;
 }
@@ -204,7 +204,7 @@ span.nextx{
 }
 
 li.active-ball {
-    background-color:rgba(4, 43, 105, 0.9);
+    background-color:rgba(0, 0, 0, 0.6);
     border: 0.09em solid #fff;
 }
 </style>
@@ -215,8 +215,8 @@ const carousel  = document.querySelector(".carousel");
 const sliderId  = document.querySelector(".slider-id");
 const slider    = document.querySelector(".slider");
 const slides    = document.querySelectorAll(".slide");
-const prevx      = document.querySelector(".prevx");
-const nextx      = document.querySelector(".nextx");
+const HeNyprev      = document.querySelector(".HeNyprev");
+const HeNynext      = document.querySelector(".HeNynext");
 const balls     = document.querySelector(".balls");
 const mainSliderBall      = document.querySelectorAll(".main-slider-ball");
 
@@ -284,8 +284,8 @@ maineSlider(slider,slidesLength);
 
 
 
-// To nextx Slide
-function tonextx() {
+// To HeNynext Slide
+function toHeNynext() {
     let current = parseInt(document.querySelector(".active").id);
     console.log(current);
     let moveSize = 100 / slidesLength;
@@ -295,7 +295,7 @@ function tonextx() {
         slides.forEach(element => {
         element.classList.remove("active");
         });
-    // check if the nextx slide is not the last slide to make the effect
+    // check if the HeNynext slide is not the last slide to make the effect
     if(current < slidesLength){   
         slides[current].classList.add("active");      
         slider.style.transform = `translateX(calc(-${moveSize}% * ${current}))`;
@@ -319,8 +319,8 @@ function tonextx() {
         }, 2000);
 }
 
-// To prevxious slide
-function toprevx() {
+// To HeNyprevious slide
+function toHeNyprev() {
     let current = parseInt(document.querySelector(".active").id);
     let moveSize = 100 / slidesLength;
 
@@ -330,7 +330,7 @@ function toprevx() {
         slides.forEach(element => {
         element.classList.remove("active");
         });        
-    // check if the nextx slide is not the last slide to make the effect
+    // check if the HeNynext slide is not the last slide to make the effect
     if(current > 1){  
         current -= 2;
         slides[current].classList.add("active"); 
@@ -356,9 +356,9 @@ function toprevx() {
         }, 2000);
 }
 
-//Call the prevx & nextx functions.
-prevx.onclick = toprevx;
-nextx.onclick = tonextx;
+//Call the HeNyprev & HeNynext functions.
+HeNyprev.onclick = toHeNyprev;
+HeNynext.onclick = toHeNynext;
 
 // Power the balls
 
