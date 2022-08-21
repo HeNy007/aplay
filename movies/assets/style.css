@@ -1903,16 +1903,17 @@ div .jordan2 {
   color: #ffffff;
     font-size: 1.3rem;
     direction: rtl;
-    background-image: linear-gradient(to right, #111, #710011, #111);
+    background-image: linear-gradient(to right, #000, #111, #000);
     margin-block-start: 0em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    border-bottom: 5px solid #fff;
+    border-bottom: 0.17em solid #fff;
     border-radius: 0px 0px 25px 25px;
   height: 85px;
-  width: 100%;
-  margin-bottom: 10;
+  width: 98%;
+  margin: auto;
+  margin-bottom: 5;
 }
 
 .HeNymenu {
