@@ -42,9 +42,18 @@ $container-max-widths: (
 @media only screen and (min-device-width: 930px){
 	.container {
     margin: 0 auto;
-    max-width: 980px;}
+    max-width: 930px;}
 }
-
+@media only screen and (min-device-width: 768px){
+	.container {
+    margin: 0 auto;
+    max-width: 768px;}
+}
+@media only screen and (min-device-width: 1000px){
+	.container {
+    margin: 0 auto;
+    max-width: 1000px;}
+}
 
 </style>
 
@@ -125,6 +134,7 @@ margin: 0px auto;
     z-index: 10;
     width: 96%;
     height: 210px;
+     max-width: 768px
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -228,14 +238,14 @@ span.next{
     line-height: 35px;
     border-radius: 50%;
     background-color: transparent ;
-    border: 0.09em solid #fff;
+    border: 0.1em solid #fff;
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
 
 li.active-ball {
     background-color:rgba(0, 0, 0, 0.7);
-    border: 0.09em solid #fff;
+    border: 0.1em solid #fff;
 }
 </style>
 <script>
@@ -616,7 +626,7 @@ function showSlide(id, sliderName) {
      </div>
    <!-- أفلام تونسية ---------> 
    	
-   
+   <div class="container">
    	 <!-- مسلسلات تركية ---------> 
 
    <div class="mobile-container">
