@@ -39,14 +39,18 @@
 <!-- SLIDER BLANTER -->
     
         <div class="carousel">
-          <span class="slider-id">1</span>            
+          <span class="slider-id">1</span>
+            <di class="controls">
+                <span class="araw prev">Prev</span>
+                <span class="araw next">Next</span>
+            </di>            
             <div class="slider">
                 <section id="1" class="slide">
-                  <img src="https://i.ytimg.com/vi/i1kOo09ktGw/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCW94dLdHv_lv1SSWMnIQT3zCo4Uw" alt="" />
+                  <img src="https://1.bp.blogspot.com/-U4-qlVLjqQ4/XnDxLFBcgEI/AAAAAAAAPVM/PYAtyE-_YRMVnDQE7vhmYLXQDv39bkvfwCLcBGAsYHQ/s1600/blog_dachra2.jpg" alt="" />
                     
                   </section>
                 <section id="2" class="slide">
-                  <img src="https://rassdtunisia.net/wp-content/uploads/2020/12/1608673925_img.jpg" alt="" />
+                  <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgHHQwrtFcJFb0l9Qb1LGxnmxlIUdTxBwftCGMfK3RbE3aKSdk_f1ZZD0wjFFAa1Iy8dor1T0opP4JfbeAeeXaDBqrx2AWf3Hdbzz0iXHl6tBI2vhzWfpD6ObznONHKkHx6PMCGUFfM3jVdbl_S7yPb8j6XQTPNcTDS10cc321dLtfFKxL2d4f3hiS7jQ=w1600" alt="" />
               </section>
                 <section id="3" class="slide">
                   <img src="https://22dakika.org/wp-content/uploads/2018/08/maxresdefault.jpg" alt="" />
@@ -56,11 +60,11 @@
                   
                 </section>
                 <section id="5" class="slide">
-                  <img src="https://www.bayl.eu/wp-content/uploads/2022/01/Hunter-X-Hunter-Saison-7-Tout-ce-que-vous.jpg" alt="" />
+                  <img src="https://i.ytimg.com/vi/thqwzwm-z14/maxresdefault.jpg" alt="" />
                     
                   </section>
                 <section id="6" class="slide">
-                  <img src="https://1.bp.blogspot.com/-U4-qlVLjqQ4/XnDxLFBcgEI/AAAAAAAAPVM/PYAtyE-_YRMVnDQE7vhmYLXQDv39bkvfwCLcBGAsYHQ/s1600/blog_dachra2.jpg" alt="" />
+                  <img src="https://m.attessia.tv/store/archive/image/2020/4/24/ef9a2d39-43c3-438b-b659-d8fa3a485b16/2.jpg?v=2&format=webp&preset=h650" alt="" />
                   
                 </section>
             </div>
@@ -85,7 +89,7 @@
 }
 
 .carousel {   border: 0.1em solid #fff;
-	padding-bottom : 16px;
+	padding-bottom : 10px;
 	text-align: center;
 	border-radius: 30px;
 margin: 0px auto;
@@ -120,7 +124,7 @@ span.slider-id{
     
 }
 
-.araw3a {
+.araw {
     z-index: 19;
     color: #fff;
     font-size: 20px;
@@ -134,12 +138,12 @@ span.slider-id{
     top: 50%;
     transform: translateY(-50%);
 }
-span.HeNyprev{
+span.prev{
     left: 0;
     border-radius:  0 30% 30% 0 ;
 }
 
-span.HeNynext{
+span.next{
     right: 0;
     border-radius: 30% 0 0 30%;
 }
@@ -201,7 +205,7 @@ span.HeNynext{
 }
 
 li.active-ball {
-    background-color:rgba(0, 0, 0, 0.6);
+    background-color:rgba(0, 0, 0, 0.7);
     border: 0.09em solid #fff;
 }
 </style>
@@ -212,8 +216,8 @@ const carousel  = document.querySelector(".carousel");
 const sliderId  = document.querySelector(".slider-id");
 const slider    = document.querySelector(".slider");
 const slides    = document.querySelectorAll(".slide");
-const HeNyprev      = document.querySelector(".HeNyprev");
-const HeNynext      = document.querySelector(".HeNynext");
+const prev      = document.querySelector(".prev");
+const next      = document.querySelector(".next");
 const balls     = document.querySelector(".balls");
 const mainSliderBall      = document.querySelectorAll(".main-slider-ball");
 
@@ -281,8 +285,8 @@ maineSlider(slider,slidesLength);
 
 
 
-// To HeNynext Slide
-function toHeNynext() {
+// To next Slide
+function tonext() {
     let current = parseInt(document.querySelector(".active").id);
     console.log(current);
     let moveSize = 100 / slidesLength;
@@ -292,7 +296,7 @@ function toHeNynext() {
         slides.forEach(element => {
         element.classList.remove("active");
         });
-    // check if the HeNynext slide is not the last slide to make the effect
+    // check if the next slide is not the last slide to make the effect
     if(current < slidesLength){   
         slides[current].classList.add("active");      
         slider.style.transform = `translateX(calc(-${moveSize}% * ${current}))`;
@@ -316,8 +320,8 @@ function toHeNynext() {
         }, 2000);
 }
 
-// To HeNyprevious slide
-function toHeNyprev() {
+// To previous slide
+function toprev() {
     let current = parseInt(document.querySelector(".active").id);
     let moveSize = 100 / slidesLength;
 
@@ -327,7 +331,7 @@ function toHeNyprev() {
         slides.forEach(element => {
         element.classList.remove("active");
         });        
-    // check if the HeNynext slide is not the last slide to make the effect
+    // check if the next slide is not the last slide to make the effect
     if(current > 1){  
         current -= 2;
         slides[current].classList.add("active"); 
@@ -353,9 +357,9 @@ function toHeNyprev() {
         }, 2000);
 }
 
-//Call the HeNyprev & HeNynext functions.
-HeNyprev.onclick = toHeNyprev;
-HeNynext.onclick = toHeNynext;
+//Call the prev & next functions.
+prev.onclick = toprev;
+next.onclick = tonext;
 
 // Power the balls
 
