@@ -1,52 +1,3 @@
-@media only screen and (min-device-width: 480px) {
-        .container {
-          margin: 0 auto;
-          max-width: 450px;
-        }
-      }
-
-      @media only screen and (min-device-width: 768px) {
-        .container {
-          margin: 0 auto;
-          max-width: 768px;
-        }
-      }
-
-      @media only screen and (min-device-width: 930px) {
-        .container {
-          margin: 0 auto;
-          max-width: 930px;
-        }
-      }
-
-      @media only screen and (min-device-width: 768px) {
-        .container {
-          margin: 0 auto;
-          max-width: 768px;
-        }
-      }
-
-      @media only screen and (min-device-width: 1000px) {
-        .container {
-          margin: 0 auto;
-          max-width: 1000px;
-        }
-      }
-
-      @media only screen and (min-device-width: 1280px) {
-        .container {
-          margin: 0 auto;
-          max-width: 1280px;
-        }
-      }
-
-      @media only screen and (min-device-width: 1800px) {
-        .container {
-          margin: 0 auto;
-          max-width: 1800px;
-        }
-      }
-
 .ShahidHeaderContainer_container__3vk3K
 
     body {
@@ -70,6 +21,10 @@
   padding: 5px 10px;
   position: relative;
   margin: 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 #header-blanter h1 {
   margin: 12px;
