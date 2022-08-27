@@ -1,49 +1,42 @@
 @media only screen and (min-device-width: 480px) {
-        .majoura {
+        .rtl page-template page-template-page-home page-template-page-home-php page {
           margin: 0 auto;
           max-width: 450px;
         }
       }
 
       @media only screen and (min-device-width: 768px) {
-        .majoura {
+        .rtl page-template page-template-page-home page-template-page-home-php page {
           margin: 0 auto;
           max-width: 768px;
         }
       }
 
       @media only screen and (min-device-width: 930px) {
-        .majoura {
+        .rtl page-template page-template-page-home page-template-page-home-php page {
           margin: 0 auto;
           max-width: 930px;
         }
       }
 
       @media only screen and (min-device-width: 768px) {
-        .majoura {
+        .rtl page-template page-template-page-home page-template-page-home-php page {
           margin: 0 auto;
           max-width: 768px;
         }
       }
 
       @media only screen and (min-device-width: 1000px) {
-        .majoura {
+        .rtl page-template page-template-page-home page-template-page-home-php page {
           margin: 0 auto;
           max-width: 1000px;
         }
       }
 
       @media only screen and (min-device-width: 1280px) {
-        .majoura {
+        .rtl page-template page-template-page-home page-template-page-home-php page {
           margin: 0 auto;
           max-width: 1280px;
-        }
-      }
-
-      @media only screen and (min-device-width: 1800px) {
-        .majoura {
-          margin: 0 auto;
-          max-width: 1800px;
         }
       }
 
