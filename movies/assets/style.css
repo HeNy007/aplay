@@ -1,47 +1,47 @@
 @media only screen and (min-device-width: 480px) {
-        .container {
+        .majoura {
           margin: 0 auto;
           max-width: 450px;
         }
       }
 
       @media only screen and (min-device-width: 768px) {
-        .container {
+        .majoura {
           margin: 0 auto;
           max-width: 768px;
         }
       }
 
       @media only screen and (min-device-width: 930px) {
-        .container {
+        .majoura {
           margin: 0 auto;
           max-width: 930px;
         }
       }
 
       @media only screen and (min-device-width: 768px) {
-        .container {
+        .majoura {
           margin: 0 auto;
           max-width: 768px;
         }
       }
 
       @media only screen and (min-device-width: 1000px) {
-        .container {
+        .majoura {
           margin: 0 auto;
           max-width: 1000px;
         }
       }
 
       @media only screen and (min-device-width: 1280px) {
-        .container {
+        .majoura {
           margin: 0 auto;
           max-width: 1280px;
         }
       }
 
       @media only screen and (min-device-width: 1800px) {
-        .container {
+        .majoura {
           margin: 0 auto;
           max-width: 1800px;
         }
