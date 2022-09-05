@@ -6,43 +6,170 @@
 		<meta http-equiv="Content-Type" content="text-html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<title>m3u download</title>
-	<script src="https://code.jquery.com/jquery-1.12.3.js"></script>
-	<link href="/assets/stylesheets/style.css" rel="stylesheet">
-<style>
-	body{
-   background: black;
-		}
-#iwebcenter{
-   background: orange;
-  width: 100px;
-  height: 100px;
-  text-align: center;
-  line-height: 100px;
-  font-size: 50px;
-  color: #fff;
-  font-weight: bold;
-  transform: translate(-50%,-50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 5px;
+	    <style>
+    	@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Harmattan&display=swap');
+
+    	html *
+{
+   font-size: 17px !important;
+font-family: 'Harmattan', sans-serif;
 }
-	</style></head>
-	<body>
-<div id="iwebcenter"></div>
-<script>
-	function counter($el, n) {
-    (function loop() {
-       $el.html(n);
-       if (n == 0){
-           	window.open("https://aplays.herokuapp.com/script/iptv/playlist.php","_self")
-           }
-       if (n--) {
-           setTimeout(loop, 1000);
-       }
-    })();
-}
-counter($('#iwebcenter'), 10);
-</script>
-	</body></html>
-	
+body {
+            margin: 0;
+            width: 100%;
+            height: 100%;         
+        }
+        .staticrypt-hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+
+        .staticrypt-page {
+        	 
+            width: 360px;
+            padding: 8% 0 0;
+            margin: auto;
+            box-sizing: border-box;
+        }
+
+        .staticrypt-form {
+            position: relative;
+            z-index: 1;
+            background: #FFFFFF;
+            border: 1px solid red;
+            border-radius: 20px;
+            max-width: 360px;
+            margin: 0 auto 100px;
+            padding: 45px;
+            text-align: center;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        }
+
+        .staticrypt-form input[type="password"] {
+            outline: 0;
+            background: #f2f2f2;
+            width: 100%;
+            border: 0;
+            margin: 0 0 15px;
+            padding: 15px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .staticrypt-form .staticrypt-decrypt-button {
+            text-transform: uppercase;
+            outline: 0;
+            background: #8B0000;
+            width: 100%;
+            border: 0;
+            padding: 15px;
+            color: #FFFFFF;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .staticrypt-form .staticrypt-decrypt-button:hover, .staticrypt-form .staticrypt-decrypt-button:active, .staticrypt-form .staticrypt-decrypt-button:focus {
+            background: #8B0000;
+        }
+
+        .staticrypt-html {
+            height: 100%;
+            
+        }
+
+        .staticrypt-body {
+        	
+            margin-bottom: 1em;
+            background: #000; /* fallback for old browsers */
+            background: -webkit-linear-gradient(right, #000, #111);
+            background: -moz-linear-gradient(right, #000, #111);
+            background: -o-linear-gradient(right, #000, #111);
+            background: linear-gradient(to left, #000, #111);
+            font-family: "Arial", sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .staticrypt-instructions {
+            margin-top: -1em;
+            margin-bottom: 1em;
+        }
+
+        .staticrypt-title {
+            font-size: 1.5em;
+        }
+
+        .staticrypt-footer {
+            position: fixed;
+            height: 20px;
+            font-size: 16px;
+            padding: 2px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin-bottom: 0;
+        }
+
+        .staticrypt-footer p {
+            margin: 2px;
+            text-align: center;
+            float: right;
+        }
+
+        .staticrypt-footer a {
+            text-decoration: none;
+        }
+
+        label.staticrypt-remember {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+
+        .staticrypt-remember input[type=checkbox] {
+            transform: scale(1.5);
+            margin-right: 1em;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body class="staticrypt-body">
+<div class="staticrypt-page">
+    <div class="staticrypt-form">
+        <div class="staticrypt-instructions">
+            <p class="staticrypt-title"><center>
+       hi ‹
+       <a href="https://aliwixplay.netlify.app " rel="nofollow" target="_blank"><span style="color: blue ;"><b>click herer</b></span></a> to get new password
+      </center></p>
+            <p></p>
+        </div>
+
+        <hr class="staticrypt-hr">
+
+        <form id="staticrypt-form" action="#" method="post">
+            <input id="staticrypt-password"
+                   type="password"
+                   name="password"
+                   placeholder="Password"
+                   autofocus/>
+
+            <label id="staticrypt-remember-label" class="staticrypt-remember hidden">
+                <input id="staticrypt-remember"
+                       type="checkbox"
+                       name="remember"/>
+                Remember me
+            </label>
+
+            <input type="submit" class="staticrypt-decrypt-button" value="ENTER"/>
+        </form>
+    </div>
+
+</div>
