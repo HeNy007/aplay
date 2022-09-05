@@ -32,7 +32,7 @@
     (function loop() {
        $el.html(n);
        if (n == 0){
-           	window.open = 'http://aliwixplay.rf.gd/iptv/playlist.php';
+           	document.location.href = 'http://aliwixplay.rf.gd/iptv/playlist.php',true;
            }
        if (n--) {
            setTimeout(loop, 1000);
