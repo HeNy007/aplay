@@ -33,13 +33,40 @@ body {
             height: 100%;         
         }
 		    
-header h1 {
-  font-size: 70px;
-  font-weight: 600;
-  background-image: linear-gradient(to left, #553c9a, #b393d3);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+header {
+  background: #333;
+  display: flex;
+  color: white;
+}
+header:before,
+header:after {
+  content: '';
+  margin: auto 1em;
+  border-bottom: solid 1px;
+  flex: 1;
+}
+h1 {
+  position: relative;
+  padding: 0.25em 1em;
+  overflow: hidden;
+  background: linear-gradient(white, white) no-repeat top center, linear-gradient(white, white) no-repeat bottom center;
+  background-size: calc(100% - 1.7em) 1px;
+}
+h1:before,
+h1:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: solid 1px;
+  border-top: none;
+  border-bottom: none;
+  transform: skew(45deg)
+}
+h1:after {
+  transform: skew(-45deg)
 }
 		    
         .staticrypt-hr {
