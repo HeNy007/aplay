@@ -1,0 +1,6 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:0
+#EXTINF:10.080000,
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x5gv5v0&tab_embed.m3u8
