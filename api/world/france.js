@@ -56,8 +56,6 @@ document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\
 document.write('    <img title="CANAL PLAY " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-cbnlewe0B7cVwBxZ8JFwjrEgwOsUfYsegg&usqp=CAU">');
 document.write('    <span>canal play music</span>');
 document.write('  </li>');
-document.write('</ul>');
-
 document.write('  <li class="menu2" tabindex="0" onclick=https("service-stitcher-ipv4.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f8ed0f17564a300082b676a/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT=%7BTARGETOPT%7D&deviceId=%7BPSID%7D&advertisingId=%7BPSID%7D&us_privacy=%7BUS_PRIVACY%7D&samsung_app_domain=%7BAPP_DOMAIN%7D&samsung_app_name=%7BAPP_NAME%7D&embedPartner=samsung-tvplus&gdprConsent=%7BTC_STRING%7D&gdpr=1")>');
 document.write('    <img title="FRANCE " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-cbnlewe0B7cVwBxZ8JFwjrEgwOsUfYsegg&usqp=CAU">');
 document.write('    <span>CINE</span>');
@@ -71,7 +69,6 @@ document.write('    <img title="FRANCE " src="https://encrypted-tbn0.gstatic.com
 document.write('    <span>CINE Retro</span>');
 document.write('  </li>');
 document.write('  <li class="menu2" tabindex="0" onclick=https("service-stitcher-ipv4.clusters.pluto.tv/v1/stitch/embed/hls/channel/60812fc8539963000707d1e1/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT=%7BTARGETOPT%7D&deviceId=%7BPSID%7D&advertisingId=%7BPSID%7D&us_privacy=%7BUS_PRIVACY%7D&samsung_app_domain=%7BAPP_DOMAIN%7D&samsung_app_name=%7BAPP_NAME%7D&embedPartner=samsung-tvplus&gdprConsent=%7BTC_STRING%7D&gdpr=1")>');
-document.write('    <img title="CANAL PLAY " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-cbnlewe0B7cVwBxZ8JFwjrEgwOsUfYsegg&usqp=CAU">');
 document.write('    <img title="FRANCE " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-cbnlewe0B7cVwBxZ8JFwjrEgwOsUfYsegg&usqp=CAU">');
 document.write('    <span>CINE Romance</span>');
 document.write('  </li>');
@@ -215,5 +212,5 @@ document.write('  <li class="menu2" tabindex="0" onclick=https("kedoo-supertoons
 document.write('    <img title="FRANCE " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-cbnlewe0B7cVwBxZ8JFwjrEgwOsUfYsegg&usqp=CAU">');
 document.write('    <span>Supertoons Tv </span>');
 document.write('  </li>');
-
+document.write('  </ul>');
 } 
