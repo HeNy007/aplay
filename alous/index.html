@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html translate="no">
+
+<head>
+	<meta name="google" content="notranslate">
+	<meta http-equiv="refresh" content="1200">
+	<meta http-equiv="content-type" content="text/html; charset=us-ascii">
+	<meta name="author" content="Alous Sports LIVE">
+	<title>Alous Sports</title>
+	<meta property="og:url" content="http://seetv.live/">
+	<meta property="og:title" content="Alous Sports LIVE">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="https://cdn.freebiesupply.com/logos/large/2x/sports-logo-png-transparent.png">
+	<meta name="image" content="https://cdn.freebiesupply.com/logos/large/2x/sports-logo-png-transparent.png">
+	<meta property="og:description" content="Alous Sports LIVE">
+	<meta name="description" content="FREE CHANNEL">
+	<meta name="generator" content="Alous Sports LIVE">
+	<!-- JQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.17.1/extensions/mobile/bootstrap-table-mobile.min.js"></script>
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="Alous Sports">
+	<meta name="twitter:title" content="Alous Sports LIVE">
+	<meta name="twitter:image" content="https://cdn.freebiesupply.com/logos/large/2x/sports-logo-png-transparent.png">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<style>
+	@media only screen and (max-width:1000px) {
+		/*if it is 1000px change the font to 12 pt and so on for each resolution you need.*/
+		.centered {
+			font-size: 12pt!important;
+		}
+	}
+	
+	@media only screen and (max-width:800px) {
+		/*if it is 800px change the font to 11 pt and so on for each resolution you need.*/
+		.centered {
+			font-size: 11pt!important;
+		}
+	}
+	
+	@media only screen and (max-width:600px) {
+		.centered {
+			font-size: 10pt!important;
+		}
+	}
+	
+	@media only screen and (max-width:400px) {
+		.centered {
+			font-size: 9pt!important;
+		}
+	}
+	
+	@media only screen and (max-width:200px) {
+		.centered {
+			font-size: 8pt!important;
+		}
+	}
+	
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	
+	.content {
+		width: 900px;
+		margin: auto;
+		background: red;
+	}
+	
+	@media screen and (max-width:768px) {
+		.wrapper {
+			padding: 15px;
+		}
+		.content {
+			width: auto;
+		}
+	}
+	
+	* {
+		outline: 0px;
+		padding: 0px;
+		margin: 0px;
+		font-family: Rubik, sans-serif !important;
+	}
+	
+	body {
+		background: #000;
+	}
+	
+	.site {}
+	
+	.qanat {
+		overflow: auto;
+		position: absolute;
+		top: 0px;
+		z-index: 1;
+		width: 25%;
+		bottom: 0;
+	}
+	
+	.play {
+		border: 0;
+		border-left: 1px solid #ccc;
+		height: 100%;
+		float: right;
+		margin: 0;
+		width: 75%;
+		background: #000;
+	}
+	
+	#embedd {
+		width: 99%;
+		text-align: center;
+		direction: 1tr;
+		font-size: 17px;
+		height: 22px;
+		bottom: 20px;
+		position: fixed;
+		z-index: 99;
+		right: 0;
+		border-left: unset;
+		border-right: unset;
+		color: #fff;
+		background: #000;
+	}
+	
+	li {
+		display: block;
+		width: 99.5%;
+		float: left;
+	}
+	
+	li a {
+		text-align: left;
+		line-height: 40px;
+		font-size: 20px;
+		color: #fff;
+		display: block;
+		border-bottom: 1px solid #dcdcdc;
+		padding-left: 30px;
+	}
+	
+	.qanat::-webkit-scrollbar {
+		width: 12px;
+		background-color: #ccc;
+	}
+	
+	.qanat::-webkit-scrollbar-thumb {
+		border-radius: 12px;
+		-webkit-box-shadow: inset 0 0 12px rgba(0, 0, 0, .18);
+		background-color: #12C6CB;
+	}
+	
+	li.active a {
+		background: linear-gradient(to bottom, #CB3C12 0%, #333 100%);
+		color: #fff;
+	}
+	
+	li a:hover {
+		background: linear-gradient(to bottom, #CB3C12 0%, #CB3C12 100%);
+		color: #fff;
+	}
+	
+	a {
+		text-decoration: none;
+	}
+	
+	[data-watermark] img {
+		width: 100% !important;
+		top: 0 !important;
+		right: 0 !important;
+		bottom: 0 !important;
+	}
+	
+	[data-player] video {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	
+	[data-watermark] {
+		max-width: 100% !important;
+		width: 100% !important;
+		top: 0 !important;
+		right: 0 !important;
+		bottom: 0 !important;
+	}
+	
+	.clappr-watermark[data-watermark] img {
+		width: 100% !important;
+	}
+	
+	.media-control[data-media-control] .media-control-layer[data-controls] .drawer-container[data-volume] {
+		display: none !important;
+	}
+	
+	.media-control[data-media-control] .media-control-layer[data-controls] button.media-control-button {
+		width: 50px !important;
+		margin: -6px 0px !important;
+	}
+	
+	.media-control[data-media-control] .media-control-layer[data-controls] button.media-control-button svg {
+		height: 50px !important;
+	}
+	
+	#adsense {
+		display: none !important;
+	}
+	
+	.container {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		padding-top: 52.25%;
+	}
+	
+	.responsive-iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		border: none;
+	}
+	
+	#navbar a {
+		float: left;
+		display: block;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 1.05%;
+		text-decoration: none;
+		font-size: 17px;
+	}
+	
+	#navbar.active a {
+		background: linear-gradient(to bottom, #0DADC0 0%, #333 100%);
+		color: #fff;
+	}
+	
+	#navbar a:hover {
+		background: linear-gradient(to bottom, #0DADC0 0%, #333 100%);
+		color: #fff;
+	}
+	
+	li a img {
+		float: right;
+		border-left: 1px solid #dcdcdc;
+		width: 40px;
+		text-align: center;
+		padding: 2px 7px 2px 7px;
+		margin-top: 2px;
+	}
+	
+	#mob {
+		display: none;
+	}
+	
+	.sharawa {
+		display: none;
+	}
+	
+	@media (max-width: 980px) {
+		#des {
+			display: none;
+		}
+		#mob {
+			display: block;
+		}
+		.site {
+			padding-top: 56%;
+		}
+		.qanat {
+			width: 100%;
+			position: static;
+			margin-top: 40px;
+		}
+		.play {
+			height: unset;
+			width: 100%;
+			top: 0px;
+			position: fixed;
+		}
+		li a {
+			text-align: center;
+			font-size: 32px;
+			line-height: 110px;
+			margin: 15px;
+			border: 1px #ccc solid;
+			border-radius: 10px;
+			background: #fff;
+			padding-left: 0;
+			color: #333;
+		}
+		li {
+			width: 50%;
+			float: left;
+			border-right: none;
+		}
+		.zhmara {
+			background: linear-gradient(to bottom, #0FCCE2 0%, #0C7D88 100%);
+			width: 0%;
+			float: right;
+			text-align: center;
+			padding-top: 60px;
+			padding-bottom: 60px;
+			/* color: #13B3E2; */
+			font-size: 75px;
+			line-height: 15px;
+			font-weight: 900;
+			color: #fff;
+			position: relative;
+			left: unset;
+			margin: 20px;
+			border-radius: 15px;
+			padding-left: unset;
+			padding-right: unset;
+		}
+		#home {
+			width: 100%;
+		}
+		#embedd {
+			display: none;
+		}
+	}
+	</style>
+	<script src="/js/ads.js"></script>
+</head>
+<!-- Google Tag Manager -->
+<!-- End Google Tag Manager -->
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<!-- End Google Tag Manager (noscript) -->
+	<div class="site">
+		<div class="play">
+			<div id="s1" class="container">
+				<iframe class="responsive-iframe" frameborder="0" allowfullscreen src="https://foufank.tk:8443/chola/shoula.php?ch=1" name="iframe_007" id="iframe_007"></iframe>
+			</div>
+			<center>
+				<script type="text/javascript">
+				atOptions = {
+					'key': '6bdc22735c4bb2adef29dd8d6ebf62ee',
+					'format': 'iframe',
+					'height': 60,
+					'width': 468,
+					'params': {}
+				};
+				document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectivecreativeformats.com/6bdc22735c4bb2adef29dd8d6ebf62ee/invoke.js"><\/scr' + 'ipt>');
+				</script>
+			</center>
+		</div>
+		<br>
+		<textarea id="embedd" onclick="this.select();" readonly>Â© Copyright Alous Sports</textarea>
+	</div>
+	<div class="qanat">
+		<script>
+		FUCKUTHIEF();
+		</script>
+	</div>
+	<p id="demo"></p>
+	<script>
+	var shewa = window.location.pathname;
+	str = shewa;
+	puxt = str.slice(1, 4);
+	if(puxt == 0) {
+		document.getElementById('home').className += " active";
+		document.getElementById('s2').className = "sharawa";
+	} else {
+		document.getElementById(puxt).className += " active";
+		document.getElementById('s1').className = "sharawa";
+	}
+	document.getElementById('embedd').innerHTML = "Â© Copyright Alous Sports";
+	</script>
+</body>
+
+</html>
