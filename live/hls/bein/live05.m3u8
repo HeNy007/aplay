@@ -1,0 +1,9 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:0
+#EXTINF:10.080000,
+http://157.90.248.102/upload/images/logo05.m3u8
+#EXTINF:10.000000,
+https://aliwixplay.tn/live/maintenance/maintenance.m3u8
+#EXT-X-ENDLIST
