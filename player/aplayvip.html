@@ -265,7 +265,9 @@ location.href = "https://aliwixplay.netlify.app"
    
    </script> 
    <script>
-   let agent = navigator.userAgent;
+   
+let agent = navigator.userAgent;
+console.log(agent); 
    // externalplayer
    
    function wuffy(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="intent://"+btoa("https://ddd.vhls.ru.com/ddy3/premium"+link+"/index.m3u8|User-Agent="+agent+"|Referer=https://streamservicehd.click/" )+"#Intent;scheme=xmtv;package=co.wuffy.player;end"}};
@@ -277,7 +279,7 @@ function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
 var n="[\\?&]"+e+"=([^&#]*)",
 l=new RegExp(n),
 c=l.exec(window.location.href);
-return null==c?"YWRtZG41LmNkbi5tYW5nb21vbG8uY29tL2Fkc3BvcnRzMi9zbWlsOmFkc3BvcnRzMi5zdHJlYW0uc21pbC9wbGF5bGlzdC5tM3U4":unescape(c[1])}
+return null==c?"OTE=":unescape(c[1])}
 var video=gup("src");
 var link=decodeURIComponent(atob(video));
 
