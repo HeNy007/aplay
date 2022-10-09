@@ -266,8 +266,8 @@ location.href = "https://aliwixplay.netlify.app"
    </script> 
    <script>
    
-let agent = navigator.userAgent;
-console.log(agent); 
+var agent = navigator.userAgent;
+console.log(agent.innerText); 
    // externalplayer
    
    function wuffy(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="intent://"+btoa("https://ddd.vhls.ru.com/ddy3/premium"+link+"/index.m3u8|User-Agent="+agent+"|Referer=https://streamservicehd.click/" )+"#Intent;scheme=xmtv;package=co.wuffy.player;end"}};
