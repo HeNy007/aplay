@@ -264,6 +264,8 @@ border:solid thick #000;
    
    </style>
     <script>
+	    var m3u8 = "";
+	    var referer = "";
    function goto(){
    location.href = "go:download"
    }
@@ -283,8 +285,8 @@ var agent = navigator.userAgent;
 console.log(agent); 
    // externalplayer
    
-   function wuffy(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="intent://"+btoa("https://webudi.openhd.lol/ddy3/premium"+link+"/index.m3u8|User-Agent="+agent+"|Referer=https://streamservicehd.click/" )+"#Intent;scheme=xmtv;package=co.wuffy.player;end"}};
-   function mx(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="intent://ddd.vhls.ru.com/ddy3/premium"+link+"/index.m3u8|Referer=https://streamservicehd.click/&User-Agent="+agent+"#Intent;scheme=https;type=video/*;package=com.mxtech.videoplayer.ad;S.browser_fallback_url=market://details?id=com.mxtech.videoplayer.ad;S.title=AliwixPlay;end"}};
+   function wuffy(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="intent://"+btoa("https://webudi.openhd.lol/ddy3/premium"+link+"/index.m3u8|User-Agent="+agent+"|Referer="+referer+"" )+"#Intent;scheme=xmtv;package=co.wuffy.player;end"}};
+   function mx(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="intent://"+m3u8+link+"/index.m3u8|Referer="+referer+"/&User-Agent="+agent+"#Intent;scheme=https;type=video/*;package=com.mxtech.videoplayer.ad;S.browser_fallback_url=market://details?id=com.mxtech.videoplayer.ad;S.title=AliwixPlay;end"}};
    
    </script >
 <script type="text/javascript">
