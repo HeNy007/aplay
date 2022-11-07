@@ -3,7 +3,7 @@
 
 
 document.write('      <li id="home" class="btn">');
-document.write('        <a href="https://foufank.tk:8443/chola/shoula.php?ch=0"><span style="font-size:30px">!</span> Alous Sports</a>');
+document.write('        <a href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://aliwixplay.tn/app&ved=2ahUKEwjl__DQxJz7AhXYX_EDHcDBA8AQjBB6BAgHEAM&usg=AOvVaw1goJFtarQjpv9Qguuidr-F"><span style="font-size:30px">!</span>download our mobile app </a>');
 document.write('      </li>');
 document.write('      <li id="1" class="btn">');
 document.write('        <a href="https://foufank.tk:8443/chola/shoula.php?ch=0" target="iframe_007"><font id="des">Bein Sports News</font> <font id="mob">Bein Sports News</font></a>');
