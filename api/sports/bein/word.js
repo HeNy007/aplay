@@ -57,7 +57,7 @@ document.write('    <span>salam tv PS</span>');
 document.write('  </li>');
 
 document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/live6.php?ch=59\'">');
-document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMvf-d_KmgGrVPogyvQ-QD5RMxPLgeMFHH6w&usqp=CAU>');
+document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMvf-d_KmgGrVPogyvQ-QD5RMxPLgeMFHH6w&usqp=CAU">');
 document.write('    <span>Alhorya sport PS</span>');
 document.write('  </li>');
 
