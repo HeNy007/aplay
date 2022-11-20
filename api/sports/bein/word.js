@@ -1,6 +1,27 @@
 function FUCKUTHIEF(){
 document.write('<ul id="matchKey">');
 
+document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/live3.php?id=1624\'">');
+document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRJjUfNpqzGfrO29kEFuloA7k_EreH6ns8PA&usqp=CAU">');
+document.write('    <span>beIn Max 1 SD</span>');
+document.write('  </li>');
+
+document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/live3.php?id=1627\'">');
+document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRJjUfNpqzGfrO29kEFuloA7k_EreH6ns8PA&usqp=CAU">');
+document.write('    <span>beIn Max 2 SD</span>');
+document.write('  </li>');
+
+document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/live3.php?id=217\'">');
+document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRJjUfNpqzGfrO29kEFuloA7k_EreH6ns8PA&usqp=CAU">');
+document.write('    <span>beIn Max 1 HD</span>');
+document.write('  </li>');
+
+document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/live3.php?id=1628\'">');
+document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRJjUfNpqzGfrO29kEFuloA7k_EreH6ns8PA&usqp=CAU">');
+document.write('    <span>beIn Max 2 HD</span>');
+document.write('  </li>');
+
+
 document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/live6.php?ch=1\'">');
 document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHZWlT1Ogba1vE2NoTlL-oJE2p9LDteSbQLw&usqp=CAU">');
 document.write('    <span>CHOALA SP 1</span>');
