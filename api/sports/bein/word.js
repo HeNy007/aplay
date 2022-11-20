@@ -11,7 +11,7 @@ document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.c
 document.write('    <span>beIn Max 2 SD</span>');
 document.write('  </li>');
 
-document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/live3.php?id=217\'">');
+document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/live3.php?id=1625\'">');
 document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRJjUfNpqzGfrO29kEFuloA7k_EreH6ns8PA&usqp=CAU">');
 document.write('    <span>beIn Max 1 HD</span>');
 document.write('  </li>');
