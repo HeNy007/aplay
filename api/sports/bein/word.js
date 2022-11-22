@@ -33,6 +33,11 @@ document.write('    <img title="BEIN SP" src="https://beinsportslivehd.com/wp-co
 document.write('    <span>beIN Live 6</span>');
 document.write('  </li>');
 
+document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'https://aliwixplay.tn/player/qaliwix?src=7\'">');
+document.write('    <img title="BEIN SP" src="https://beinsportslivehd.com/wp-content/uploads/2022/03/cropped-logo-2.jpg">');
+document.write('    <span>beIN Live 7</span>');
+document.write('  </li>');
+
 
 document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/live6.php?ch=1\'">');
 document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHZWlT1Ogba1vE2NoTlL-oJE2p9LDteSbQLw&usqp=CAU">');
