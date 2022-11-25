@@ -90,42 +90,6 @@ document.write('  </li>');
 
 
 
-document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'https://aliwixplay.tn/player/qaliwix?src=1\'">');
-document.write('    <img title="BEIN SP" src="https://beinsportslivehd.com/wp-content/uploads/2022/03/cropped-logo-2.jpg">');
-document.write('    <span>beIN Live 1</span>');
-document.write('  </li>');
-
-document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'https://aliwixplay.tn/player/qaliwix?src=2\'">');
-document.write('    <img title="BEIN SP" src="https://beinsportslivehd.com/wp-content/uploads/2022/03/cropped-logo-2.jpg">');
-document.write('    <span>beIN Live 2</span>');
-document.write('  </li>');
-
-document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'https://aliwixplay.tn/player/qaliwix?src=3\'">');
-document.write('    <img title="BEIN SP" src="https://beinsportslivehd.com/wp-content/uploads/2022/03/cropped-logo-2.jpg">');
-document.write('    <span>beIN Live 3</span>');
-document.write('  </li>');
-
-document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'https://aliwixplay.tn/player/qaliwix?src=4\'">');
-document.write('    <img title="BEIN SP" src="https://beinsportslivehd.com/wp-content/uploads/2022/03/cropped-logo-2.jpg">');
-document.write('    <span>beIN Live 4</span>');
-document.write('  </li>');
-
-document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'https://aliwixplay.tn/player/qaliwix?src=5\'">');
-document.write('    <img title="BEIN SP" src="https://beinsportslivehd.com/wp-content/uploads/2022/03/cropped-logo-2.jpg">');
-document.write('    <span>beIN Live 5</span>');
-document.write('  </li>');
-
-document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'https://aliwixplay.tn/player/qaliwix?src=6\'">');
-document.write('    <img title="BEIN SP" src="https://beinsportslivehd.com/wp-content/uploads/2022/03/cropped-logo-2.jpg">');
-document.write('    <span>beIN Live 6</span>');
-document.write('  </li>');
-
-document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'https://aliwixplay.tn/player/qaliwix?src=7\'">');
-document.write('    <img title="BEIN SP" src="https://beinsportslivehd.com/wp-content/uploads/2022/03/cropped-logo-2.jpg">');
-document.write('    <span>beIN Live 7</span>');
-document.write('  </li>');
-
-
 
 
 
