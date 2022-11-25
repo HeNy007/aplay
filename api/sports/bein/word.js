@@ -1,6 +1,11 @@
 function FUCKUTHIEF(){
 document.write('<ul id="matchKey">');
 
+document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/aliwix/duhoksport.php\'">');
+document.write('    <img title="CHOALA SP" src="https://pbs.twimg.com/media/E9-OFwlWEAUSt9O.jpg">');
+document.write('    <span>Duhok Sport</span>');
+document.write('  </li>');
+
 document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/aliwix/HeNy.php?ch=1\'">');
 document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4bnPkjFZYIqj5XLo8JSGk1xNLXUowwIKzcw&usqp=CAU">');
 document.write('    <span>SERVER 1 🔴</span>');
