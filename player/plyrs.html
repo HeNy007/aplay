@@ -112,8 +112,8 @@
    .players{position:fixed; height:100%;width:100%; padding:0px; margin:0px;}
    video{  object-fit: fill; }
    
-   .dots {content: '';width: 10px;height: 10px;background: #8B0000;position: absolute;z-index: 1;border-radius: 50%;margin:10px}
-   .dots::before {content: '';position: relative;display: block;width: 300%;height: 300%;box-sizing: border-box;margin-left: -100%;margin-top: -100%;border-radius: 45px;background-color: #8B0000;animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;}
+   .dots {content: '';width: 10px;height: 10px;background: #fb6f13;position: absolute;z-index: 1;border-radius: 50%;margin:10px}
+   .dots::before {content: '';position: relative;display: block;width: 300%;height: 300%;box-sizing: border-box;margin-left: -100%;margin-top: -100%;border-radius: 45px;background-color: #fb6f13;animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;}
    .dots::after {content: '';position: absolute;left: 0;top: 0;display: block;width: 100%;height: 100%;border-radius: 15px;box-shadow: 0 0 8px rgba(0,0,0,0.3);animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite}
    .item-post .post-body {font-family: 'Inter', sans-serif;font-size: 15.3px}
    .plyr {--plyr-color-main: #ff6600;box-shadow: 0px 0px 19px rgba(30,30,30,.1);border-radius: 0;}
@@ -225,24 +225,106 @@
    </style>
   </head>
  <body> 
+  <div class="preloader"></div> 
   <div class="players"> 
    <span class="dots"></span> 
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sh20raj/SopPlayer@main/CatSu/catsu.min.css"/>
-<video 
-id="my-video" class="video-js" 
-controls  poster="https://aliwixplay.tn/images/cover.png" data-setup='' loop>
-<source id="ga7af" src="https://heny007.github.io/hls/download/001.mp4" type='video/webm'/>
-</video>
-<script src="https://cdn.jsdelivr.net/gh/sh20raj/SopPlayer@main/CatSu/catsu.min.js"></script>
-<link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" />
+   <video id="video" poster="" width="100%" height="100%" controls="" crossorigin="" playsinline="">
+    <source type="application/x-mpegURL" onclick.src="iptv"> 
+   </video> 
   </div> 
-  
+  <div id="dlna"> 
+   <div id="dlna_message"> 
+    <button class="clossalert" onclick="document.getElementById(&quot;dlna&quot;).style.display=&quot;none&quot;;">X</button> 
+    <div class="c-slider"> 
+     <div class="c-slider"> 
+      <div class="c-slide"> 
+       <div onclick="mx()" class="circle"> 
+        <img src="https://aliwixplay.tn/player/img/82efa49c-c459-4b71-83fb-68b9da555349_thumb (2).png"> 
+        <svg viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;" xml:space="preserve"> 
+         <circle cx="50" cy="50" r="40"></circle> 
+        </svg> 
+       </div> 
+       <div class="c-slide"> 
+        <div onclick="wuffy()" class="circle"> 
+         <img src="https://aliwixplay.tn/player/img/72368682_110561740414824_5464656146772000768_n.jpg" alt=""> 
+         <svg viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;" xml:space="preserve"> 
+          <circle cx="50" cy="50" r="40"></circle> 
+         </svg> 
+        </div> 
+       </div> 
+       <div class="c-slide"> 
+        <div onclick="dlna()" class="circle"> 
+         <img src="https://aliwixplay.tn/player/img/unnamed.webp" alt=""> 
+         <svg viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;" xml:space="preserve"> 
+          <circle cx="50" cy="50" r="40"></circle> 
+         </svg> 
+        </div> 
+       </div>
+      </div>
+
+     </div> 
      <script>
-   document.getElementById('ga7af').setAttribute('src', link2);
    
+   // externalplayer
+   function dlna(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="wvc-x-callback://open?url=https://"+link+"&secure_uri=true"}};
+   function wuffy(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="intent://"+btoa("https://"+link)+"#Intent;scheme=xmtv;package=co.wuffy.player;end"}};
+   function mx(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="intent://"+link+"#Intent;scheme=https;type=video/*;package=com.mxtech.videoplayer.ad;S.browser_fallback_url=market://details?id=com.mxtech.videoplayer.ad;S.title=AliwixPlay;end"}};
+   function vlc(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="vlc-x-callback:// protocol, my link is vlc-x-callback://x-callback-url/stream?url=http://"+link+"&sub=AliwixPlay"}};
    
 
+   </script> 
+     <script type="text/javascript">
+function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
+var n="[\\?&]"+e+"=([^&#]*)",
+l=new RegExp(n),
+c=l.exec(window.location.href);
+return null==c?"aliwixplay.tn/live/maintenance/maintenance.m3u8":unescape(c[1])}
+var video=gup("src");
+var link=(video);
+document.addEventListener('DOMContentLoaded', () => {
+const controls = ['restart', 'play-large','play','progress', 'current-time','captions', 'settings','fullscreen' ];
+const source ="https://"+link;
+const video = document.querySelector('video');       
+ //const player = Plyr.setup('video', {controls, captions: {active: false, update: false, language: 'auto'}});
+const defaultOptions = {controls,captions: {active: true, update: false, language: 'auto'}};
+
+  if (Hls.isSupported()) {
+   
+    const hls = new Hls();
+    hls.loadSource(source);
+    hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
+
+      // Transform available levels into an array of integers (height values).
+      const availableQualities = hls.levels.map((l) => l.height)
+
+      // Add new qualities to option
+      defaultOptions.quality = {
+        default: availableQualities[0],
+        options: availableQualities,
+        // this ensures Plyr to use Hls to update quality level
+        forced: true,        
+        onChange: (e) => updateQuality(e),
+      }
+
+      // Initialize here
+      const player = new Plyr(video, defaultOptions);
+    });
+    hls.attachMedia(video);
+    window.hls = hls;
+  } else {
+ 
+    const player = new Plyr(video, defaultOptions);
+  }
+
+  function updateQuality(newQuality) {
+    window.hls.levels.forEach((level, levelIndex) => {
+      if (level.height === newQuality) {
+        console.log("Found quality match with " + newQuality);
+        window.hls.currentLevel = levelIndex;
+      }
+    });
+  }
+});
 
 $(window).on("orientationchange", () => {
    if(screen.width > screen.height){
