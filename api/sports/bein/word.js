@@ -1,6 +1,11 @@
 function FUCKUTHIEF(){
 document.write('<ul id="matchKey">');
 
+document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/live6.php?ch=59\'">');
+document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMvf-d_KmgGrVPogyvQ-QD5RMxPLgeMFHH6w&usqp=CAU">');
+document.write('    <span>Alhorya sport PS</span>');
+document.write('  </li>'); 
+
 
 document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/aliwix/HeNy.php?ch=1\'">');
 document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4bnPkjFZYIqj5XLo8JSGk1xNLXUowwIKzcw&usqp=CAU">');
@@ -11,6 +16,33 @@ document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\
 document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4bnPkjFZYIqj5XLo8JSGk1xNLXUowwIKzcw&usqp=CAU">');
 document.write('    <span>SERVER 2 🔴</span>');
 document.write('  </li>');
+
+document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/live6.php?ch=1\'">');
+document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHZWlT1Ogba1vE2NoTlL-oJE2p9LDteSbQLw&usqp=CAU">');
+document.write('    <span>CHOALA SP 1</span>');
+document.write('  </li>');
+
+document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/live6.php?ch=2\'">');
+document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHZWlT1Ogba1vE2NoTlL-oJE2p9LDteSbQLw&usqp=CAU">');
+document.write('    <span>CHOALA SP 2</span>');
+document.write('  </li>');
+
+document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/live6.php?ch=3\'">');
+document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHZWlT1Ogba1vE2NoTlL-oJE2p9LDteSbQLw&usqp=CAU">');
+document.write('    <span>CHOALA SP 3</span>');
+document.write('  </li>');
+
+document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/live6.php?ch=4\'">');
+document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHZWlT1Ogba1vE2NoTlL-oJE2p9LDteSbQLw&usqp=CAU">');
+document.write('    <span>CHOALA SP 4</span>');
+document.write('  </li>');
+
+
+document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/live6.php?ch=63\'">');
+document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrbcBWjL5RsuSNk0LCIGC9r2r-FHh0rRsMAQ&usqp=CAU">');
+document.write('    <span>salam tv PS</span>');
+document.write('  </li>');
+
 
 document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/live3.php?id=1624\'">');
 document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSk9ZcJy2aroI1mlNkGIyhA_vjo-6PYtXo1A&usqp=CAU">');
@@ -43,36 +75,7 @@ document.write('    <span>beIN MAX 2 4k</span>');
 document.write('  </li>');
 
 
-document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/live6.php?ch=1\'">');
-document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHZWlT1Ogba1vE2NoTlL-oJE2p9LDteSbQLw&usqp=CAU">');
-document.write('    <span>CHOALA SP 1</span>');
-document.write('  </li>');
 
-document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/live6.php?ch=2\'">');
-document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHZWlT1Ogba1vE2NoTlL-oJE2p9LDteSbQLw&usqp=CAU">');
-document.write('    <span>CHOALA SP 2</span>');
-document.write('  </li>');
-
-document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/live6.php?ch=3\'">');
-document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHZWlT1Ogba1vE2NoTlL-oJE2p9LDteSbQLw&usqp=CAU">');
-document.write('    <span>CHOALA SP 3</span>');
-document.write('  </li>');
-
-document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/live6.php?ch=4\'">');
-document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHZWlT1Ogba1vE2NoTlL-oJE2p9LDteSbQLw&usqp=CAU">');
-document.write('    <span>CHOALA SP 4</span>');
-document.write('  </li>');
-
-
-document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/live6.php?ch=63\'">');
-document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrbcBWjL5RsuSNk0LCIGC9r2r-FHh0rRsMAQ&usqp=CAU">');
-document.write('    <span>salam tv PS</span>');
-document.write('  </li>');
-
-document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/live6.php?ch=59\'">');
-document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMvf-d_KmgGrVPogyvQ-QD5RMxPLgeMFHH6w&usqp=CAU">');
-document.write('    <span>Alhorya sport PS</span>');
-document.write('  </li>');
 
 document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'http://aliwixplay.rf.gd/script/live6.php?ch=44\'">');
 document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQseJqAWQgvC01h5zggs7wfjQfQ7l4kJqQB8A&usqp=CAU">');
