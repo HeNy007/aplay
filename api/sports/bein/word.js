@@ -1,7 +1,7 @@
 function FUCKUTHIEF(){
 document.write('<ul id="matchKey">');
 
-document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'go:beinbkp'">');
+document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'go:beinbkp\'">');
 document.write('    <img title="CHOALA SP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcRRPHr6GXXaaiBY6h6TwJzYdp16a_Nydquw&usqp=CAU">');
 document.write('    <span>beIN Sports VIP</span>');
 document.write('  </li>'); 
