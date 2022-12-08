@@ -1,3 +1,9 @@
+//alert offline
+
+window.addEventListener('offline', function(event){
+    alert("You are offline please turn on internet connection to run website");
+});
+
 // propeller ads
 
 document.write('<script async="async" data-cfasync="false" src="//arsnivyr.com/1?z=5575923"></script>');
