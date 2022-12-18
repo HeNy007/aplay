@@ -1,5 +1,6 @@
 //alert offline
 
+document.write('<style>.alert {padding: 20px;background-color: #f44336;color: white;}</style>');
 window.addEventListener('offline', function(event){
     alert("You are offline please turn on internet connection to run website");
 });
