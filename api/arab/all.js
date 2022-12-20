@@ -138,3 +138,4 @@ document.write("<span>Tamazigh<\/span>");
 document.write("<\/li> ");
 document.write("<\/ul> ");
 
+}
