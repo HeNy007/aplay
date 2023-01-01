@@ -49,25 +49,27 @@ document.write('<div class="Wallpaper" style="background-image: linear-gradient(
 
 	</script>
 
-
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<link href="https://vjs.zencdn.net/7.4.1/video-js.css" rel="stylesheet" /><script src="https://vjs.zencdn.net/7.4.1/video.js"></script>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> 
 <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
 <script src="https://unpkg.com/video.js/dist/video.js"></script>
+
 <div>
 <style type="text/css">
-#video {background-position: 50% 50% ;
+#my-video {background-position: 50% 50% ;
 box-shadow: 0 5px 30px 3px rgb(77, 77, 77); 
 width:100%;
+height:300px;
 
  } 
 video {object-fit: fill;}
-#video.vjs-fluid {
-  width: 70%;
+#my-video.vjs-fluid {
+  width: 100%;
   padding: 50px;
 }
 
-#video .vjs-big-play-button {
+#my-video .vjs-big-play-button {
   background: #eb2f06;
   color: #fff;
   border: 1px #fff solid;
@@ -78,13 +80,13 @@ video {object-fit: fill;}
   font-size: 3.5em;
 }
 
-#video .vjs-control:focus:before,
-#video .vjs-control:hover:before,
-#video .vjs-control:focus {
+#my-video .vjs-control:focus:before,
+#my-video .vjs-control:hover:before,
+#my-video .vjs-control:focus {
   text-shadow: none;
 }
 
-#video.vjs-fluid {
+#my-video.vjs-fluid {
   width: 100%;
   padding: 5px;
   padding-top: 37%;
@@ -93,99 +95,90 @@ video {object-fit: fill;}
   
 }
 
-#video .vjs-picture-in-picture-control {
+#my-video .vjs-picture-in-picture-control {
   display: none;
 }
-#video .vjs-current-time {
+#my-video .vjs-current-time {
   display: block;
 }
 
-#video .vjs-control-bar {
-  background: #fff;
+#my-video .vjs-control-bar {
+  background: #000;
   font-size: 1.3em;
-  color: #eb2f06;
+  color: #fff;
   border: 0.5px black solid;
   border-radius: 5px;
-  width: 90%;
+  width: 100%;
   left: 5%;
   bottom: 3%;
+  padding: 0px;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
 }
-#video .vjs-play-progress,
-#video .vjs-volume-level {
+#my-video .vjs-play-progress,
+#my-video .vjs-volume-level {
   background: red;
   border-radius: 2em;
 }
 
-#video .vjs-load-progress {
+#my-video .vjs-load-progress {
   display: none;
   -webkit-text-stroke: 0.2px black;
 }
 
-#video .vjs-slider {
-  background: black;
+#my-video .vjs-slider {
+  background: #fff;
   border-radius: 2em;
 }
 
-#video .vjs-control {
+#my-video .vjs-control {
   -webkit-text-stroke: 0.2px black;
 }
 
-#video .vjs-menu-content {
+#my-video .vjs-menu-content {
   background: #fa983a;
-}#video .vjs-selected {
+}#my-video .vjs-selected {
   background: #e58e26;
   color: #eb2f06;
 }
 
-#video .vjs-button:hover {
+#my-video .vjs-button:hover {
   color: #ea2027;
 }
-.video .vjs-button.vjs-vjsdownload{cursor:pointer;display:block;font-family:VideoJs}.video-js.vjs-vjsdownload .vjs-button.vjs-vjsdownload:before{display:block;position:relative;top:4px;content:'\f101';transform:rotate(90deg);font-size:1.5em}.video-js.vjs-vjsdownload .vjs-button.vjs-vjsdownload:after{display:block;content:' ';width:4px;height:5px;background-color:white;position:relative;top:-11px;left:calc(50% - 2px)}
+.video-js .vjs-button.vjs-vjsdownload{cursor:pointer;display:block;font-family:VideoJs}.video-js.vjs-vjsdownload .vjs-button.vjs-vjsdownload:before{display:block;position:relative;top:4px;content:'\f101';transform:rotate(90deg);font-size:1.5em}.video-js.vjs-vjsdownload .vjs-button.vjs-vjsdownload:after{display:block;content:' ';width:4px;height:5px;background-color:white;position:relative;top:-11px;left:calc(50% - 2px)}
 </style><script>
 
 
-document.write('<center><video id="video" class="video-js vjs-default-skin vjs-big-play-centered vjs-controls-enabled" controls poster="https://docs.teleport.media/images/videojs.png"><source src="'+vid+'" type="video/mp4"></video></center>')
-,function(e,o){var t=e.player=o("video"),n=document.getElementById("load-url"),r=document.getElementById("url");n.addEventListener("submit",function(e){return e.preventDefault(),t.src({src:r.value,type:"application/x-mpegURL"}),!1})}(window,window.videojs); 
+document.write('<center><video id="my-video"   class="video-js vjs-default-skin vjs-big-play-centered vjs-controls-enabled" controls poster="https://aliwixplay.tn/images/cover.png"><source src="'+vid+'" type="video/webm"></video></center>')
+,function(e,o){var t=e.player=o("video-js"),n=document.getElementById("load-url"),r=document.getElementById("url");n.addEventListener("submit",function(e){return e.preventDefault(),t.src({src:r.value,type:"application/x-mpegURL"}),!1})}(window,window.videojs); 
 </script>
   <script>
-  	var player = videojs("video");
+  	
+      
+      
+      /**
+ * videojs-vjsdownload
+ * @version 1.0.4
+ * @copyright 2019 7Ds7
+ * @license Apache-2.0
+ */
+!function(e){if("object"==typeof exports&&"undefined"!=typeof module)module.exports=e();else if("function"==typeof define&&define.amd)define([],e);else{var t;t="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:this,t.videojsVjsdownload=e()}}(function(){return function e(t,o,n){function r(l,u){if(!o[l]){if(!t[l]){var f="function"==typeof require&&require;if(!u&&f)return f(l,!0);if(i)return i(l,!0);var a=new Error("Cannot find module '"+l+"'");throw a.code="MODULE_NOT_FOUND",a}var d=o[l]={exports:{}};t[l][0].call(d.exports,function(e){var o=t[l][1][e];return r(o||e)},d,d.exports,e,t,o,n)}return o[l].exports}for(var i="function"==typeof require&&require,l=0;l<n.length;l++)r(n[l]);return r}({1:[function(e,t,o){(function(e){"use strict";function n(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function r(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}Object.defineProperty(o,"__esModule",{value:!0});var i=function(){function e(e,t){for(var o=0;o<t.length;o++){var n=t[o];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,o,n){return o&&e(t.prototype,o),n&&e(t,n),t}}(),l=function(e,t,o){for(var n=!0;n;){var r=e,i=t,l=o;n=!1,null===r&&(r=Function.prototype);var u=Object.getOwnPropertyDescriptor(r,i);if(void 0!==u){if("value"in u)return u.value;var f=u.get;if(void 0===f)return;return f.call(l)}var a=Object.getPrototypeOf(r);if(null===a)return;e=a,t=i,o=l,n=!0,u=a=void 0}},u="undefined"!=typeof window?window.videojs:void 0!==e?e.videojs:null,f=function(e){return e&&e.__esModule?e:{default:e}}(u),a={beforeElement:"fullscreenToggle",textControl:"Download video",name:"downloadButton",downloadURL:null},d=f.default.getComponent("Button"),c=function(e){function t(){n(this,t),l(Object.getPrototypeOf(t.prototype),"constructor",this).apply(this,arguments)}return r(t,e),i(t,[{key:"buildCSSClass",value:function(){return"vjs-vjsdownload "+l(Object.getPrototypeOf(t.prototype),"buildCSSClass",this).call(this)}},{key:"handleClick",value:function(){var e=this.player();window.open(this.options_.downloadURL||e.currentSrc(),"Download"),e.trigger("downloadvideo")}}]),t}(d),s=function(e,t){var o=e.controlBar.addChild(new c(e,t),{});o.controlText(t.textControl),e.controlBar.el().insertBefore(o.el(),e.controlBar.getChild(t.beforeElement).el()),e.addClass("vjs-vjsdownload")},p=function(e){var t=this;this.ready(function(){s(t,f.default.mergeOptions(a,e))})};f.default.registerPlugin("vjsdownload",p),o.default=p,t.exports=o.default}).call(this,"undefined"!=typeof global?global:"undefined"!=typeof self?self:"undefined"!=typeof window?window:{})},{}]},{},[1])(1)});
 
-
-
-// adding the quality selector before fullscreen
-
-player.controlBar.addChild('QualitySelector');
-player.controlBar.addChild('FullscreenToggle')
-
-player.ready(function() {
-  this.hotkeys({
-    volumeStep: 0.1,
-    seekStep: 5,
-    enableModifiersForNumbers: false,
+var player = videojs(document.querySelector('.video-js'), {
+  plugins: {
+    vjsdownload:{
+      beforeElement: 'playbackRateMenuButton',
+      textControl: 'Download video',
+      name: 'downloadButton',
+      downloadURL: 'https://insert_source_here.mp4' //optional if you need a different download url than the source
+    }
+  }
+} , function() {
+  console.log('Callback video-js initiated');
+  this.on('downloadvideo', function(e){
+    console.log('downloadvideo triggered');
   });
 });
 
-player.seekButtons({
-  forward: 10,
-  back: 10
-});
-
-var player = videojs(document.querySelector('.video'), {
-          plugins: {
-            vjsdownload:{
-              beforeElement: 'playbackRateMenuButton',
-              textControl: 'Download video',
-              name: 'downloadButton',
-              downloadURL: '//vjs.zencdn.net/v/oceans.mp4' //optional if you need a different download url than the source
-            }
-          }
-        } , function() {
-          console.log('Callback video-js initiated');
-          this.on('downloadvideo', function(){
-          console.log('downloadvideo triggered'); 
-        });
-      });
   	</script>
 </div>
 </body> </html>
