@@ -1,4 +1,5 @@
 <html> <head> <meta name="viewport" content="width=device-width, user-scalable=no"/> 
+<meta http-equiv="Content-Type" CONTENT="text/html; charset=utf-8">
 <script type="text/javascript" src="https://dl.dropbox.com/s/n830ftpexj647qr/navbar.js"></script> 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script> 
@@ -12,6 +13,8 @@
 
 
 <script>
+setRequestHeader("content-type","application/x-www-form-urlencoded;charset=UTF-8");
+
 function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
 var n="[\\?&]"+e+"=([^&#]*)",
 l=new RegExp(n),
@@ -19,9 +22,9 @@ c=l.exec(window.location.href);
 return null==c?"":unescape(c[1])}
 var year=gup("year");
 var dis=gup("disc");
-var disc=decodeURIComponent(dis);
+var disc=atob(dis);
 var tit=gup("title");
-var title=decodeURIComponent(tit);
+var title=atob(tit);
 var vid=gup("src");
 var cover=gup("cover");
 
