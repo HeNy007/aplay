@@ -17,7 +17,7 @@ Settings located at line 9, current script will translate english to arabic-->
 <div id="google_translate_element"></div>
 <script>
     function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar', autoDisplay: false}, 'google_translate_element');
+        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar', autoDisplay: true}, 'google_translate_element');
         var a = document.querySelector("#google_translate_element select");
         a.selectedIndex=1;
         a.dispatchEvent(new Event('change'));
