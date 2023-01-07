@@ -721,28 +721,17 @@ video {
     <div id="webcastx_message"> 
      <div class="c-slider"></div> 
      <div class="c-slide"> 
-      <div onclick="webcastx()" class="circle"> 
+      <div onclick="dlna()" class="circle"> 
        <img alt="" src="https://i.imgur.com/T4VYadR.png"> 
       </div> 
      </div> 
     </div> 
    </div> <script>
 // externalplayer
-
-function webcastx() {
-if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
-window.location = link;
-} else {
-location.href = "wvc-x-callback://open?url=" + link + "&secure_uri=true";
-}
-
-function mx() {
-if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
-window.location = link;
-} else {
-location.href = "intent:" + link + "#Intent;package=com.mxtech.videoplayer.ad;end";
-}
-}
+   function dlna(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="wvc-x-callback://open?url=https://"+link+"&secure_uri=true"}};
+   function wuffy(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="intent://"+btoa("https://"+link)+"#Intent;scheme=xmtv;package=co.wuffy.player;end"}};
+   function mx(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="intent://"+link+"#Intent;scheme=https;type=video/*;package=com.mxtech.videoplayer.ad;S.browser_fallback_url=market://details?id=com.mxtech.videoplayer.ad;S.title=AliwixPlay;end"}};
+   function vlc(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="vlc-x-callback:// protocol, my link is vlc-x-callback://x-callback-url/stream?url=http://"+link+"&sub=AliwixPlay"}};
 </script> 
    <!-- changesizeScreen  ---> </a>
   <a onclick="changesizeScreen()" style="position: fixed; right: 55px; top: 18px; z-index: 999999999999999999999999999; width: 25px; height: auto;" target="_blank"> <img src="https://i.imgur.com/BrfYnwa.png" style="height: 100%; width: 100%;"> </a> 
@@ -753,7 +742,7 @@ location.href = "intent:" + link + "#Intent;package=com.mxtech.videoplayer.ad;en
 var n="[\\?&]"+e+"=([^&#]*)",
 l=new RegExp(n),
 c=l.exec(window.location.href);
-return null==c?"https://aliwixplay.tn/live/maintenance/maintenance.m3u8":unescape(c[1])}
+return null==c?"aliwixplay.tn/live/maintenance/maintenance.m3u8":unescape(c[1])}
 var video=gup("src");
 var link=(video);
 
@@ -769,7 +758,7 @@ var quality = getQueryParam("src");
    <video class="player" autoplay="true" controls="true" height="100%" poster="https://aliwixplay.netlify.app/app/assets/aliwixplay.jpg" id="player" width="100%"></video> 
    <script>
 var video = document.getElementById("player");
-video.src = link ;
+video.src = "https://"+link ;
 </script> 
    <script src="https://cdn.jsdelivr.net/npm/hls.js@canary"></script> 
    <script>
@@ -779,7 +768,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //const controls = ['play-large', 'rewind', 'play', 'fast-forward', 'progress', 'current-time', 'duration','mute','volume','captions','download', 'settings','fullscreen']
 //const controls = ['play-large', 'rewind', 'play', 'fast-forward', 'progress', 'current-time', 'duration','mute','volume','captions','settings','fullscreen'];
 //const controls = ['play-large','play', 'progress', 'current-time', 'duration','mute','volume','captions','settings','fullscreen'];
-const controls = ['play-large','play', 'progress','current-time', 'duration' ,'captions' ,'settings','fullscreen'];
+const controls = ['play-large',  'rewind','play', 'fast-forward', 'progress','current-time', 'duration' ,'download','captions' ,'settings','fullscreen'];
 
 
 
