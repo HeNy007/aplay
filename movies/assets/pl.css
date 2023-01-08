@@ -378,4 +378,9 @@ a.e1 {
     margin: 5px;
 }
 
-
+.Gobak {
+    position:   fixed;
+    top:        0px;
+    width :       100%;
+    text-align: center;
+}
