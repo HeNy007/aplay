@@ -43,7 +43,7 @@ document.write('  </div>');
 document.write('  <div id="reproductors">');
 document.write('    <div class="video">');
 document.write('      <div id="video-content" class="video-html">');
-document.write('        <iframe target="_blank" src="http://aliwixplay.tn/player/plyr?src='+vid+'" width="100%" height="100%" sandbox="allow-downloads allow-same-origin allow-scripts" allowfullscreen allowtransparency="" allow="autoplay" scrolling="no" frameborder=""></iframe>');
+document.write('        <iframe src="http://aliwixplay.tn/player/plyr?src='+vid+'" width="100%" height="100%" sandbox="allow-scripts allow-downloads allow-same-origin allow-popups allow-forms" allowfullscreen"yes" frameborder="0"></iframe>');
 document.write('      </div>');
 document.write('    </div>');
 document.write('  </div><br>');
@@ -60,9 +60,6 @@ document.write('  </center>');
   <center>
     <a target="_blank" href="https://wa.me/+21626095930?text=مرحبا"><font color="gray"><button class="bt2"><font color="gray"><font color="gray"><i class="fas fa-play-cle">Contact Us</i></font></font></button></font></a>
   </center>
-  <script>
-  var video = []; var inicio = ''; video[1] = 'https://uqload.com/embed-aisbeq5wp8qe.html'; latino video[2] = 'https://upstream.to/embed-40qq14y6qi2p.html';  latino 2 video[3] = ''; latino 3 $(document).ready(function() { $(".VideoPlayer ul li:first").addClass("active"); $('.video-html').html('<iframe src="'+video[1]+'" width="100%" height="100%" sandbox="allow-same-origin allow-scripts" scrolling="no" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen><\/iframe>'); $(".VideoPlayer ul li").click(function () { $(".VideoPlayer ul li").removeClass("active"); $(this).addClass("active"); $('#video-content').html('<iframe src="'+video[$(this).attr('data-id')]+'" width="100%" height="100%" sandbox="allow-same-origin allow-scripts" scrolling="no" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen><\/iframe>'); return false; }); }); $(document).ready(function(){ $("ul li").on("click", function(){ $(this).siblings().removeClass("active") $(this).addClass("active") }) }) <!-- javascrip-para-el-elemento-preload --> window.onload = function(){ $("#spinner").fadeOut(); $("body").removeClass("hidden") }  <!-- javascrip-para-el-elemento-preload --> 
-  </script> <!-- javascrip-para-el-elemento-preload --> 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <style type="text/css">
   @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
@@ -87,9 +84,6 @@ margin: 20 10 20 10;
       </div>
     </div>
   </div>
-  <script>
-  const fs_BotoesLightbox = document.querySelectorAll(".fs-abrir-lightbox"); if(fs_BotoesLightbox){ for (var i=0; i < fs_BotoesLightbox.length; i++) { fs_BotoesLightbox[i].onclick = function(fs_VideoAtual){ const fs_VideoLightbox = fs_VideoAtual.currentTarget.getAttribute('data-video'); const fs_UrlVideo = "" + fs_VideoLightbox; const fs_ContentVideo = document.querySelector("#lightbox-content") fs_ContentVideo.innerHTML += '<iframe id="video-adicionado" width="100%" height="100%" sandbox="allow-same-origin allow-scripts" scrolling="no" style=" border-radius:20px;" src="'+ fs_UrlVideo +'" frameborder="0" allowfullscreen><\/iframe>'; document.querySelector("#lightbox").className = "abrir"; } } } 
-document.getElementById("fechar").addEventListener("click", function(e) { document.getElementById("lightbox").className = ""; document.getElementById("video-adicionado").remove();  }); document.querySelector("#lightbox").addEventListener("click", function(e) { if (e.target.id == "fechar") { document.querySelector("#lightbox").className = ""; document.querySelector("#video-adicionado").remove(); } }); document.querySelector("#lightbox").addEventListener("click", function(e) { if (e.target.id == "lightbox") { document.querySelector("#lightbox").className = ""; document.querySelector("#video-adicionado").remove(); } }); 
-  </script><br>
+  <br>
 </body>
 </html>
