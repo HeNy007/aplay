@@ -12,6 +12,25 @@
   <title></title>
 </head>
 <body>
+<!--
+  This code will translate page contents automatically (without user input)
+  Settings located at line 9, current script will translate english to arabic
+-->
+<style>#google_translate_element,.skiptranslate{display:none;}body{top:0!important;}</style>
+<div id="google_translate_element"></div>
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en', 
+            includedLanguages: 'ar', 
+            autoDisplay: false
+        }, 'google_translate_element');
+        var a = document.querySelector("#google_translate_element select");
+        a.selectedIndex=1;
+        a.dispatchEvent(new Event('change'));
+    }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script>
   document.write('<div id="banner">');
 document.write('  <!--   <a class="btn atras" href="go:INICIO"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="45" fill="currentColor" class="bi bi-arrow-left" viewbox="0 0 16 16">');
@@ -37,7 +56,7 @@ document.write('    <span style="color: #ffffff;">'+time+'</span></p>');
 document.write('  </center>');
 document.write('  <div id="conteinervid">');
 document.write('    <div class="VideoPlayer Bglg">');
-document.write('      <h6>Aliwix Server :</h6>  ');
+document.write('      <h6>Aliwix Player :</h6>  ');
 document.write('    </div>');
 document.write('  </div>');
 document.write('  <div id="reproductors">');
