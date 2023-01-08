@@ -12,4 +12,5 @@ var tit=gup("title");
 var title=atob(tit);
 var vid=gup("src");
 var cover=gup("cover");
+var profile=gup("profile");
 var trailer=gup("trailer");
