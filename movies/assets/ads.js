@@ -6,10 +6,8 @@ window.addEventListener('offline', function(event){
 });
 
 // ads
-if(userAgent.indexOf("3asba") == -1) {
-document.write('<script type="text/javascript"
-       src="/ads.js"></script>');
-} 
+
+if(navigator.userAgent.match(/3asba/i) !== 1){document.write('<script type="text/javascript" src="/ads.js"><\/script>');}
 
 
 //clear cookies
