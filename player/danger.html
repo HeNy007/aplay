@@ -40,7 +40,7 @@
 
                 function dlna() {
                     if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
-                        window.location = link
+                        window.location = "https://"+link
                     } else {
                         location.href = "wvc-x-callback://open?url=https://" + link + "&secure_uri=true"
                     }
@@ -48,7 +48,7 @@
 
                 function wuffy() {
                     if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
-                        window.location = link
+                        window.location = "https://"+link
                     } else {
                         location.href = "intent://" + btoa("https://" + link) + "#Intent;scheme=xmtv;package=co.wuffy.player;end"
                     }
@@ -56,7 +56,7 @@
 
                 function mx() {
                     if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
-                        window.location = b
+                        window.location = "https://"+link
                     } else {
                         location.href = "intent://" + link + "#Intent;scheme=https;type=video/*;package=com.mxtech.videoplayer.ad;S.browser_fallback_url=market://details?id=com.mxtech.videoplayer.ad;S.title=AliwixPlay;end"
                     }
