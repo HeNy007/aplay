@@ -1,0 +1,17 @@
+{
+  "name": "Aliwix Play",
+  "description": " تمتع بمشاهدة افلامك و قنواتك المفضلة أينما كنت عبر موقع ألويكس بلاي | Aliwix Play.",
+  "start_url": "/",
+  "lang": "en-FR",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "https://cdn.jsdelivr.net/gh/heny007/AliwixTV/img/l1.png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://aliwixplay.netlify.app/app/assets/aliwixplay.jpg"
+    }
+  ]
+}
