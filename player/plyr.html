@@ -821,28 +821,7 @@ const defaultOptions = {controls,captions: {active: true, update: false, languag
   }
 });
 
-var winwidth=$(window).width();
-            var winheight=$(window).height();
 
-            const player = Plyr.setup('player');
-            player.forEach (item => {
-
-                item.on('enterfullscreen', event => {
-
-                 $(".plyr__video-wrapper").css({"transform": "rotate(90deg)", "height": winwidth, "width": winheight, "margin-left": "0px", "margin-right": "0px"});
-                })
-                item.on('exitfullscreen', event => {
-                 $(".plyr__video-wrapper").css({"transform": "rotate(0deg)", "height": "100%", "width": "100%", "margin-left": "auto", "margin-right": "auto"});
-                })
-            });
-
-$(document).on('webkitfullscreenchange mozfullscreenchange fullscreenchange MSFullscreenChange', function() {
-if(plyr.fullscreen.active) {
-screen.orientation.lock("landscape");
-} else {
-screen.orientation.unlock();
-}
-}
 // Full screen button: Set the example to fullscreen.
 const fullscreen_btn = document.querySelector('#player');
 fullscreen_btn.addEventListener('click', () => {
