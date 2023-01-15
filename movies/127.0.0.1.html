@@ -14,8 +14,12 @@ l=new RegExp(n),
 c=l.exec(window.location.href);
 return null==c?"":unescape(c[1])}
 var script=gup("script");
-
-document.write('<script defer src="https://'+location.host+script+'"></script>');
+var script = document.createElement('script');
+script.onload = function () {
+    //do stuff with the script
+};
+script.src = "https://'+location.host+script+'" ;
+document.head.appendChild(script); //or something of the likes
 </script>
     
     <meta property="og:image" content="https://r.yaqot.me/upload/articles/5fcea399.png">
