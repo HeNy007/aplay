@@ -1,4 +1,3 @@
-document.getElementsByTagName('meta')["keywords"].content = "مسلسل براءة, مسلسل براءة سامي الفهري,مسلسل براءة التونسي ويكيبيديا";
 document.getElementsByTagName('meta')["description"].content = "مسلسل براءة الجزء الأول كامل و بدون اشتراك";
 document.title = "مسلسل براءة الجزء الأول";
 document.querySelectorAll('meta[property=og\\:image]')[0].setAttribute('content', 'https://r.yaqot.me/upload/articles/5fcea399.png')
