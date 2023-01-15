@@ -6,7 +6,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'>
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    
+  
 <script type="text/javascript">
 function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
 var n="[\\?&]"+e+"=([^&#]*)",
@@ -14,12 +14,8 @@ l=new RegExp(n),
 c=l.exec(window.location.href);
 return null==c?"":unescape(c[1])}
 var scr=gup("scr");
-let script = document.createElement('script');
-script.onload = function () {
-    //do stuff with the script
-};
-script.src = scr;
-document.head.appendChild(script); //or something of the likes
+document.write("<script type='text/javascript' src='"+ scr + "'><\/scr" + "ipt>");
+
 </script>
     
     <meta property="og:image" content="https://r.yaqot.me/upload/articles/5fcea399.png">
