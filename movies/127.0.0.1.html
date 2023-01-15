@@ -14,11 +14,11 @@ l=new RegExp(n),
 c=l.exec(window.location.href);
 return null==c?"":unescape(c[1])}
 var scr=gup("scr");
-var script = document.createElement('script');
+let script = document.createElement('script');
 script.onload = function () {
     //do stuff with the script
 };
-script.src = "https://'+location.host+scr+'" ;
+script.src = scr;
 document.head.appendChild(script); //or something of the likes
 </script>
     
