@@ -1,6 +1,17 @@
-document.getElementsByTagName('meta')["keywords"].content = "My new page keywords!!";
-document.getElementsByTagName('meta')["description"].content = "My new page description!!";
-document.title = "My new Document Title!!";
+document.getElementsByTagName('meta')["keywords"].content = "مسلسل براءة, 
+مسلسل براءة سامي الفهري,
+مسلسل براءة التونسي ويكيبيديا, 
+مسلسل براءة cast, 
+مسلسل براءة سامي الفهري dailymotion, 
+مسلسل البراءة dailymotion تونسي, 
+مسلسل البراءة dailymotion التونسي, 
+مسلسل البراءة facebook, 
+مسلسل براءة sami fehri, 
+مسلسل براءة سامي الفهري facebook, 
+مسلسل براءة youtube";
+document.getElementsByTagName('meta')["description"].content = "مسلسل براءة الجزء الأول كامل و بدون اشتراك";
+document.title = "مسلسل براءة الجزء الأول";
+document.querySelectorAll('meta[property=og\\:image]')[0].setAttribute('content', 'https://r.yaqot.me/upload/articles/5fcea399.png')
 
 function FUCKU(){
 document.write('<i class="bi bi-list-nested"></i> قصه المسلسل <i class="bi bi-list-nested"></i>');
