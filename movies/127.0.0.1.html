@@ -13,12 +13,12 @@ var n="[\\?&]"+e+"=([^&#]*)",
 l=new RegExp(n),
 c=l.exec(window.location.href);
 return null==c?"":unescape(c[1])}
-var script=gup("script");
+var scr=gup("scr");
 var script = document.createElement('script');
 script.onload = function () {
     //do stuff with the script
 };
-script.src = "https://'+location.host+script+'" ;
+script.src = "https://'+location.host+scr+'" ;
 document.head.appendChild(script); //or something of the likes
 </script>
     
