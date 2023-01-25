@@ -1,8 +1,13 @@
-<video id="player" controls>
-  <source src="https://newtest.webtv1.lol/ddyx2/premium98/tracks-v1a1/mono.m3u8" type="application/x-mpegURL" 
-  headers='{"Referer":"https://streamservicehd.click/premiumtv/daddyhd.php?id=98"}'>
-</video>
-<script>
-  var frame = document.getElementById("player").contentWindow;
-  frame.document.referrer = "https://streamservicehd.click/premiumtv/daddyhd.php?id=98";
-</script>
+<html>
+  <head>
+    <script>
+      var video = document.createElement("video");
+      video.src = "https://newtest.webtv1.lol/ddyx2/premium98/tracks-v1a1/mono.m3u8";
+      video.setAttribute("controls", "");
+      video.setAttribute("referer", "https://streamservicehd.click/premiumtv/daddyhd.php?id=98");
+      document.body.appendChild(video);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
