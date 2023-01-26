@@ -40,8 +40,8 @@
   <!--TITLE--> 
   <title>AliwixPlay</title> 
 <script>
-if (window.location.href.startsWith("/movies")) {
-   window.location.href = "/movies/tunisia/series";
+if (document.referrer.indexOf("/movies") === 0) {
+    // code to run on page
 }
 </script>
  </head> 
