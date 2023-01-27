@@ -277,11 +277,49 @@ location.href = "https://aliwixplay.netlify.app"
    }
    
    </script> 
-   <script>
-var rnd = Math.floor(Math.random()*6) + 2;   
+   <script>   
 var agent = navigator.userAgent;
-var m3u8 = "qt"+rnd+".dwasat.com/upload/images/logo0";
-var referer = "https://www.qanat.tv/?0";
+var referer = "https://www.qanat.tv/yariga.html?";
+	   var shewa = window.location.search;
+
+	str = shewa;
+	
+	puxt = str.slice(1, 2);
+	
+	zhmara = Math.floor(Math.random()*8+1);
+	
+	if (zhmara == 1) {
+    var pop= 'bastora';
+    }
+	if (zhmara == 2) {
+    var pop= 'bohawler';
+    }
+	if (zhmara == 3) {
+    var pop= 'chamchamal';
+    }
+	if (zhmara == 4) {
+    var pop= 'choman';
+    }
+    if (zhmara == 5) {
+    var pop= 'duhok';
+    }
+    if (zhmara == 6) {
+    var pop= 'halsho';
+    }
+    if (zhmara == 7) {
+    var pop= 'galala';
+    }
+    if (zhmara == 8) {
+    var pop= 'karkuk';
+    }
+ 
+    if (puxt > 0 && puxt <= 8 ){
+        
+    var m3u8 = "https://" + pop + ".co/upload/images/logo" + puxt + ".m3u8";
+	    
+	}else{
+	var m3u8 = "https://aliwixplay.tn/live/maintenance/maintenance.m3u8";
+	}
 
    // externalplayer
    
