@@ -280,50 +280,19 @@ location.href = "https://aliwixplay.netlify.app"
    <script>   
 var agent = navigator.userAgent;
 var referer = "https://www.qanat.tv/yariga.html?";
-	   var shewa = window.location.search;
+	   let towns = ["karkuk", "galala", "halsho", "duhok", "choman", "chamchamal", "bohawler", "bastora"];
 
-	str = shewa;
-	
-	puxt = str.slice(1, 2);
-	
-	zhmara = Math.floor(Math.random()*8+1);
-	
-	if (zhmara == 1) {
-    var pop= 'bastora';
-    }
-	if (zhmara == 2) {
-    var pop= 'bohawler';
-    }
-	if (zhmara == 3) {
-    var pop= 'chamchamal';
-    }
-	if (zhmara == 4) {
-    var pop= 'choman';
-    }
-    if (zhmara == 5) {
-    var pop= 'duhok';
-    }
-    if (zhmara == 6) {
-    var pop= 'halsho';
-    }
-    if (zhmara == 7) {
-    var pop= 'galala';
-    }
-    if (zhmara == 8) {
-    var pop= 'karkuk';
-    }
- 
-    if (puxt > 0 && puxt <= 8 ){
+function getRandomTown() {
+    let randomIndex = Math.floor(Math.random() * towns.length);
+    return towns[randomIndex];
+}
+var pop = getRandomTown() ;
         
-    var m3u8 = "https://" + pop + ".co/upload/images/logo" + puxt + ".m3u8";
 	    
-	}else{
-	var m3u8 = "https://aliwixplay.tn/live/maintenance/maintenance.m3u8";
-	}
-
+	
    // externalplayer
    
-   function mx(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="intent://"+m3u8+link+".m3u8|Referer="+referer+link+"&User-Agent=Mozilla/5.0 (Linux; Android 10; SNE-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36#Intent;scheme=https;type=video/*;package=com.mxtech.videoplayer.ad;S.browser_fallback_url=market://details?id=com.mxtech.videoplayer.ad;S.title=AliwixPlay;end"}};
+   function mx(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="intent://"+pop +".co/upload/images/logo" + link + ".m3u8|Referer="+referer+link+"&User-Agent=Mozilla/5.0 (Linux; Android 10; SNE-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36#Intent;scheme=https;type=video/*;package=com.mxtech.videoplayer.ad;S.browser_fallback_url=market://details?id=com.mxtech.videoplayer.ad;S.title=AliwixPlay;end"}};
    
    </script >
 <script type="text/javascript">
