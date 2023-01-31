@@ -27,7 +27,7 @@ document.write('    <img title="Aliwix SP" src="https://aliwixplay.tn/api/sports
 document.write('    <span>Live 🔴 6</span>');
 document.write('  </li>');
 document.write('  <li class="menu2" tabindex="0" onclick="window.location.href=\'https://aliwixplay.tn/player/qaliwix?src=7.jpg\'">');
-document.write('    <img title="Aliwix SP" src="https://aliwixplay.tn/api/sports/bein/img/7">');
+document.write('    <img title="Aliwix SP" src="https://aliwixplay.tn/api/sports/bein/img/7.jpg">');
 document.write('    <span>Live 🔴 7</span>');
 document.write('  </li>');
 
