@@ -1,0 +1,17 @@
+<script>
+const request = new XMLHttpRequest();
+request.open("GET", "https://www.alkass.net/alkass/live.aspx?ch=one", true);
+request.setRequestHeader("User-Agent", "Mozilla/5.0");
+request.setRequestHeader("Referer", "http://3asba.tn/");
+
+request.onreadystatechange = function() {
+  if (request.readyState === XMLHttpRequest.DONE && request.status === 200) {
+    const matches = request.responseText.match(/hls.*'(http.*?m3u8.*?)'/);
+    const stream = matches[1];
+    window.location.replace(stream);
+  }
+};
+
+request.send();
+
+</script>
