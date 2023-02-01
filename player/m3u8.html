@@ -1,17 +1,25 @@
 <script>
-const request = new XMLHttpRequest();
-request.open("GET", "https://www.alkass.net/alkass/live.aspx?ch=one", true);
-request.setRequestHeader("User-Agent", "Mozilla/5.0");
-request.setRequestHeader("Referer", "http://3asba.tn/");
-
-request.onreadystatechange = function() {
-  if (request.readyState === XMLHttpRequest.DONE && request.status === 200) {
-    const matches = request.responseText.match(/hls.*'(http.*?m3u8.*?)'/);
-    const stream = matches[1];
-    window.location.replace(stream);
+async function getStreamUrl() {
+  const response = await fetch("https://www.alkass.net/alkass/live.aspx?ch=one", {
+    headers: {
+      "User-Agent": "Mozilla/5.0",
+      Referer: "https://www.alkass.net/"
+    }
+  });
+  if (!response.ok) {
+    throw new Error(`Failed to fetch: ${response.statusText}`);
   }
-};
+  const text = await response.text();
+  const matches = text.match(/http.*?m3u8.*?/);
+  if (!matches || matches.length === 0) {
+    throw new Error("Failed to extract m3u8 from response");
+  }
+  const stream = matches[0];
+  window.location.replace(stream);
+}
 
-request.send();
-
+getStreamUrl()
+  .catch(error => {
+    console.error(error);
+  });
 </script>
