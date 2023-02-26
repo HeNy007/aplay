@@ -1,10 +1,10 @@
 function FUCKUTHIEF(){
 
 document.write("<ul id=\"matchKey\">");
-document.write("<li class=\"menu2\" onclick=\"window.location.href='http:\/\/aliwixplay.rf.gd\/script\/live8.php?ch=564'\"><img title=\"ARAB \" src=\"https:\/\/i.ibb.co\/G9F0Lbn\/watania1.png\"> ");
+document.write("<li class=\"menu2\" onclick=https(\"live.watania1.tn:1935\/live\/watanya1.stream\/playlist.m3u8\")><img title=\"ARAB \" src=\"https:\/\/i.ibb.co\/G9F0Lbn\/watania1.png\"> ");
 document.write("<span>Tun Nat 1<\/span>");
 document.write("<\/li> ");
-document.write("<li class=\"menu2\" onclick=https(\"aliwix-spammers.herokuapp.com\/ch.php?token=HeNy007&ch=tun1\")><img title=\"ARAB \" src=\"https:\/\/i.ibb.co\/6mcbcPg\/watania2.png\"> ");
+document.write("<li class=\"menu2\" onclick=https(\"live.watania2.tn:1935\/live\/watanya2.stream\/playlist.m3u8\")><img title=\"ARAB \" src=\"https:\/\/i.ibb.co\/6mcbcPg\/watania2.png\"> ");
 document.write("<span>Tun Nat 2<\/span>");
 document.write("<\/li> ");
 document.write("<li class=\"menu2\" onclick=https(\"aplays.herokuapp.com\/script\/fck4.m3u8?id=9876281\")><img title=\"ARAB \" src=\"https:\/\/i.ibb.co\/G9F0Lbn\/watania1.png\"> ");
