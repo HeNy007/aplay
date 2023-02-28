@@ -6,7 +6,7 @@ document.write('  <li class="menu" tabindex="0" onclick="window.location.href=\'
 document.write('    <img title="Aliwix" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLmOT7SMVYdheBDdv81QXndGczuGBbVyFtcw&usqp=CAU">');
 document.write('    <span>VIP PACKAGE</span>');
 document.write('  </li>');
-document.write('  <li class="menu" tabindex="0" onclick="window.location.href=\'https://aliwixplay.tn/live/android/sports.html\'">');
+document.write('  <li class="menu" tabindex="0" onclick="window.location.href=\'https://aliwixplay.tn/live/android/sports\'">');
 document.write('    <img title="Aliwix" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4oxbPMVyt5C1ZO4tjfK2cy7AkdF7uEx6oxw&usqp=CAU">');
 document.write('    <span>SPORTS</span>');
 document.write('  </li>');
